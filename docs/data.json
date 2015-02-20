@@ -1,0 +1,1365 @@
+{
+    "project": {
+        "name": "KetteringJS",
+        "description": "Kettering University Javascript Library.",
+        "version": "0.0.1",
+        "url": "http://ketteringjs.org"
+    },
+    "files": {
+        "src\\Directory.js": {
+            "name": "src\\Directory.js",
+            "modules": {},
+            "classes": {
+                "KU.Directory": 1,
+                "KU.Directory.Department": 1,
+                "KU.Directory.Contact": 1
+            },
+            "fors": {
+                "KU.Directory.Department": 1,
+                "KU.Directory.Contact": 1,
+                "KU.Directory": 1
+            },
+            "namespaces": {}
+        },
+        "src\\Events.js": {
+            "name": "src\\Events.js",
+            "modules": {},
+            "classes": {
+                "KU.Events": 1,
+                "KU.Events.Event": 1,
+                "KU.Events.Caption": 1
+            },
+            "fors": {
+                "KU.Events.Event": 1,
+                "KU.Events.Caption": 1,
+                "KU.Events": 1
+            },
+            "namespaces": {}
+        },
+        "src\\KetteringJS-Core.js": {
+            "name": "src\\KetteringJS-Core.js",
+            "modules": {
+                "KU": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Library.js": {
+            "name": "src\\Library.js",
+            "modules": {},
+            "classes": {
+                "KU.Library": 1,
+                "KU.Library.Book": 1,
+                "KU.Library.SearchOption": 1
+            },
+            "fors": {
+                "KU.Library.Book": 1,
+                "KU.Library.SearchOption": 1,
+                "KU.Library": 1
+            },
+            "namespaces": {}
+        },
+        "src\\News.js": {
+            "name": "src\\News.js",
+            "modules": {},
+            "classes": {
+                "KU.News": 1,
+                "KU.News.Article": 1,
+                "KU.News.Caption": 1
+            },
+            "fors": {
+                "KU.News.Article": 1,
+                "KU.News.Caption": 1,
+                "KU.News": 1
+            },
+            "namespaces": {}
+        },
+        "src\\Transfer.js": {
+            "name": "src\\Transfer.js",
+            "modules": {},
+            "classes": {
+                "KU.Transfer": 1,
+                "KU.Transfer.College": 1,
+                "KU.Transfer.Course": 1
+            },
+            "fors": {
+                "KU.Transfer.College": 1,
+                "KU.Transfer.Course": 1,
+                "KU.Transfer": 1
+            },
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "KU": {
+            "name": "KU",
+            "submodules": {},
+            "classes": {
+                "KU.Directory": 1,
+                "KU.Directory.Department": 1,
+                "KU.Directory.Contact": 1,
+                "KU.Events": 1,
+                "KU.Events.Event": 1,
+                "KU.Events.Caption": 1,
+                "KU.Library": 1,
+                "KU.Library.Book": 1,
+                "KU.Library.SearchOption": 1,
+                "KU.News": 1,
+                "KU.News.Article": 1,
+                "KU.News.Caption": 1,
+                "KU.Transfer": 1,
+                "KU.Transfer.College": 1,
+                "KU.Transfer.Course": 1
+            },
+            "fors": {
+                "KU.Library.Book": 1,
+                "KU.Library.SearchOption": 1,
+                "KU.Library": 1,
+                "KU.News.Article": 1,
+                "KU.News.Caption": 1,
+                "KU.News": 1,
+                "KU.Transfer.College": 1,
+                "KU.Transfer.Course": 1,
+                "KU.Transfer": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\Transfer.js",
+            "line": 111,
+            "description": "KU is the module/namespace used to contain all relevant classes, functions,\nand properties of the KetteringJS library."
+        }
+    },
+    "classes": {
+        "KU.Directory": {
+            "name": "KU.Directory",
+            "shortname": "KU.Directory",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Directory.js",
+            "line": 19,
+            "description": "The directory class will allow the library to gather information\non faculty/staff members such as name, office, phone number, and email."
+        },
+        "KU.Directory.Department": {
+            "name": "KU.Directory.Department",
+            "shortname": "KU.Directory.Department",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Directory.js",
+            "line": 62,
+            "description": "Holds the information for a Kettering department"
+        },
+        "KU.Directory.Contact": {
+            "name": "KU.Directory.Contact",
+            "shortname": "KU.Directory.Contact",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Directory.js",
+            "line": 107,
+            "description": "Holds all the information for a Kettering faculty/staff member member."
+        },
+        "KU.Events": {
+            "name": "KU.Events",
+            "shortname": "KU.Events",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Events.js",
+            "line": 19,
+            "description": "The events class contains properties and functions related to Kettering\nUniversity's events. It should provide an easy and structured \naccess to the latest events on campus."
+        },
+        "KU.Events.Event": {
+            "name": "KU.Events.Event",
+            "shortname": "KU.Events.Event",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Events.js",
+            "line": 37,
+            "description": "Holds the detailed information about a Kettering event."
+        },
+        "KU.Events.Caption": {
+            "name": "KU.Events.Caption",
+            "shortname": "KU.Events.Caption",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "file": "src\\Events.js",
+            "line": 80,
+            "description": "Holds all the basic information for a Kettering event."
+        },
+        "KU.Library": {
+            "name": "KU.Library",
+            "shortname": "KU.Library",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Library.js",
+            "line": 19,
+            "description": "The library class will allow KetteringJS to gather information\non currently available books available at Ketterings Library!"
+        },
+        "KU.Library.Book": {
+            "name": "KU.Library.Book",
+            "shortname": "KU.Library.Book",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Library.js",
+            "line": 46,
+            "description": "Contains information for a single Library book in Kettering's database."
+        },
+        "KU.Library.SearchOption": {
+            "name": "KU.Library.SearchOption",
+            "shortname": "KU.Library.SearchOption",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Library.js",
+            "line": 135,
+            "description": "Name value pair for a search option"
+        },
+        "KU.News": {
+            "name": "KU.News",
+            "shortname": "KU.News",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\News.js",
+            "line": 19,
+            "description": "The news class contains properties and functions related to Kettering\nUniversity's news articles. It should provide an easy and structured \naccess to the latest news articles on campus."
+        },
+        "KU.News.Article": {
+            "name": "KU.News.Article",
+            "shortname": "KU.News.Article",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\News.js",
+            "line": 35,
+            "description": "Holds all the information for a Kettering news article."
+        },
+        "KU.News.Caption": {
+            "name": "KU.News.Caption",
+            "shortname": "KU.News.Caption",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\News.js",
+            "line": 93,
+            "description": "Holds all the very basic information for a Kettering news article."
+        },
+        "KU.Transfer": {
+            "name": "KU.Transfer",
+            "shortname": "KU.Transfer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Transfer.js",
+            "line": 19,
+            "description": "The transfer class will allow KetteringJS to gather information\non transferable courses to Kettering!"
+        },
+        "KU.Transfer.College": {
+            "name": "KU.Transfer.College",
+            "shortname": "KU.Transfer.College",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Transfer.js",
+            "line": 35,
+            "description": "Contains information for a college able to transfer credits to Kettering!"
+        },
+        "KU.Transfer.Course": {
+            "name": "KU.Transfer.Course",
+            "shortname": "KU.Transfer.Course",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\Transfer.js",
+            "line": 111,
+            "description": "Contains information for a course which is transferable to Kettering!"
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\Directory.js",
+            "line": 36,
+            "description": "Deobfuscate a message",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "- the string which needs to be deobfuscated",
+                    "type": "String"
+                }
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 70,
+            "description": "The name of the department in plain English.",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Directory.Department"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 86,
+            "description": "The value identifier of the department used with the directory API and\nspecifically the search method. This value is generally an int, but can\nalso be a string (e.g All)",
+            "itemtype": "attribute",
+            "name": "valueId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Directory.Department"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 115,
+            "description": "The full name of the faculty/staff member.",
+            "itemtype": "attribute",
+            "name": "fullName",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Directory.Contact"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 131,
+            "description": "Information on the directory contact. Unfortunately the information is\nunordered and unclassified so it can only exist for now as an array\nof strings. Usually the order is [department, tags, office, phone, email].\nImportant: this order is NOT guaranteed nor is it that each of these pieces\nwill be available.",
+            "itemtype": "attribute",
+            "name": "info",
+            "type": "Array<String>",
+            "readonly": "",
+            "class": "KU.Directory.Contact"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 151,
+            "description": "The image url corresponding to the faculty/staff member.",
+            "itemtype": "attribute",
+            "name": "imgUrl",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Directory.Contact"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 171,
+            "description": "Cancels the current search for the directory.",
+            "itemtype": "method",
+            "name": "abort",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    // Abort the latest search!\n    KU.Directory.abort();"
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 192,
+            "description": "Searches through Kettering directory with the specified parameters.",
+            "itemtype": "method",
+            "name": "search",
+            "params": [
+                {
+                    "name": "firstName",
+                    "description": "- first name to search with",
+                    "type": "String"
+                },
+                {
+                    "name": "lastName",
+                    "description": "- last name to search with",
+                    "type": "String"
+                },
+                {
+                    "name": "ext",
+                    "description": "- extension to use in search",
+                    "type": "String"
+                },
+                {
+                    "name": "departmentId",
+                    "description": "- value identifier for a department used in search",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    search results. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(contacts){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Search through directory\n    KU.Directory.search(\"\", \"Huggins\", \"\", \"All\", success, failure);"
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 340,
+            "description": "Gathers the next page of the latest search in the directory.",
+            "itemtype": "method",
+            "name": "nextPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    search results. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(contacts){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get next page\n    KU.Directory.nextPage(success, failure);"
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 382,
+            "description": "Gathers the previous page of the latest search in the directory.",
+            "itemtype": "method",
+            "name": "previousPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    search results. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(contacts){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get previous page\n    KU.Directory.previousPage(success, failure);"
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Directory.js",
+            "line": 433,
+            "description": "Retrieves a list of valid departments available to search with.",
+            "itemtype": "method",
+            "name": "getDepartments",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of departments. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Department.html\">\n    KU.Directory.Department</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of departments. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(departments){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get department list\n    KU.Directory.getDepartments(success, failure);"
+            ],
+            "class": "KU.Directory"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 45,
+            "description": "Title of the event",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Event"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 61,
+            "description": "Event main HTML content",
+            "itemtype": "attribute",
+            "name": "mainHtml",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Event"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 90,
+            "description": "Title of the event",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 106,
+            "description": "Location of the event",
+            "itemtype": "attribute",
+            "name": "location",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 122,
+            "description": "Time of the event",
+            "itemtype": "attribute",
+            "name": "time",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 138,
+            "description": "Month of the event",
+            "itemtype": "attribute",
+            "name": "month",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 154,
+            "description": "Day of the month for the event",
+            "itemtype": "attribute",
+            "name": "dayOfTheMonth",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 170,
+            "description": "Day of the week for the event",
+            "itemtype": "attribute",
+            "name": "dayOfTheWeek",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 186,
+            "description": "Kettering's tags for the event",
+            "itemtype": "attribute",
+            "name": "tags",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 202,
+            "description": "Web address for the image/icon corresponding with the article.",
+            "itemtype": "attribute",
+            "name": "imgUrl",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 218,
+            "description": "Retrieves the detailed contents of an event.",
+            "itemtype": "method",
+            "name": "getEvent",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    event. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(event){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get article from first events caption\n    captions[0].getEvent(success, failure);"
+            ],
+            "class": "KU.Events.Caption"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 292,
+            "description": "Retrieves a list of Caption grabbed and parsed from the specified page number",
+            "itemtype": "method",
+            "name": "retrieve",
+            "params": [
+                {
+                    "name": "pageNumber",
+                    "description": "- the index page to retrieve",
+                    "type": "Int"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get events list from page 0\n    KU.Events.retrieve(0, success, failure);"
+            ],
+            "class": "KU.Events"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 422,
+            "description": "Retrieves the next page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
+            "itemtype": "method",
+            "name": "nextPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get events list from the next page\n    KU.Events.nextPage(success, failure);"
+            ],
+            "class": "KU.Events"
+        },
+        {
+            "file": "src\\Events.js",
+            "line": 459,
+            "description": "Retrieves the previous page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
+            "itemtype": "method",
+            "name": "previousPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get events list from the previous page\n    KU.Events.previousPage(success, failure);"
+            ],
+            "class": "KU.Events"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 54,
+            "description": "Title of the book",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.Book",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 69,
+            "description": "Author of the book",
+            "itemtype": "attribute",
+            "name": "author",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.Book",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 85,
+            "description": "Call number for the book",
+            "itemtype": "attribute",
+            "name": "callNumber",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.Book",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 101,
+            "description": "Holdings statement for the book (number of books left / availability).",
+            "itemtype": "attribute",
+            "name": "holdings",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.Book",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 117,
+            "description": "Web address for the image corresponding to the book (if there is one)!",
+            "itemtype": "attribute",
+            "name": "imgUrl",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.Book",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 143,
+            "description": "The name of the search option in plain English",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.SearchOption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 159,
+            "description": "The value identifier of the search option used with the library API and\nspecifically the search method. This value is generally a strange string\ndefined by our 3rd party library system.",
+            "itemtype": "attribute",
+            "name": "valueId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Library.SearchOption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 180,
+            "description": "Searches through Kettering library with the specified parameters.",
+            "itemtype": "method",
+            "name": "search",
+            "params": [
+                {
+                    "name": "field",
+                    "description": "- plain text field to search with",
+                    "type": "String"
+                },
+                {
+                    "name": "searchOptionId",
+                    "description": "- option Id for category to search with.",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    search results. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(books){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Search through the library\n    KU.Library.search(\"Cryptography\", \"SU^SUBJECT^SUBJECTS^^subject\", success, failure);"
+            ],
+            "class": "KU.Library",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 318,
+            "description": "Gets the next page for the latest Library search!",
+            "itemtype": "method",
+            "name": "nextPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    search results. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(books){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Search through the library\n    KU.Library.nextPage(success, failure);"
+            ],
+            "class": "KU.Library",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 355,
+            "description": "Returns a list of valuable library options to search by.",
+            "itemtype": "method",
+            "name": "getSearchOptions",
+            "return": {
+                "description": "",
+                "type": "KU.Library.SearchOption[]"
+            },
+            "example": [
+                "  \n    // Get search options!\n    var options = KU.Library.getSearchOptions();"
+            ],
+            "class": "KU.Library",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Library.js",
+            "line": 371,
+            "description": "Cancels the current search for the library.",
+            "itemtype": "method",
+            "name": "abort",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    // Abort the latest search!\n    KU.Library.abort();"
+            ],
+            "class": "KU.Library",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 43,
+            "description": "Title of the article",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Article",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 58,
+            "description": "Header info (such as date, category, etc)",
+            "itemtype": "attribute",
+            "name": "headerInfo",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Article",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 73,
+            "description": "Article main HTML content. This includes all types of elements including\nimages and videos.",
+            "itemtype": "attribute",
+            "name": "mainHtml",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Article",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 104,
+            "description": "Retrieves the detailed contents of a news article.",
+            "itemtype": "method",
+            "name": "getArticle",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the news article. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Article.html\">\n    KU.News.Article</a></span> article)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    news article. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(article){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get article from first news caption\n    captions[0].getArticle(success, failure);"
+            ],
+            "class": "KU.News.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 176,
+            "description": "Title of the article",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 192,
+            "description": "Author who wrote the article",
+            "itemtype": "attribute",
+            "name": "author",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 208,
+            "description": "Date when the article was written",
+            "itemtype": "attribute",
+            "name": "date",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 224,
+            "description": "Web address for the image/icon corresponding with the article.",
+            "itemtype": "attribute",
+            "name": "imgUrl",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.News.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 245,
+            "description": "Retrieves a list of Caption grabbed and parsed from the specified page number.",
+            "itemtype": "method",
+            "name": "retrieve",
+            "params": [
+                {
+                    "name": "pageNumber",
+                    "description": "- the index page to retrieve",
+                    "type": "Int"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get news list from page 0\n    KU.News.retrieve(0, success, failure);"
+            ],
+            "class": "KU.News",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 330,
+            "description": "Retrieves the next page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
+            "itemtype": "method",
+            "name": "nextPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get news list from next page\n    KU.News.nextPage(success, failure);"
+            ],
+            "class": "KU.News",
+            "module": "KU"
+        },
+        {
+            "file": "src\\News.js",
+            "line": 368,
+            "description": "Retrieves the previous page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
+            "itemtype": "method",
+            "name": "previousPage",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get news list from previous page\n    KU.News.previousPage(success, failure);"
+            ],
+            "class": "KU.News",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 43,
+            "description": "Name of the college",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.College",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 59,
+            "description": "Search code used against Kettering's database",
+            "itemtype": "attribute",
+            "name": "code",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.College",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 75,
+            "description": "City where college is located (if known).",
+            "itemtype": "attribute",
+            "name": "city",
+            "type": "string",
+            "optional": [
+                ""
+            ],
+            "readonly": "",
+            "class": "KU.Transfer.College",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 92,
+            "description": "State where college is located (if known).",
+            "itemtype": "attribute",
+            "name": "state",
+            "type": "string",
+            "optional": [
+                ""
+            ],
+            "readonly": "",
+            "class": "KU.Transfer.College",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 119,
+            "description": "Title for Kettering course",
+            "itemtype": "attribute",
+            "name": "kuTitle",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 135,
+            "description": "Course Id for Kettering course",
+            "itemtype": "attribute",
+            "name": "kuCourseId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 151,
+            "description": "Title for transfer course as referenced from other college",
+            "itemtype": "attribute",
+            "name": "transTitle",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 167,
+            "description": "Course Id for transfer course as referenced from other college",
+            "itemtype": "attribute",
+            "name": "transCourseId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 183,
+            "description": "Number of credits the transfer course is worth",
+            "itemtype": "attribute",
+            "name": "credits",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 199,
+            "description": "College that corresponds with the transfer course",
+            "itemtype": "attribute",
+            "name": "college",
+            "type": "KU.Transfer.College",
+            "readonly": "",
+            "class": "KU.Transfer.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 217,
+            "description": "Searches for transfer courses by course id",
+            "itemtype": "method",
+            "name": "searchByCollege",
+            "params": [
+                {
+                    "name": "collegeCode",
+                    "description": "- the college code to be searched by",
+                    "type": "Int"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    the transfer courses. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get college list\n    KU.Transfer.searchByCollege(004896, success, failure);"
+            ],
+            "class": "KU.Transfer",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 326,
+            "description": "Searches for transfer courses by course id",
+            "itemtype": "method",
+            "name": "searchByCourseId",
+            "params": [
+                {
+                    "name": "subject",
+                    "description": "- the course prefix, e.g MATH",
+                    "type": "String"
+                },
+                {
+                    "name": "idNumber",
+                    "description": "- the course number, e.g 101",
+                    "type": "String"
+                },
+                {
+                    "name": "stateAbr",
+                    "description": "- filter by state abreviation, examples are ALL, MI, FL",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    the transfer courses. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get college list\n    KU.Transfer.searchByCourseId(\"MATH\", 101, \"ALL\", success, failure);"
+            ],
+            "class": "KU.Transfer",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 442,
+            "description": "Retrieves a list of valid colleges which can be searched with.",
+            "itemtype": "method",
+            "name": "getColleges",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the colleges. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.College.html\">\n    KU.Transfer.College</a>[]</span> items)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    colleges. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(colleges){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get college list\n    KU.Transfer.getColleges(success, failure);"
+            ],
+            "class": "KU.Transfer",
+            "module": "KU"
+        },
+        {
+            "file": "src\\Transfer.js",
+            "line": 510,
+            "description": "Cancels the current search within transfer",
+            "itemtype": "method",
+            "name": "abort",
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    // Abort the latest search!\n    KU.Transfer.abort();"
+            ],
+            "class": "KU.Transfer",
+            "module": "KU"
+        }
+    ]
+}

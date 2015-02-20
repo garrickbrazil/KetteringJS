@@ -1,0 +1,50 @@
+#===========================================================
+#    This file makes the KetteringJS library by
+#    simply concatenating many source files together
+#    and skipping the header to avoid repetition
+#===========================================================
+
+import fileinput
+import os
+
+# Params
+headerLen = 16
+coreFile = "KetteringJS-Core.js"
+outputFile = "KetteringJS.js"
+folderToCheck = "src"
+folderToOutput = "bin"
+
+# Get source files
+sourceFiles = os.listdir( "src" )
+
+
+# Output
+with open(folderToOutput + "\\" + outputFile, 'w') as fout:
+
+
+    # Copy KetteringJS-Core.js first
+    for line in fileinput.input("src\\" + coreFile):
+
+        # Copy contents
+        fout.write(line)
+
+    # Go through source files
+    for file in sourceFiles:
+
+
+        # Only include javascript files
+       if(file.endswith(".js") and str(file) != "KetteringJS-Core.js"):
+
+            # Whitespace
+            fout.write("\n")
+
+            index = 0
+            
+            # Open file
+            for line in fileinput.input("src\\" + file):
+
+                index += 1
+
+                # Copy contents, skipping header
+                if(index > headerLen):
+                    fout.write(line)
