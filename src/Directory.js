@@ -105,7 +105,7 @@
     
     
     /******************************************************************************
-     *  Holds all the information for a Kettering faculty/staff member member.
+     *  Holds all the information for a Kettering faculty/staff member.
      *
      *  @class KU.Directory.Contact
      ******************************************************************************/

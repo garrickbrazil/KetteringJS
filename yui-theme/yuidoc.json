@@ -1,8 +1,8 @@
 {
     "name": "KetteringJS",
     "description": "Kettering University Javascript Library.",
-    "version": "0.0.1",
-    "url": "http://ketteringjs.org",
+    "version": "0.0.2",
+    "url": "http://ketteringjs.info",
     "options": {
         "outdir": "docs/",
 		"themedir": "yui-theme/",

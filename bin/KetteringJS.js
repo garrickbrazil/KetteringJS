@@ -118,7 +118,7 @@ var KU = {
     
     
     /******************************************************************************
-     *  Holds all the information for a Kettering faculty/staff member member.
+     *  Holds all the information for a Kettering faculty/staff member.
      *
      *  @class KU.Directory.Contact
      ******************************************************************************/
@@ -1470,10 +1470,6 @@ var KU = {
      *  @class KU.News.Caption
      ******************************************************************************/
     function Caption(title, author, date, imgUrl, detailsUrl){
-
-        // Privates
-        var details = null;
-    
     
         /******************************************************************************
          *  Retrieves the detailed contents of a news article.
@@ -1501,48 +1497,7 @@ var KU = {
          *****************************************************************************/
         this.getArticle = function(successCallback, failureCallback){
             
-            
-            // Do we already have details?
-            if(details != null){
-                
-                // Send the details then finish up!
-                successCallback(details);
-                return;
-            }
-            
-            
-            // Properties used
-            var url = 'http://www.kettering.edu/' + detailsUrl;
-            
-            
-            $.ajax({
-                url: url,
-                type: 'GET',
-                dataType: 'html',
-                success: function(data) {
-                
-                    // Load downloaded document
-                    var doc = $("<div>").html(data);
-                    
-                    // Get necessary information
-                    var main = doc.find('.field.field-name-body.field-type-text-with-summary.field-label-hidden');
-                    var title = doc.find('.news').text();
-                    var info = doc.find('.info').text();
-                    
-                    // Make article
-                    var article = new Article(title, info, main)    
-                    
-                    // Callback!
-                    successCallback(article);
-                    
-                },
-                
-                error: function(xhr, status, errorThrown){
-                    
-                    // Callback!
-                    failureCallback(errorThrown);
-                }
-            });
+            News.downloadArticle(detailsUrl, successCallback, failureCallback);
             
         };
       
@@ -1610,11 +1565,90 @@ var KU = {
             set: function(val) { /* Read only!! */ }
         });
 	
+        /******************************************************************************
+         *  The web address to the detail article page.
+         *
+         *  @attribute detailsUrl
+         *  @type string
+         *  @for KU.News.Caption
+         *  @readOnly
+        ******************************************************************************/
+        Object.defineProperty(this, "detailsUrl" , { 
+        
+            // Getter and Setter
+            get: function() { return detailsUrl; },
+            set: function(val) { /* Read only!! */ }
+        });
+        
+    
         return this;
 
     };
     
 
+    /******************************************************************************
+     *  Retrieves the detailed contents of a news article.
+     * 
+     *  @method downloadArticle
+     *  @param {string} articleUrl - the full web address where to get the article from
+     *  @param {function} successCallback - Called after successful gathering of 
+     *      the news article. Function Header: <code>void successCallback(<span 
+     *      class="type"><a class="crosslink" href="..\classes\KU.News.Article.html">
+     *      KU.News.Article</a></span> article)</code>;
+     *  @param {function} failureCallback - Called after a failure at gathering the
+     *      news article. Function Header: void <code>failureCallback(String errMsg)</code>;
+     *  @for KU.News
+     *  @return {void}
+     *  @example  
+     *      var success = function(article){
+     *          ...
+     *      }
+     *     
+     *      var failure = function(errMsg){
+     *          ...
+     *      }
+     *      
+     *      // Get article from first news caption
+     *      KU.News.downloadArticle("http://www.kettering.edu/news/example", success, failure);
+     *****************************************************************************/
+    News.downloadArticle = function(articleUrl, successCallback, failureCallback){
+        
+        // Properties used
+        var url = 'http://www.kettering.edu/' + articleUrl;
+        
+        
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'html',
+            success: function(data) {
+            
+                // Load downloaded document
+                var doc = $("<div>").html(data);
+                
+                // Get necessary information
+                var main = doc.find('.field.field-name-body.field-type-text-with-summary.field-label-hidden');
+                var title = doc.find('.news').text();
+                var info = doc.find('.info').text();
+                
+                // Make article
+                var article = new Article(title, info, main)    
+                
+                // Callback!
+                successCallback(article);
+                
+            },
+            
+            error: function(xhr, status, errorThrown){
+                
+                // Callback!
+                failureCallback(errorThrown);
+            }
+        });
+        
+    };
+        
+    
     
     /******************************************************************************
      *  Retrieves a list of Caption grabbed and parsed from the specified page number. 
@@ -1649,7 +1683,7 @@ var KU = {
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-news seems more reliable without a page in this case
-        if( pageNumber == 0 ) url = 'http://www.kettering.edu/news/current-news?page=' + pageNumber;
+        if( pageNumber != 0 ) url = 'http://www.kettering.edu/news/current-news?page=' + pageNumber;
         else url = 'http://www.kettering.edu/news/current-news';
         
         page = pageNumber;
