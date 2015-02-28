@@ -2,7 +2,7 @@
     "project": {
         "name": "KetteringJS",
         "description": "Kettering University Javascript Library.",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "url": "http://ketteringjs.info"
     },
     "files": {
