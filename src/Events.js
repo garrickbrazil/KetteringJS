@@ -84,8 +84,6 @@
      ******************************************************************************/
     function Caption(title, location, time, month, dayOfTheMonth, dayOfTheWeek, tags, imgUrl, detailsUrl){
 
-        // Privates
-        var details = null;
     
         /******************************************************************************
          *  Title of the event
@@ -213,7 +211,22 @@
             get: function() { return imgUrl; },
             set: function(val) { /* Read only!! */ }
         });
-    
+
+        /******************************************************************************
+         *  The web address to the detail article page.
+         *
+         *  @attribute detailsUrl
+         *  @type string
+         *  @for KU.Events.Caption
+         *  @readOnly
+        ******************************************************************************/
+        Object.defineProperty(this, "detailsUrl" , { 
+        
+            // Getter and Setter
+            get: function() { return detailsUrl; },
+            set: function(val) { /* Read only!! */ }
+        });
+        
     
         /******************************************************************************
          *  Retrieves the detailed contents of an event.
@@ -242,50 +255,73 @@
         this.getEvent = function(successCallback, failureCallback){
             
             
-            // Do we already have details?
-            if(details != null){
-                
-                // Send the details then finish up!
-                successCallback(details);
-                return;
-            }
-            
-            
-            // Properties used
-            var url = 'http://www.kettering.edu/' + detailsUrl;
-            
-            $.ajax({
-                url: url,
-                type: 'GET',
-                dataType: 'html',
-                success: function(data) {
-                
-                    // Load downloaded document
-                    var doc = $("<div>").html(data);
-                    
-                    // Get necessary information
-                    var main = doc.find('.content.clearfix');
-                    var title = doc.find('.title.inside').text();
-                    
-                    // Make event
-                    var event = new Event(title, main)    
-                    
-                    // Callback!
-                    successCallback(event);
-                    
-                },
-                
-                error: function(xhr, status, errorThrown){
-                    
-                    // Callback!
-                    failureCallback(errorThrown);
-                }
-            });
+            Events.downloadEventDetails(detailsUrl, successCallback, failureCallback);
             
         };
 	
         return this;
 
+    };
+    
+    
+    /******************************************************************************
+     *  Retrieves the detailed contents of an event.
+     * 
+     *  @method downloadEventDetails
+     *  @param {string} eventUrl - the web address of where to download the event from
+     *  @param {function} successCallback - Called after successful gathering of 
+     *      the event. Function Header: <code>void successCallback(<span 
+     *      class="type"><a class="crosslink" href="..\classes\KU.Events.Event.html">
+     *      KU.Events.Event</a></span> event)</code>;
+     *  @param {function} failureCallback - Called after a failure at gathering the
+     *      event. Function Header: void <code>failureCallback(String errMsg)</code>;
+     *  @for KU.Events.Caption
+     *  @return {void}
+     *  @example  
+     *      var success = function(event){
+     *          ...
+     *      }
+     *     
+     *      var failure = function(errMsg){
+     *          ...
+     *      }
+     *      
+     *      // Get article from first events caption
+     *      KU.Events.downloadEventDetails("http://www.kettering.edu/events/example",success, failure);
+     *****************************************************************************/
+    Events.downloadEventDetails = function(url, successCallback, failureCallback){
+        
+        // Properties used
+        var url = 'http://www.kettering.edu/' + url;
+        
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'html',
+            success: function(data) {
+            
+                // Load downloaded document
+                var doc = $("<div>").html(data);
+                
+                // Get necessary information
+                var main = doc.find('.content.clearfix');
+                var title = doc.find('.title.inside').text();
+                
+                // Make event
+                var event = new Event(title, main)    
+                
+                // Callback!
+                successCallback(event);
+                
+            },
+            
+            error: function(xhr, status, errorThrown){
+                
+                // Callback!
+                failureCallback(errorThrown);
+            }
+        });
+        
     };
     
     
@@ -322,7 +358,7 @@
       
         // Found at least one occasion where page=0 was different than default
 		// site, /events seems more reliable without a page in this case
-        if( pageNumber == 0 ) url = 'http://www.kettering.edu/events?page=' + pageNumber;
+        if( pageNumber != 0 ) url = 'http://www.kettering.edu/events?page=' + pageNumber;
         else url = 'http://www.kettering.edu/events';
         
         page = pageNumber;

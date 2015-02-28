@@ -590,7 +590,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 90,
+            "line": 88,
             "description": "Title of the event",
             "itemtype": "attribute",
             "name": "title",
@@ -601,7 +601,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 106,
+            "line": 104,
             "description": "Location of the event",
             "itemtype": "attribute",
             "name": "location",
@@ -612,7 +612,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 122,
+            "line": 120,
             "description": "Time of the event",
             "itemtype": "attribute",
             "name": "time",
@@ -623,7 +623,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 138,
+            "line": 136,
             "description": "Month of the event",
             "itemtype": "attribute",
             "name": "month",
@@ -634,7 +634,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 154,
+            "line": 152,
             "description": "Day of the month for the event",
             "itemtype": "attribute",
             "name": "dayOfTheMonth",
@@ -645,7 +645,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 170,
+            "line": 168,
             "description": "Day of the week for the event",
             "itemtype": "attribute",
             "name": "dayOfTheWeek",
@@ -656,7 +656,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 186,
+            "line": 184,
             "description": "Kettering's tags for the event",
             "itemtype": "attribute",
             "name": "tags",
@@ -667,7 +667,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 202,
+            "line": 200,
             "description": "Web address for the image/icon corresponding with the article.",
             "itemtype": "attribute",
             "name": "imgUrl",
@@ -678,7 +678,18 @@
         },
         {
             "file": "src\\events.js",
-            "line": 218,
+            "line": 215,
+            "description": "The web address to the detail article page.",
+            "itemtype": "attribute",
+            "name": "detailsUrl",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Events.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\events.js",
+            "line": 231,
             "description": "Retrieves the detailed contents of an event.",
             "itemtype": "method",
             "name": "getEvent",
@@ -706,7 +717,40 @@
         },
         {
             "file": "src\\events.js",
-            "line": 292,
+            "line": 267,
+            "description": "Retrieves the detailed contents of an event.",
+            "itemtype": "method",
+            "name": "downloadEventDetails",
+            "params": [
+                {
+                    "name": "eventUrl",
+                    "description": "- the web address of where to download the event from",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at gathering the\n    event. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(event){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get article from first events caption\n    KU.Events.downloadEventDetails(\"http://www.kettering.edu/events/example\",success, failure);"
+            ],
+            "class": "KU.Events.Caption",
+            "module": "KU"
+        },
+        {
+            "file": "src\\events.js",
+            "line": 328,
             "description": "Retrieves a list of Caption grabbed and parsed from the specified page number",
             "itemtype": "method",
             "name": "retrieve",
@@ -739,7 +783,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 422,
+            "line": 458,
             "description": "Retrieves the next page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
             "itemtype": "method",
             "name": "nextPage",
@@ -767,7 +811,7 @@
         },
         {
             "file": "src\\events.js",
-            "line": 459,
+            "line": 495,
             "description": "Retrieves the previous page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
             "itemtype": "method",
             "name": "previousPage",
