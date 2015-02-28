@@ -105,6 +105,24 @@
     
     
     /******************************************************************************
+     *  Contains information for a directory contact info message. Which is
+     *  generally just a plain message and a boolean for its font-weight bold.
+     *
+     *  @class KU.Directory.Contact.Info
+     ******************************************************************************/    
+    function Info(message, weight){
+        
+        
+        this.message = message;
+        this.weight = weight;
+        
+        
+        return this;
+        
+    }
+    
+    
+    /******************************************************************************
      *  Holds all the information for a Kettering faculty/staff member.
      *
      *  @class KU.Directory.Contact
@@ -133,10 +151,11 @@
          *  unordered and unclassified so it can only exist for now as an array
          *  of strings. Usually the order is [department, tags, office, phone, email].
          *  Important: this order is NOT guaranteed nor is it that each of these pieces
-         *  will be available.
+         *  will be available. *Note: the array type is <a class="crosslink" 
+         *  href="..\classes\KU.Directory.Contact.Info.html">KU.Directory.Contact.Info</a>*.
          *
          *  @attribute info
-         *  @type Array<String>
+         *  @type {Array<KU.Directory.Contact.Info>}
          *  @for KU.Directory.Contact
          *  @readOnly
         ******************************************************************************/
@@ -276,6 +295,7 @@
                         var name = $('h3', this).first().text();
 
                         var info = [];
+                        var counter = 0;
                         
                         $('.inside span', this).each(
                             function(i){
@@ -302,9 +322,9 @@
                                 
                                 // Non-empty information?
                                 if(!(detail.replace(/\s+/g, '') == "" || $(this).find('.tel').length > 0)){
-                                    
+                                                                   
                                     // Store detail
-                                    info[i] = detail;
+                                    info[counter++] = new Info(detail, ($(this).hasClass("bold")?("bold"):("")));
                                 }
                                 
                         });

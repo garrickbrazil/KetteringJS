@@ -3,7 +3,7 @@ ___
  
 ## KetteringJS 
 
-Version-0.0.3
+Version-0.0.4
 
 KetteringJS is a library meant to give easy and structured access
 to various information and functions through Javascript. 

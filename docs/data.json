@@ -2,7 +2,7 @@
     "project": {
         "name": "KetteringJS",
         "description": "Kettering University Javascript Library.",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "url": "http://ketteringjs.info"
     },
     "files": {
@@ -21,6 +21,7 @@
             "classes": {
                 "KU.Directory": 1,
                 "KU.Directory.Department": 1,
+                "KU.Directory.Contact.Info": 1,
                 "KU.Directory.Contact": 1
             },
             "fors": {
@@ -98,6 +99,7 @@
             "classes": {
                 "KU.Directory": 1,
                 "KU.Directory.Department": 1,
+                "KU.Directory.Contact.Info": 1,
                 "KU.Directory.Contact": 1,
                 "KU.Events": 1,
                 "KU.Events.Event": 1,
@@ -165,6 +167,20 @@
             "line": 62,
             "description": "Holds the information for a Kettering department"
         },
+        "KU.Directory.Contact.Info": {
+            "name": "KU.Directory.Contact.Info",
+            "shortname": "KU.Directory.Contact.Info",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\directory.js",
+            "line": 107,
+            "description": "Contains information for a directory contact info message. Which is\ngenerally just a plain message and a boolean for its font-weight bold."
+        },
         "KU.Directory.Contact": {
             "name": "KU.Directory.Contact",
             "shortname": "KU.Directory.Contact",
@@ -176,7 +192,7 @@
             "module": "KU",
             "namespace": "",
             "file": "src\\directory.js",
-            "line": 107,
+            "line": 125,
             "description": "Holds all the information for a Kettering faculty/staff member."
         },
         "KU.Events": {
@@ -387,7 +403,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 115,
+            "line": 133,
             "description": "The full name of the faculty/staff member.",
             "itemtype": "attribute",
             "name": "fullName",
@@ -398,18 +414,18 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 131,
-            "description": "Information on the directory contact. Unfortunately the information is\nunordered and unclassified so it can only exist for now as an array\nof strings. Usually the order is [department, tags, office, phone, email].\nImportant: this order is NOT guaranteed nor is it that each of these pieces\nwill be available.",
+            "line": 149,
+            "description": "Information on the directory contact. Unfortunately the information is\nunordered and unclassified so it can only exist for now as an array\nof strings. Usually the order is [department, tags, office, phone, email].\nImportant: this order is NOT guaranteed nor is it that each of these pieces\nwill be available. *Note: the array type is <a class=\"crosslink\" \nhref=\"..\\classes\\KU.Directory.Contact.Info.html\">KU.Directory.Contact.Info</a>*.",
             "itemtype": "attribute",
             "name": "info",
-            "type": "Array<String>",
+            "type": "{Array<KU.Directory.Contact.Info>}",
             "readonly": "",
             "class": "KU.Directory.Contact",
             "module": "KU"
         },
         {
             "file": "src\\directory.js",
-            "line": 151,
+            "line": 170,
             "description": "The image url corresponding to the faculty/staff member.",
             "itemtype": "attribute",
             "name": "imgUrl",
@@ -420,7 +436,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 171,
+            "line": 190,
             "description": "Cancels the current search for the directory.",
             "itemtype": "method",
             "name": "abort",
@@ -436,7 +452,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 192,
+            "line": 211,
             "description": "Searches through Kettering directory with the specified parameters.",
             "itemtype": "method",
             "name": "search",
@@ -484,7 +500,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 340,
+            "line": 360,
             "description": "Gathers the next page of the latest search in the directory.",
             "itemtype": "method",
             "name": "nextPage",
@@ -512,7 +528,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 382,
+            "line": 402,
             "description": "Gathers the previous page of the latest search in the directory.",
             "itemtype": "method",
             "name": "previousPage",
@@ -540,7 +556,7 @@
         },
         {
             "file": "src\\directory.js",
-            "line": 433,
+            "line": 453,
             "description": "Retrieves a list of valid departments available to search with.",
             "itemtype": "method",
             "name": "getDepartments",

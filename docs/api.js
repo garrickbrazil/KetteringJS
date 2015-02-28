@@ -3,6 +3,7 @@ YUI.add("yuidoc-meta", function(Y) {
     "classes": [
         "KU.Directory",
         "KU.Directory.Contact",
+        "KU.Directory.Contact.Info",
         "KU.Directory.Department",
         "KU.Events",
         "KU.Events.Caption",
