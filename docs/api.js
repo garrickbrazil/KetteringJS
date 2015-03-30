@@ -14,6 +14,13 @@ YUI.add("yuidoc-meta", function(Y) {
         "KU.News",
         "KU.News.Article",
         "KU.News.Caption",
+        "KU.Student.BB",
+        "KU.Student.BB.Contact",
+        "KU.Student.BB.Course",
+        "KU.Student.BB.Folder",
+        "KU.Student.BB.Grade",
+        "KU.Student.BB.Item",
+        "KU.Student.BB.Tree",
         "KU.Transfer",
         "KU.Transfer.College",
         "KU.Transfer.Course"

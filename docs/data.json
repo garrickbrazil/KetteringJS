@@ -2,7 +2,7 @@
     "project": {
         "name": "KetteringJS",
         "description": "Kettering University Javascript Library.",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "url": "http://ketteringjs.info"
     },
     "files": {
@@ -76,6 +76,29 @@
             },
             "namespaces": {}
         },
+        "src\\student.js": {
+            "name": "src\\student.js",
+            "modules": {},
+            "classes": {
+                "KU.Student.BB": 1,
+                "KU.Student.BB.Contact": 1,
+                "KU.Student.BB.Grade": 1,
+                "KU.Student.BB.Tree": 1,
+                "KU.Student.BB.Folder": 1,
+                "KU.Student.BB.Item": 1,
+                "KU.Student.BB.Course": 1
+            },
+            "fors": {
+                "KU.Student.BB.Contact": 1,
+                "KU.Student.BB.Grade": 1,
+                "KU.Student.BB.Tree": 1,
+                "KU.Student.BB.Folder": 1,
+                "KU.Student.BB.Item": 1,
+                "KU.Student.BB.Course": 1,
+                "KU.Student.BB": 1
+            },
+            "namespaces": {}
+        },
         "src\\transfer.js": {
             "name": "src\\transfer.js",
             "modules": {},
@@ -110,6 +133,13 @@
                 "KU.News": 1,
                 "KU.News.Article": 1,
                 "KU.News.Caption": 1,
+                "KU.Student.BB": 1,
+                "KU.Student.BB.Contact": 1,
+                "KU.Student.BB.Grade": 1,
+                "KU.Student.BB.Tree": 1,
+                "KU.Student.BB.Folder": 1,
+                "KU.Student.BB.Item": 1,
+                "KU.Student.BB.Course": 1,
                 "KU.Transfer": 1,
                 "KU.Transfer.College": 1,
                 "KU.Transfer.Course": 1
@@ -127,6 +157,13 @@
                 "KU.News.Article": 1,
                 "KU.News.Caption": 1,
                 "KU.News": 1,
+                "KU.Student.BB.Contact": 1,
+                "KU.Student.BB.Grade": 1,
+                "KU.Student.BB.Tree": 1,
+                "KU.Student.BB.Folder": 1,
+                "KU.Student.BB.Item": 1,
+                "KU.Student.BB.Course": 1,
+                "KU.Student.BB": 1,
                 "KU.Transfer.College": 1,
                 "KU.Transfer.Course": 1,
                 "KU.Transfer": 1
@@ -304,7 +341,7 @@
             "module": "KU",
             "namespace": "",
             "file": "src\\news.js",
-            "line": 35,
+            "line": 37,
             "description": "Holds all the information for a Kettering news article."
         },
         "KU.News.Caption": {
@@ -318,8 +355,106 @@
             "module": "KU",
             "namespace": "",
             "file": "src\\news.js",
-            "line": 93,
+            "line": 95,
             "description": "Holds all the very basic information for a Kettering news article."
+        },
+        "KU.Student.BB": {
+            "name": "KU.Student.BB",
+            "shortname": "KU.Student.BB",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 30,
+            "description": "Child class of student to contain all Blackboard related functions and classes"
+        },
+        "KU.Student.BB.Contact": {
+            "name": "KU.Student.BB.Contact",
+            "shortname": "KU.Student.BB.Contact",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 38,
+            "description": "Holds the information for a Blackboard contact"
+        },
+        "KU.Student.BB.Grade": {
+            "name": "KU.Student.BB.Grade",
+            "shortname": "KU.Student.BB.Grade",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 97,
+            "description": "Holds all the information for a Blackboard grade"
+        },
+        "KU.Student.BB.Tree": {
+            "name": "KU.Student.BB.Tree",
+            "shortname": "KU.Student.BB.Tree",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 207,
+            "description": "Holds all the folders and files within a single layer of a content tree\nfor a course."
+        },
+        "KU.Student.BB.Folder": {
+            "name": "KU.Student.BB.Folder",
+            "shortname": "KU.Student.BB.Folder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 256,
+            "description": "Holds all the basic information for a folder on Blackboard and allows\nits own menu tree to be downloaded."
+        },
+        "KU.Student.BB.Item": {
+            "name": "KU.Student.BB.Item",
+            "shortname": "KU.Student.BB.Item",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 366,
+            "description": "Holds all the information for a content item on Blackboard!"
+        },
+        "KU.Student.BB.Course": {
+            "name": "KU.Student.BB.Course",
+            "shortname": "KU.Student.BB.Course",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "src\\student.js",
+            "line": 410,
+            "description": "Holds all the information for a course downloaded from Blackboard"
         },
         "KU.Transfer": {
             "name": "KU.Transfer",
@@ -1030,7 +1165,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 43,
+            "line": 45,
             "description": "Title of the article",
             "itemtype": "attribute",
             "name": "title",
@@ -1041,7 +1176,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 58,
+            "line": 60,
             "description": "Header info (such as date, category, etc)",
             "itemtype": "attribute",
             "name": "headerInfo",
@@ -1052,7 +1187,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 73,
+            "line": 75,
             "description": "Article main HTML content. This includes all types of elements including\nimages and videos.",
             "itemtype": "attribute",
             "name": "mainHtml",
@@ -1063,7 +1198,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 100,
+            "line": 102,
             "description": "Retrieves the detailed contents of a news article.",
             "itemtype": "method",
             "name": "getArticle",
@@ -1091,7 +1226,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 131,
+            "line": 133,
             "description": "Title of the article",
             "itemtype": "attribute",
             "name": "title",
@@ -1102,7 +1237,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 147,
+            "line": 149,
             "description": "Author who wrote the article",
             "itemtype": "attribute",
             "name": "author",
@@ -1113,7 +1248,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 163,
+            "line": 165,
             "description": "Date when the article was written",
             "itemtype": "attribute",
             "name": "date",
@@ -1124,7 +1259,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 179,
+            "line": 181,
             "description": "Web address for the image/icon corresponding with the article.",
             "itemtype": "attribute",
             "name": "imgUrl",
@@ -1135,7 +1270,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 194,
+            "line": 196,
             "description": "The web address to the detail article page.",
             "itemtype": "attribute",
             "name": "detailsUrl",
@@ -1146,7 +1281,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 215,
+            "line": 217,
             "description": "Retrieves the detailed contents of a news article.",
             "itemtype": "method",
             "name": "downloadArticle",
@@ -1179,7 +1314,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 279,
+            "line": 281,
             "description": "Retrieves a list of Caption grabbed and parsed from the specified page number.",
             "itemtype": "method",
             "name": "retrieve",
@@ -1212,7 +1347,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 364,
+            "line": 366,
             "description": "Retrieves the next page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
             "itemtype": "method",
             "name": "nextPage",
@@ -1240,7 +1375,7 @@
         },
         {
             "file": "src\\news.js",
-            "line": 402,
+            "line": 404,
             "description": "Retrieves the previous page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
             "itemtype": "method",
             "name": "previousPage",
@@ -1264,6 +1399,573 @@
                 "  \n    var success = function(items){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get news list from previous page\n    KU.News.previousPage(success, failure);"
             ],
             "class": "KU.News",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 19,
+            "description": "The student class will allow KetteringJS to gather information\non a student at Kettering University through banner web and blackboard",
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 46,
+            "description": "First name of contact",
+            "itemtype": "attribute",
+            "name": "firstName",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Contact",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 62,
+            "description": "Last name of contact",
+            "itemtype": "attribute",
+            "name": "lastName",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Contact",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 78,
+            "description": "Email address of the contact (when available).",
+            "itemtype": "attribute",
+            "name": "email",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Contact",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 105,
+            "description": "Title of grade",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 121,
+            "description": "Grade as a letter, percent or raw number",
+            "itemtype": "attribute",
+            "name": "grade",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 137,
+            "description": "Points possible for the grade (when available).",
+            "itemtype": "attribute",
+            "name": "pointsPossible",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 154,
+            "description": "Due date for the assignment (when available).",
+            "itemtype": "attribute",
+            "name": "dueDate",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 171,
+            "description": "The date the grade was last updated (when available).",
+            "itemtype": "attribute",
+            "name": "postedDate",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 188,
+            "description": "Status the assignment (when available).",
+            "itemtype": "attribute",
+            "name": "status",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 216,
+            "description": "Folders found inside the blackboard folder! Type is <code><span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Folder.html\">\n    KU.Student.BB.Folder[]</a></span></code>;",
+            "itemtype": "attribute",
+            "name": "folders",
+            "type": "Array",
+            "readonly": "",
+            "class": "KU.Student.BB.Tree",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 234,
+            "description": "Items found inside the blackboard folder! Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Item.html\">\nKU.Student.BB.Item[]</a></span></code>;",
+            "itemtype": "attribute",
+            "name": "items",
+            "type": "Array",
+            "readonly": "",
+            "class": "KU.Student.BB.Tree",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 265,
+            "description": "Blackboard course identifier",
+            "itemtype": "attribute",
+            "name": "bbId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Folder",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 281,
+            "description": "Blackboard content folder identifier",
+            "itemtype": "attribute",
+            "name": "contentId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Folder",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 297,
+            "description": "The name of the folder as it appears on Blackboard",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Folder",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 313,
+            "description": "Details html for the folder as they appear on Blackboard",
+            "itemtype": "attribute",
+            "name": "details",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Folder",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 329,
+            "description": "Gets the content tree for a folder",
+            "itemtype": "method",
+            "name": "getContentTree",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the content tree was failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(tree){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    folder.getContentTree(success, failure);"
+            ],
+            "class": "KU.Student.BB.Folder",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 374,
+            "description": "The name of the content item as it appears on Blackboard",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Item",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 390,
+            "description": "Details html for the item as they appear on Blackboard",
+            "itemtype": "attribute",
+            "name": "details",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Item",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 418,
+            "description": "Course identifier",
+            "itemtype": "attribute",
+            "name": "courseId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 434,
+            "description": "Term for the course. This is represented by the year and quarter (e.g 201501)",
+            "itemtype": "attribute",
+            "name": "term",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 450,
+            "description": "Crn for the course",
+            "itemtype": "attribute",
+            "name": "crn",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 466,
+            "description": "Section for the course",
+            "itemtype": "attribute",
+            "name": "section",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 482,
+            "description": "Title for the course",
+            "itemtype": "attribute",
+            "name": "courseTitle",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 498,
+            "description": "Days string for the course (e.g \"MTR\" for Monday Tuesday Thursday)",
+            "itemtype": "attribute",
+            "name": "days",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 514,
+            "description": "Meeting time for the course (e.g 3:35-5:40)",
+            "itemtype": "attribute",
+            "name": "time",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 530,
+            "description": "Blackboard course Id",
+            "itemtype": "attribute",
+            "name": "bbId",
+            "type": "string",
+            "readonly": "",
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 546,
+            "description": "Gets the content tree for a course containing a list of folders and files.",
+            "itemtype": "method",
+            "name": "getContentTree",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the content tree was failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(tree){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    course.getContentTree(success, failure);"
+            ],
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 579,
+            "description": "Gets the entire class roster",
+            "itemtype": "method",
+            "name": "getRoster",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the class roster has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Contact.html\">\n    KU.Student.BB.Contact[]</a></span> contacts)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the class roster was failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(contacts){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    course.getRoster(success, failure);"
+            ],
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 660,
+            "description": "Downloads the current grades for a course",
+            "itemtype": "method",
+            "name": "getGrades",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the course grades has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Grade.html\">\n    KU.Student.BB.Grade[]</a></span> grades)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the course grades failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(grades){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the course grades\n    course.getGrades(success, failure);"
+            ],
+            "class": "KU.Student.BB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 744,
+            "description": "Gets the content tree for a course containing a list of folders and files\nbased on a specified bbId and contentId. This is meant to be a generic function\nused by KU.Student.BB.Course and KU.Student.BB.Folder.",
+            "itemtype": "method",
+            "name": "retrieveContentTree",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "bbId",
+                    "description": "- blackboard course identifier",
+                    "type": "String"
+                },
+                {
+                    "name": "contentId",
+                    "description": "- blackboard folder identifier",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the content tree was failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(tree){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    course.getContentTree(success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 933,
+            "description": "Logs the user into blackboard",
+            "itemtype": "method",
+            "name": "login",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "- the Kettering user Id",
+                    "type": "String"
+                },
+                {
+                    "name": "pass",
+                    "description": "- password used to login to blackboard",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful login into blackboard. \n    Function Header: <code>void successCallback()</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at logging into\n    blackboard. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Login !\n    KU.Student.BB.login(\"user\",\"pass\", success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 1005,
+            "description": "Checks to see if browser has any user logged into Blackboard",
+            "itemtype": "method",
+            "name": "checkLogIn",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after login status is checked. \n    Function Header: <code>void successCallback(Boolean loggedIn)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the check failed to execute\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(loggedIn){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Check login\n    KU.Student.BB.checkLogIn(success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 1056,
+            "description": "Parses an html document to evaluate login status of Blackboard",
+            "itemtype": "method",
+            "name": "isLoggedIn",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "- jquery object to parse through",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "boolean"
+            },
+            "example": [
+                "  \n    // Check login\n    var loggedIn = KU.Student.BB.isLoggedIn($(htmlStr));"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "src\\student.js",
+            "line": 1075,
+            "description": "Downloads the blackboard courses",
+            "itemtype": "method",
+            "name": "downloadCourses",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after courses are gathered. \n    Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Course.html\">\n    KU.Student.BB.Course</a></span> courses)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at logging into either\n    blackboard. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Download courses\n    KU.Student.BB.downloadCourses(success, failure);"
+            ],
+            "class": "KU.Student.BB",
             "module": "KU"
         },
         {
@@ -1410,7 +2112,7 @@
                 "type": "Void"
             },
             "example": [
-                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get college list\n    KU.Transfer.searchByCollege(004896, success, failure);"
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get transfer courses\n    KU.Transfer.searchByCollege(004896, success, failure);"
             ],
             "class": "KU.Transfer",
             "module": "KU"
@@ -1453,7 +2155,7 @@
                 "type": "Void"
             },
             "example": [
-                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get college list\n    KU.Transfer.searchByCourseId(\"MATH\", 101, \"ALL\", success, failure);"
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get transfer courses\n    KU.Transfer.searchByCourseId(\"MATH\", 101, \"ALL\", success, failure);"
             ],
             "class": "KU.Transfer",
             "module": "KU"

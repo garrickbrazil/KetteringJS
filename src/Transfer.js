@@ -236,7 +236,7 @@
      *          ...
      *      }
      *      
-     *      // Get college list
+     *      // Get transfer courses
      *      KU.Transfer.searchByCollege(004896, success, failure);
      *****************************************************************************/
     Transfer.searchByCollege = function(collegeCode, successCallback, failureCallback){
@@ -347,7 +347,7 @@
      *          ...
      *      }
      *      
-     *      // Get college list
+     *      // Get transfer courses
      *      KU.Transfer.searchByCourseId("MATH", 101, "ALL", success, failure);
      *****************************************************************************/
 	Transfer.searchByCourseId = function(subject, idNumber, stateAbr, successCallback, failureCallback){

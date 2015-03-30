@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.Directory.Department - KetteringJS</title>
+    <title>KU.Student.BB.Contact - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -126,7 +126,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.Directory.Department</h1>
+                        <h1>KU.Student.BB.Contact</h1>
 <div class="box meta">
     
 
@@ -146,7 +146,7 @@
 
 
 <div class="box intro">
-    <p>Holds the information for a Kettering department</p>
+    <p>Holds the information for a Blackboard contact</p>
 </div>
 
 
@@ -183,11 +183,15 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_name">name</a>
+                                <a href="#attr_email">email</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_valueId">valueId</a>
+                                <a href="#attr_firstName">firstName</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_lastName">lastName</a>
                             </li>
                         
                     </ul>
@@ -205,9 +209,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_name" class="attr item">
-    <a name="config_name"></a> 
-    <h3 class="name"><code>name</code></h3>
+                    <div id="attr_email" class="attr item">
+    <a name="config_email"></a> 
+    <h3 class="name"><code>email</code></h3>
     <span class="type">String</span>
 
     
@@ -218,6 +222,8 @@
 
     
 
+    
+        <span class="flag optional">optional</span>
     
 
     
@@ -241,7 +247,7 @@
     </div>
 
     <div class="description">
-        <p>The name of the department in plain English.</p>
+        <p>Email address of the contact (when available).</p>
     </div>
 
     
@@ -252,9 +258,9 @@
 </div>
 
                 
-                    <div id="attr_valueId" class="attr item">
-    <a name="config_valueId"></a> 
-    <h3 class="name"><code>valueId</code></h3>
+                    <div id="attr_firstName" class="attr item">
+    <a name="config_firstName"></a> 
+    <h3 class="name"><code>firstName</code></h3>
     <span class="type">String</span>
 
     
@@ -288,9 +294,54 @@
     </div>
 
     <div class="description">
-        <p>The value identifier of the department used with the directory API and
-specifically the search method. This value is generally an int, but can
-also be a string (e.g All)</p>
+        <p>First name of contact</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_lastName" class="attr item">
+    <a name="config_lastName"></a> 
+    <h3 class="name"><code>lastName</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Last name of contact</p>
     </div>
 
     

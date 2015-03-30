@@ -3,7 +3,7 @@ ___
  
 ## KetteringJS 
 
-Version-0.0.4
+Version-0.0.6
 
 KetteringJS is a library meant to give easy and structured access
 to various information and functions through Javascript. 
@@ -37,6 +37,13 @@ where multiple lines get indented. Note also had to hack a fix for a bug
 with using backslashes instead of forward. Changed line 188 in 
 yuidocjs/lib/builder.js to something like the following. 
 href = (path.join(base, 'classes', item + '.html')).replace(/\\/g,"/");
+
+___
+ 
+### License
+
+The project is licensed with [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0.txt).
+
 ___
  
 ### Contact

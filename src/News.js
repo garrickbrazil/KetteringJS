@@ -29,8 +29,10 @@
     // Default object
     var News = {};
 	
+    
     // Private
     var page = null;
+    
     
     /******************************************************************************
      *  Holds all the information for a Kettering news article.

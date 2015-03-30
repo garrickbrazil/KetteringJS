@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.Directory.Department - KetteringJS</title>
+    <title>KU.Student.BB.Tree - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -126,7 +126,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.Directory.Department</h1>
+                        <h1>KU.Student.BB.Tree</h1>
 <div class="box meta">
     
 
@@ -146,7 +146,8 @@
 
 
 <div class="box intro">
-    <p>Holds the information for a Kettering department</p>
+    <p>Holds all the folders and files within a single layer of a content tree
+for a course.</p>
 </div>
 
 
@@ -183,11 +184,11 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_name">name</a>
+                                <a href="#attr_folders">folders</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_valueId">valueId</a>
+                                <a href="#attr_items">items</a>
                             </li>
                         
                     </ul>
@@ -205,10 +206,10 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_name" class="attr item">
-    <a name="config_name"></a> 
-    <h3 class="name"><code>name</code></h3>
-    <span class="type">String</span>
+                    <div id="attr_folders" class="attr item">
+    <a name="config_folders"></a> 
+    <h3 class="name"><code>folders</code></h3>
+    <span class="type">Array</span>
 
     
 
@@ -241,7 +242,9 @@
     </div>
 
     <div class="description">
-        <p>The name of the department in plain English.</p>
+        <p>Folders found inside the blackboard folder! Type is <code><span>
+    <a  href="..\classes\KU.Student.BB.Folder.html">
+    KU.Student.BB.Folder[]</a></span></code>;</p>
     </div>
 
     
@@ -252,10 +255,10 @@
 </div>
 
                 
-                    <div id="attr_valueId" class="attr item">
-    <a name="config_valueId"></a> 
-    <h3 class="name"><code>valueId</code></h3>
-    <span class="type">String</span>
+                    <div id="attr_items" class="attr item">
+    <a name="config_items"></a> 
+    <h3 class="name"><code>items</code></h3>
+    <span class="type">Array</span>
 
     
 
@@ -288,9 +291,9 @@
     </div>
 
     <div class="description">
-        <p>The value identifier of the department used with the directory API and
-specifically the search method. This value is generally an int, but can
-also be a string (e.g All)</p>
+        <p>Items found inside the blackboard folder! Type is <code><span>
+<a  href="..\classes\KU.Student.BB.Item.html">
+KU.Student.BB.Item[]</a></span></code>;</p>
     </div>
 
     
