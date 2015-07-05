@@ -57,14 +57,9 @@
          *  @attribute title
          *  @type string
          *  @for KU.Library.Book
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "title" , { 
+        this.title = title;
         
-            // Getter and Setter
-            get: function() { return title; },
-            set: function(val) { /* Read only!! */ }
-        });
         
         /******************************************************************************
          *  Author of the book
@@ -72,14 +67,8 @@
          *  @attribute author
          *  @type string
          *  @for KU.Library.Book
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "author" , { 
-        
-            // Getter and Setter
-            get: function() { return author; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.author = author;
         
         
         /******************************************************************************
@@ -88,14 +77,8 @@
          *  @attribute callNumber
          *  @type string
          *  @for KU.Library.Book
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "callNumber" , { 
-        
-            // Getter and Setter
-            get: function() { return callNumber; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.callNumber = callNumber;
         
         
         /******************************************************************************
@@ -104,14 +87,8 @@
          *  @attribute holdings
          *  @type string
          *  @for KU.Library.Book
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "holdings" , { 
-        
-            // Getter and Setter
-            get: function() { return holdings; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.holdings = holdings;
         
         
         /******************************************************************************
@@ -120,14 +97,8 @@
          *  @attribute imgUrl
          *  @type string
          *  @for KU.Library.Book
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "imgUrl" , { 
-        
-            // Getter and Setter
-            get: function() { return imgUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.imgUrl = imgUrl;
         
     }
     
@@ -146,14 +117,8 @@
          *  @attribute name
          *  @type string
          *  @for KU.Library.SearchOption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "name" , { 
-        
-            // Getter and Setter
-            get: function() { return name; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.name = name;
         
         
         /******************************************************************************
@@ -164,14 +129,8 @@
          *  @attribute valueId
          *  @type string
          *  @for KU.Library.SearchOption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "valueId" , { 
-        
-            // Getter and Setter
-            get: function() { return valueId; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.valueId = valueId;
 
     
     };
@@ -185,7 +144,7 @@
      *  @param {string} searchOptionId - option Id for category to search with.
      *  @param {function} successCallback - Called after successful gathering of 
      *      the search results. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Library.Book.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Library.Book.html">
      *      KU.Library.Book</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      search results. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -321,7 +280,7 @@
      *  @method nextPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the search results. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Library.Book.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Library.Book.html">
      *      KU.Library.Book</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      search results. Function Header: void <code>failureCallback(String errMsg)</code>;

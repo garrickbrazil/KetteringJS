@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.News.Article - KetteringJS</title>
+    <title>KU.Student.JWEB.StudentInfo - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -154,7 +154,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.News.Article</h1>
+                        <h1>KU.Student.JWEB.StudentInfo</h1>
 <div class="box meta">
     
 
@@ -174,7 +174,7 @@
 
 
 <div class="box intro">
-    <p>Holds all the information for a Kettering news article.</p>
+    <p>Holds basic curriculum information for a student</p>
 </div>
 
 
@@ -211,15 +211,47 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_headerInfo">headerInfo</a>
+                                <a href="#attr_college">college</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_mainHtml">mainHtml</a>
+                                <a href="#attr_concentration">concentration</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_title">title</a>
+                                <a href="#attr_fullName">fullName</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_idNumber">idNumber</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_major">major</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_minor">minor</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_program">program</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_regularCredits">regularCredits</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_specialty">specialty</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_standing">standing</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_transferCredits">transferCredits</a>
                             </li>
                         
                     </ul>
@@ -237,9 +269,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_headerInfo" class="attr item">
-    <a name="config_headerInfo"></a> 
-    <h3 class="name"><code>headerInfo</code></h3>
+                    <div id="attr_college" class="attr item">
+    <a name="config_college"></a> 
+    <h3 class="name"><code>college</code></h3>
     <span class="type">String</span>
 
     
@@ -273,7 +305,7 @@
     </div>
 
     <div class="description">
-        <p>Header info (such as date, category, etc)</p>
+        <p>College category attended</p>
     </div>
 
     
@@ -284,9 +316,9 @@
 </div>
 
                 
-                    <div id="attr_mainHtml" class="attr item">
-    <a name="config_mainHtml"></a> 
-    <h3 class="name"><code>mainHtml</code></h3>
+                    <div id="attr_concentration" class="attr item">
+    <a name="config_concentration"></a> 
+    <h3 class="name"><code>concentration</code></h3>
     <span class="type">String</span>
 
     
@@ -320,8 +352,7 @@
     </div>
 
     <div class="description">
-        <p>Article main HTML content. This includes all types of elements including
-images and videos.</p>
+        <p>Concentration(s) of the student</p>
     </div>
 
     
@@ -332,9 +363,9 @@ images and videos.</p>
 </div>
 
                 
-                    <div id="attr_title" class="attr item">
-    <a name="config_title"></a> 
-    <h3 class="name"><code>title</code></h3>
+                    <div id="attr_fullName" class="attr item">
+    <a name="config_fullName"></a> 
+    <h3 class="name"><code>fullName</code></h3>
     <span class="type">String</span>
 
     
@@ -368,7 +399,383 @@ images and videos.</p>
     </div>
 
     <div class="description">
-        <p>Title of the article</p>
+        <p>Full name of student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_idNumber" class="attr item">
+    <a name="config_idNumber"></a> 
+    <h3 class="name"><code>idNumber</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>User id number of student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_major" class="attr item">
+    <a name="config_major"></a> 
+    <h3 class="name"><code>major</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Major(s) of the student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_minor" class="attr item">
+    <a name="config_minor"></a> 
+    <h3 class="name"><code>minor</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Minor(s) of the student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_program" class="attr item">
+    <a name="config_program"></a> 
+    <h3 class="name"><code>program</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Program title (e.g Bachelors of Science)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_regularCredits" class="attr item">
+    <a name="config_regularCredits"></a> 
+    <h3 class="name"><code>regularCredits</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Regular credits of student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_specialty" class="attr item">
+    <a name="config_specialty"></a> 
+    <h3 class="name"><code>specialty</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Specialty(s) of the student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_standing" class="attr item">
+    <a name="config_standing"></a> 
+    <h3 class="name"><code>standing</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Class standing of student</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_transferCredits" class="attr item">
+    <a name="config_transferCredits"></a> 
+    <h3 class="name"><code>transferCredits</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Transfer credits of student</p>
     </div>
 
     

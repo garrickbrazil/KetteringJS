@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.News.Article - KetteringJS</title>
+    <title>KU.Student.JWEB.AccountTerm - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -154,7 +154,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.News.Article</h1>
+                        <h1>KU.Student.JWEB.AccountTerm</h1>
 <div class="box meta">
     
 
@@ -174,7 +174,7 @@
 
 
 <div class="box intro">
-    <p>Holds all the information for a Kettering news article.</p>
+    <p>Contains all the account information for a single term at Kettering.</p>
 </div>
 
 
@@ -211,15 +211,23 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_headerInfo">headerInfo</a>
+                                <a href="#attr_balance">balance</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_mainHtml">mainHtml</a>
+                                <a href="#attr_entries">entries</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_title">title</a>
+                                <a href="#attr_term">term</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_totalCharges">totalCharges</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_totalCredits">totalCredits</a>
                             </li>
                         
                     </ul>
@@ -237,9 +245,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_headerInfo" class="attr item">
-    <a name="config_headerInfo"></a> 
-    <h3 class="name"><code>headerInfo</code></h3>
+                    <div id="attr_balance" class="attr item">
+    <a name="config_balance"></a> 
+    <h3 class="name"><code>balance</code></h3>
     <span class="type">String</span>
 
     
@@ -273,7 +281,7 @@
     </div>
 
     <div class="description">
-        <p>Header info (such as date, category, etc)</p>
+        <p>Net balance for the term</p>
     </div>
 
     
@@ -284,10 +292,10 @@
 </div>
 
                 
-                    <div id="attr_mainHtml" class="attr item">
-    <a name="config_mainHtml"></a> 
-    <h3 class="name"><code>mainHtml</code></h3>
-    <span class="type">String</span>
+                    <div id="attr_entries" class="attr item">
+    <a name="config_entries"></a> 
+    <h3 class="name"><code>entries</code></h3>
+    <span class="type">Array</span>
 
     
 
@@ -320,8 +328,9 @@
     </div>
 
     <div class="description">
-        <p>Article main HTML content. This includes all types of elements including
-images and videos.</p>
+        <p>Account entries. Type is <code><span>
+<a  href="../classes/KU.Student.JWEB.AccountEntry.html">
+KU.Student.JWEB.AccountEntry</a>[]</span></code>;</p>
     </div>
 
     
@@ -332,9 +341,9 @@ images and videos.</p>
 </div>
 
                 
-                    <div id="attr_title" class="attr item">
-    <a name="config_title"></a> 
-    <h3 class="name"><code>title</code></h3>
+                    <div id="attr_term" class="attr item">
+    <a name="config_term"></a> 
+    <h3 class="name"><code>term</code></h3>
     <span class="type">String</span>
 
     
@@ -368,7 +377,101 @@ images and videos.</p>
     </div>
 
     <div class="description">
-        <p>Title of the article</p>
+        <p>Term represented (formatted in words, e.g Winter 2015)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_totalCharges" class="attr item">
+    <a name="config_totalCharges"></a> 
+    <h3 class="name"><code>totalCharges</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Total charges for the term</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_totalCredits" class="attr item">
+    <a name="config_totalCredits"></a> 
+    <h3 class="name"><code>totalCredits</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Total credits for the term</p>
     </div>
 
     

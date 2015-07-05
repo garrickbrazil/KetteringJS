@@ -48,29 +48,19 @@
          *  @attribute title
          *  @type string
          *  @for KU.News.Article
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "title" , { 
-        
-            // Getter and Setter
-            get: function() { return title; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.title = title;
 
+        
         /******************************************************************************
          *  Header info (such as date, category, etc)
          *
          *  @attribute headerInfo
          *  @type string
          *  @for KU.News.Article
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "headerInfo" , { 
-        
-            // Getter and Setter
-            get: function() { return headerInfo; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.headerInfo = headerInfo;
+      
       
         /******************************************************************************
          *  Article main HTML content. This includes all types of elements including
@@ -79,14 +69,9 @@
          *  @attribute mainHtml
          *  @type string
          *  @for KU.News.Article
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "mainHtml" , { 
-        
-            // Getter and Setter
-            get: function() { return mainHtml; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.mainHtml = mainHtml;
+      
       
         return this;
     };
@@ -99,13 +84,14 @@
      ******************************************************************************/
     function Caption(title, author, date, imgUrl, detailsUrl){
     
+    
         /******************************************************************************
          *  Retrieves the detailed contents of a news article.
          * 
          *  @method getArticle
          *  @param {function} successCallback - Called after successful gathering of 
          *      the news article. Function Header: <code>void successCallback(<span 
-         *      class="type"><a class="crosslink" href="..\classes\KU.News.Article.html">
+         *      class="type"><a class="crosslink" href="../classes/KU.News.Article.html">
          *      KU.News.Article</a></span> article)</code>;
          *  @param {function} failureCallback - Called after a failure at gathering the
          *      news article. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -136,14 +122,8 @@
          *  @attribute title
          *  @type string
          *  @for KU.News.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "title" , { 
-        
-            // Getter and Setter
-            get: function() { return title; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.title = title;
         
         
         /******************************************************************************
@@ -152,14 +132,8 @@
          *  @attribute author
          *  @type string
          *  @for KU.News.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "author" , { 
-        
-            // Getter and Setter
-            get: function() { return author; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.author = author;
         
 
         /******************************************************************************
@@ -168,14 +142,8 @@
          *  @attribute date
          *  @type string
          *  @for KU.News.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "date" , { 
-        
-            // Getter and Setter
-            get: function() { return date; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.date = date;
         
         
         /******************************************************************************
@@ -184,14 +152,9 @@
          *  @attribute imgUrl
          *  @type string
          *  @for KU.News.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "imgUrl" , { 
+        this.imgUrl = imgUrl;
         
-            // Getter and Setter
-            get: function() { return imgUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
 	
         /******************************************************************************
          *  The web address to the detail article page.
@@ -199,14 +162,8 @@
          *  @attribute detailsUrl
          *  @type string
          *  @for KU.News.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "detailsUrl" , { 
-        
-            // Getter and Setter
-            get: function() { return detailsUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.detailsUrl = detailsUrl;
         
     
         return this;
@@ -221,7 +178,7 @@
      *  @param {string} articleUrl - the full web address where to get the article from
      *  @param {function} successCallback - Called after successful gathering of 
      *      the news article. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.News.Article.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.News.Article.html">
      *      KU.News.Article</a></span> article)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      news article. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -285,7 +242,7 @@
      *  @param {int} pageNumber - the index page to retrieve
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.News.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.News.Caption.html">
      *      KU.News.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -370,7 +327,7 @@
      *  @method nextPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.News.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.News.Caption.html">
      *      KU.News.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -408,7 +365,7 @@
      *  @method previousPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.News.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.News.Caption.html">
      *      KU.News.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;

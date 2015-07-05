@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.News.Article - KetteringJS</title>
+    <title>KU.Student.JWEB.CatalogEntry - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -154,7 +154,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.News.Article</h1>
+                        <h1>KU.Student.JWEB.CatalogEntry</h1>
 <div class="box meta">
     
 
@@ -174,7 +174,7 @@
 
 
 <div class="box intro">
-    <p>Holds all the information for a Kettering news article.</p>
+    <p>Contains all information for a course entry in a Kettering catalog</p>
 </div>
 
 
@@ -211,11 +211,55 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_headerInfo">headerInfo</a>
+                                <a href="#attr_active">active</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_mainHtml">mainHtml</a>
+                                <a href="#attr_campus">campus</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_capacity">capacity</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_courseId">courseId</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_credits">credits</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_crn">crn</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_days">days</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_professor">professor</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_room">room</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_section">section</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_startDate">startDate</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_status">status</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_time">time</a>
                             </li>
                         
                             <li class="index-item attr">
@@ -237,9 +281,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_headerInfo" class="attr item">
-    <a name="config_headerInfo"></a> 
-    <h3 class="name"><code>headerInfo</code></h3>
+                    <div id="attr_active" class="attr item">
+    <a name="config_active"></a> 
+    <h3 class="name"><code>active</code></h3>
     <span class="type">String</span>
 
     
@@ -273,7 +317,7 @@
     </div>
 
     <div class="description">
-        <p>Header info (such as date, category, etc)</p>
+        <p>Number of active students registered for course</p>
     </div>
 
     
@@ -284,9 +328,9 @@
 </div>
 
                 
-                    <div id="attr_mainHtml" class="attr item">
-    <a name="config_mainHtml"></a> 
-    <h3 class="name"><code>mainHtml</code></h3>
+                    <div id="attr_campus" class="attr item">
+    <a name="config_campus"></a> 
+    <h3 class="name"><code>campus</code></h3>
     <span class="type">String</span>
 
     
@@ -320,8 +364,524 @@
     </div>
 
     <div class="description">
-        <p>Article main HTML content. This includes all types of elements including
-images and videos.</p>
+        <p>Campus the course takes place on</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_capacity" class="attr item">
+    <a name="config_capacity"></a> 
+    <h3 class="name"><code>capacity</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Student capacity for the course</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_courseId" class="attr item">
+    <a name="config_courseId"></a> 
+    <h3 class="name"><code>courseId</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The course identifier including subject and number</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_credits" class="attr item">
+    <a name="config_credits"></a> 
+    <h3 class="name"><code>credits</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Credits the course is worth</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_crn" class="attr item">
+    <a name="config_crn"></a> 
+    <h3 class="name"><code>crn</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The unqiue crn for the course (used for registering)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_days" class="attr item">
+    <a name="config_days"></a> 
+    <h3 class="name"><code>days</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Days the course takes place in (e.g MT for monday, tuesday)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_professor" class="attr item">
+    <a name="config_professor"></a> 
+    <h3 class="name"><code>professor</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Professor teaching the course</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_room" class="attr item">
+    <a name="config_room"></a> 
+    <h3 class="name"><code>room</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Room the course takes place in</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_section" class="attr item">
+    <a name="config_section"></a> 
+    <h3 class="name"><code>section</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Section of the course as a number</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_startDate" class="attr item">
+    <a name="config_startDate"></a> 
+    <h3 class="name"><code>startDate</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Start date for the course</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_status" class="attr item">
+    <a name="config_status"></a> 
+    <h3 class="name"><code>status</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Status of the course (e.g NR for no registration, C for closed)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_time" class="attr item">
+    <a name="config_time"></a> 
+    <h3 class="name"><code>time</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Time the course takes place at (e.g 10:15 am-12:20 pm)</p>
     </div>
 
     
@@ -368,7 +928,7 @@ images and videos.</p>
     </div>
 
     <div class="description">
-        <p>Title of the article</p>
+        <p>Title of the course</p>
     </div>
 
     

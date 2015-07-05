@@ -46,14 +46,8 @@
          *  @attribute name
          *  @type string
          *  @for KU.Transfer.College
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "name" , { 
-        
-            // Getter and Setter
-            get: function() { return name; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.name = name;
 		
 		
 		/******************************************************************************
@@ -62,14 +56,8 @@
          *  @attribute code
          *  @type string
          *  @for KU.Transfer.College
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "code" , { 
-        
-            // Getter and Setter
-            get: function() { return code; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.code = code
 		
 		
 		/******************************************************************************
@@ -79,14 +67,8 @@
          *  @type string
 		 *  @optional
          *  @for KU.Transfer.College
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "city" , { 
-        
-            // Getter and Setter
-            get: function() { return city; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.city = city;
 		
 		
 		/******************************************************************************
@@ -96,15 +78,9 @@
          *  @type string
 		 *  @optional
          *  @for KU.Transfer.College
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "state" , { 
+        this.state = state;
         
-            // Getter and Setter
-            get: function() { return state; },
-            set: function(val) { /* Read only!! */ }
-        });
-	
 	};
 	
 	
@@ -122,14 +98,8 @@
          *  @attribute kuTitle
          *  @type string
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "kuTitle" , { 
-        
-            // Getter and Setter
-            get: function() { return kuTitle; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.kuTitle = kuTitle;
 		
 		
 		/******************************************************************************
@@ -138,14 +108,8 @@
          *  @attribute kuCourseId
          *  @type string
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "kuCourseId" , { 
-        
-            // Getter and Setter
-            get: function() { return kuCourseId; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.kuCourseId = kuCourseId;
 		
 		
 		/******************************************************************************
@@ -154,14 +118,8 @@
          *  @attribute transTitle
          *  @type string
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "transTitle" , { 
-        
-            // Getter and Setter
-            get: function() { return transTitle; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.transTitle = transTitle;
 		
 		
 		/******************************************************************************
@@ -170,15 +128,9 @@
          *  @attribute transCourseId
          *  @type string
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "transCourseId" , { 
+		this.transCourseId = transCourseId;
         
-            // Getter and Setter
-            get: function() { return transCourseId; },
-            set: function(val) { /* Read only!! */ }
-        });
-		
 		
 		/******************************************************************************
          *  Number of credits the transfer course is worth
@@ -186,14 +138,8 @@
          *  @attribute credits
          *  @type string
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "credits" , { 
-        
-            // Getter and Setter
-            get: function() { return credits; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.credits = credits;
 		
 		
 		/******************************************************************************
@@ -202,14 +148,8 @@
          *  @attribute college
          *  @type KU.Transfer.College
          *  @for KU.Transfer.Course
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "college" , { 
-        
-            // Getter and Setter
-            get: function() { return college; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.college = college;
 	
 	};
 	
@@ -221,7 +161,7 @@
 	 *  @param {int} collegeCode - the college code to be searched by 
      *  @param {function} successCallback - Called after successful gathering of 
      *      the transfer courses. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Transfer.Course.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Transfer.Course.html">
      *      KU.Transfer.Course</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      the transfer courses. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -332,7 +272,7 @@
 	 *  @param {string} stateAbr - filter by state abreviation, examples are ALL, MI, FL
      *  @param {function} successCallback - Called after successful gathering of 
      *      the transfer courses. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Transfer.Course.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Transfer.Course.html">
      *      KU.Transfer.Course</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      the transfer courses. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -445,7 +385,7 @@
      *  @method getColleges
      *  @param {function} successCallback - Called after successful gathering of 
      *      the colleges. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Transfer.College.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Transfer.College.html">
      *      KU.Transfer.College</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      colleges. Function Header: void <code>failureCallback(String errMsg)</code>;

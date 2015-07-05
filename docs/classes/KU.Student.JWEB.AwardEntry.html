@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.News.Article - KetteringJS</title>
+    <title>KU.Student.JWEB.AwardEntry - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -154,7 +154,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.News.Article</h1>
+                        <h1>KU.Student.JWEB.AwardEntry</h1>
 <div class="box meta">
     
 
@@ -174,7 +174,7 @@
 
 
 <div class="box intro">
-    <p>Holds all the information for a Kettering news article.</p>
+    <p>Contains all the information for an award year</p>
 </div>
 
 
@@ -211,15 +211,27 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_headerInfo">headerInfo</a>
+                                <a href="#attr_accepted">accepted</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_mainHtml">mainHtml</a>
+                                <a href="#attr_cancelled">cancelled</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_title">title</a>
+                                <a href="#attr_declined">declined</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_name">name</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_offered">offered</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_paidToDate">paidToDate</a>
                             </li>
                         
                     </ul>
@@ -237,9 +249,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_headerInfo" class="attr item">
-    <a name="config_headerInfo"></a> 
-    <h3 class="name"><code>headerInfo</code></h3>
+                    <div id="attr_accepted" class="attr item">
+    <a name="config_accepted"></a> 
+    <h3 class="name"><code>accepted</code></h3>
     <span class="type">String</span>
 
     
@@ -273,7 +285,7 @@
     </div>
 
     <div class="description">
-        <p>Header info (such as date, category, etc)</p>
+        <p>Amount of award accepted</p>
     </div>
 
     
@@ -284,9 +296,9 @@
 </div>
 
                 
-                    <div id="attr_mainHtml" class="attr item">
-    <a name="config_mainHtml"></a> 
-    <h3 class="name"><code>mainHtml</code></h3>
+                    <div id="attr_cancelled" class="attr item">
+    <a name="config_cancelled"></a> 
+    <h3 class="name"><code>cancelled</code></h3>
     <span class="type">String</span>
 
     
@@ -320,8 +332,7 @@
     </div>
 
     <div class="description">
-        <p>Article main HTML content. This includes all types of elements including
-images and videos.</p>
+        <p>Amount of award cancelled</p>
     </div>
 
     
@@ -332,9 +343,9 @@ images and videos.</p>
 </div>
 
                 
-                    <div id="attr_title" class="attr item">
-    <a name="config_title"></a> 
-    <h3 class="name"><code>title</code></h3>
+                    <div id="attr_declined" class="attr item">
+    <a name="config_declined"></a> 
+    <h3 class="name"><code>declined</code></h3>
     <span class="type">String</span>
 
     
@@ -368,7 +379,148 @@ images and videos.</p>
     </div>
 
     <div class="description">
-        <p>Title of the article</p>
+        <p>Amount of award declined</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_name" class="attr item">
+    <a name="config_name"></a> 
+    <h3 class="name"><code>name</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Name of the fund</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_offered" class="attr item">
+    <a name="config_offered"></a> 
+    <h3 class="name"><code>offered</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Amount of award offered</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_paidToDate" class="attr item">
+    <a name="config_paidToDate"></a> 
+    <h3 class="name"><code>paidToDate</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Amount of award paid to date</p>
     </div>
 
     

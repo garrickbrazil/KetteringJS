@@ -2,12 +2,12 @@
     "project": {
         "name": "KetteringJS",
         "description": "Kettering University Javascript Library.",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "url": "http://ketteringjs.info"
     },
     "files": {
-        "src\\KetteringJS-Core.js": {
-            "name": "src\\KetteringJS-Core.js",
+        "js\\KetteringJS-Core.js": {
+            "name": "js\\KetteringJS-Core.js",
             "modules": {
                 "KU": 1
             },
@@ -15,8 +15,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src\\directory.js": {
-            "name": "src\\directory.js",
+        "js\\directory.js": {
+            "name": "js\\directory.js",
             "modules": {},
             "classes": {
                 "KU.Directory": 1,
@@ -26,13 +26,14 @@
             },
             "fors": {
                 "KU.Directory.Department": 1,
+                "KU.Directory.Contact.Info": 1,
                 "KU.Directory.Contact": 1,
                 "KU.Directory": 1
             },
             "namespaces": {}
         },
-        "src\\events.js": {
-            "name": "src\\events.js",
+        "js\\events.js": {
+            "name": "js\\events.js",
             "modules": {},
             "classes": {
                 "KU.Events": 1,
@@ -46,8 +47,8 @@
             },
             "namespaces": {}
         },
-        "src\\library.js": {
-            "name": "src\\library.js",
+        "js\\library.js": {
+            "name": "js\\library.js",
             "modules": {},
             "classes": {
                 "KU.Library": 1,
@@ -61,8 +62,8 @@
             },
             "namespaces": {}
         },
-        "src\\news.js": {
-            "name": "src\\news.js",
+        "js\\news.js": {
+            "name": "js\\news.js",
             "modules": {},
             "classes": {
                 "KU.News": 1,
@@ -76,10 +77,24 @@
             },
             "namespaces": {}
         },
-        "src\\student.js": {
-            "name": "src\\student.js",
+        "js\\student.js": {
+            "name": "js\\student.js",
             "modules": {},
             "classes": {
+                "KU.Student.JWEB": 1,
+                "KU.Student.JWEB.CatalogEntry": 1,
+                "KU.Student.JWEB.AwardYear": 1,
+                "KU.Student.JWEB.AwardEntry": 1,
+                "KU.Student.JWEB.AccountTerm": 1,
+                "KU.Student.JWEB.AccountEntry": 1,
+                "KU.Student.JWEB.EvalProgram": 1,
+                "KU.Student.JWEB.FinalGrade": 1,
+                "KU.Student.JWEB.EvalArea": 1,
+                "KU.Student.JWEB.EvalCourse": 1,
+                "KU.Student.JWEB.Evaluation": 1,
+                "KU.Student.JWEB.Book": 1,
+                "KU.Student.JWEB.Course": 1,
+                "KU.Student.JWEB.StudentInfo": 1,
                 "KU.Student.BB": 1,
                 "KU.Student.BB.Contact": 1,
                 "KU.Student.BB.Grade": 1,
@@ -89,6 +104,20 @@
                 "KU.Student.BB.Course": 1
             },
             "fors": {
+                "KU.Student.JWEB.CatalogEntry": 1,
+                "KU.Student.JWEB.AwardYear": 1,
+                "KU.Student.JWEB.AwardEntry": 1,
+                "KU.Student.JWEB.AccountTerm": 1,
+                "KU.Student.JWEB.AccountEntry": 1,
+                "KU.Student.JWEB.EvalProgram": 1,
+                "KU.Student.JWEB.FinalGrade": 1,
+                "KU.Student.JWEB.EvalArea": 1,
+                "KU.Student.JWEB.EvalCourse": 1,
+                "KU.Student.JWEB.Evaluation": 1,
+                "KU.Student.JWEB.Book": 1,
+                "KU.Student.JWEB.Course": 1,
+                "KU.Student.JWEB.StudentInfo": 1,
+                "KU.Student.JWEB": 1,
                 "KU.Student.BB.Contact": 1,
                 "KU.Student.BB.Grade": 1,
                 "KU.Student.BB.Tree": 1,
@@ -99,8 +128,8 @@
             },
             "namespaces": {}
         },
-        "src\\transfer.js": {
-            "name": "src\\transfer.js",
+        "js\\transfer.js": {
+            "name": "js\\transfer.js",
             "modules": {},
             "classes": {
                 "KU.Transfer": 1,
@@ -133,6 +162,20 @@
                 "KU.News": 1,
                 "KU.News.Article": 1,
                 "KU.News.Caption": 1,
+                "KU.Student.JWEB": 1,
+                "KU.Student.JWEB.CatalogEntry": 1,
+                "KU.Student.JWEB.AwardYear": 1,
+                "KU.Student.JWEB.AwardEntry": 1,
+                "KU.Student.JWEB.AccountTerm": 1,
+                "KU.Student.JWEB.AccountEntry": 1,
+                "KU.Student.JWEB.EvalProgram": 1,
+                "KU.Student.JWEB.FinalGrade": 1,
+                "KU.Student.JWEB.EvalArea": 1,
+                "KU.Student.JWEB.EvalCourse": 1,
+                "KU.Student.JWEB.Evaluation": 1,
+                "KU.Student.JWEB.Book": 1,
+                "KU.Student.JWEB.Course": 1,
+                "KU.Student.JWEB.StudentInfo": 1,
                 "KU.Student.BB": 1,
                 "KU.Student.BB.Contact": 1,
                 "KU.Student.BB.Grade": 1,
@@ -146,6 +189,7 @@
             },
             "fors": {
                 "KU.Directory.Department": 1,
+                "KU.Directory.Contact.Info": 1,
                 "KU.Directory.Contact": 1,
                 "KU.Directory": 1,
                 "KU.Events.Event": 1,
@@ -157,6 +201,20 @@
                 "KU.News.Article": 1,
                 "KU.News.Caption": 1,
                 "KU.News": 1,
+                "KU.Student.JWEB.CatalogEntry": 1,
+                "KU.Student.JWEB.AwardYear": 1,
+                "KU.Student.JWEB.AwardEntry": 1,
+                "KU.Student.JWEB.AccountTerm": 1,
+                "KU.Student.JWEB.AccountEntry": 1,
+                "KU.Student.JWEB.EvalProgram": 1,
+                "KU.Student.JWEB.FinalGrade": 1,
+                "KU.Student.JWEB.EvalArea": 1,
+                "KU.Student.JWEB.EvalCourse": 1,
+                "KU.Student.JWEB.Evaluation": 1,
+                "KU.Student.JWEB.Book": 1,
+                "KU.Student.JWEB.Course": 1,
+                "KU.Student.JWEB.StudentInfo": 1,
+                "KU.Student.JWEB": 1,
                 "KU.Student.BB.Contact": 1,
                 "KU.Student.BB.Grade": 1,
                 "KU.Student.BB.Tree": 1,
@@ -170,8 +228,8 @@
             },
             "namespaces": {},
             "tag": "module",
-            "file": "src\\transfer.js",
-            "line": 111,
+            "file": "js\\transfer.js",
+            "line": 87,
             "description": "KU is the module/namespace used to contain all relevant classes, functions,\nand properties of the KetteringJS library."
         }
     },
@@ -186,7 +244,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\directory.js",
+            "file": "js\\directory.js",
             "line": 19,
             "description": "The directory class will allow the library to gather information\non faculty/staff members such as name, office, phone number, and email."
         },
@@ -200,7 +258,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\directory.js",
+            "file": "js\\directory.js",
             "line": 62,
             "description": "Holds the information for a Kettering department"
         },
@@ -214,8 +272,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\directory.js",
-            "line": 107,
+            "file": "js\\directory.js",
+            "line": 95,
             "description": "Contains information for a directory contact info message. Which is\ngenerally just a plain message and a boolean for its font-weight bold."
         },
         "KU.Directory.Contact": {
@@ -228,8 +286,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\directory.js",
-            "line": 125,
+            "file": "js\\directory.js",
+            "line": 129,
             "description": "Holds all the information for a Kettering faculty/staff member."
         },
         "KU.Events": {
@@ -242,7 +300,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\events.js",
+            "file": "js\\events.js",
             "line": 19,
             "description": "The events class contains properties and functions related to Kettering\nUniversity's events. It should provide an easy and structured \naccess to the latest events on campus."
         },
@@ -256,7 +314,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\events.js",
+            "file": "js\\events.js",
             "line": 37,
             "description": "Holds the detailed information about a Kettering event."
         },
@@ -270,8 +328,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\events.js",
-            "line": 80,
+            "file": "js\\events.js",
+            "line": 69,
             "description": "Holds all the basic information for a Kettering event."
         },
         "KU.Library": {
@@ -284,7 +342,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\library.js",
+            "file": "js\\library.js",
             "line": 19,
             "description": "The library class will allow KetteringJS to gather information\non currently available books available at Ketterings Library!"
         },
@@ -298,7 +356,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\library.js",
+            "file": "js\\library.js",
             "line": 46,
             "description": "Contains information for a single Library book in Kettering's database."
         },
@@ -312,8 +370,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\library.js",
-            "line": 135,
+            "file": "js\\library.js",
+            "line": 106,
             "description": "Name value pair for a search option"
         },
         "KU.News": {
@@ -326,7 +384,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\news.js",
+            "file": "js\\news.js",
             "line": 19,
             "description": "The news class contains properties and functions related to Kettering\nUniversity's news articles. It should provide an easy and structured \naccess to the latest news articles on campus."
         },
@@ -340,7 +398,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\news.js",
+            "file": "js\\news.js",
             "line": 37,
             "description": "Holds all the information for a Kettering news article."
         },
@@ -354,9 +412,205 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\news.js",
-            "line": 95,
+            "file": "js\\news.js",
+            "line": 80,
             "description": "Holds all the very basic information for a Kettering news article."
+        },
+        "KU.Student.JWEB": {
+            "name": "KU.Student.JWEB",
+            "shortname": "KU.Student.JWEB",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 30,
+            "description": "Child class of student to contain all jweb related functions and classes"
+        },
+        "KU.Student.JWEB.CatalogEntry": {
+            "name": "KU.Student.JWEB.CatalogEntry",
+            "shortname": "KU.Student.JWEB.CatalogEntry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 38,
+            "description": "Contains all information for a course entry in a Kettering catalog"
+        },
+        "KU.Student.JWEB.AwardYear": {
+            "name": "KU.Student.JWEB.AwardYear",
+            "shortname": "KU.Student.JWEB.AwardYear",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 190,
+            "description": "Contains all the award information for a year at Kettering."
+        },
+        "KU.Student.JWEB.AwardEntry": {
+            "name": "KU.Student.JWEB.AwardEntry",
+            "shortname": "KU.Student.JWEB.AwardEntry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 222,
+            "description": "Contains all the information for an award year"
+        },
+        "KU.Student.JWEB.AccountTerm": {
+            "name": "KU.Student.JWEB.AccountTerm",
+            "shortname": "KU.Student.JWEB.AccountTerm",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 292,
+            "description": "Contains all the account information for a single term at Kettering."
+        },
+        "KU.Student.JWEB.AccountEntry": {
+            "name": "KU.Student.JWEB.AccountEntry",
+            "shortname": "KU.Student.JWEB.AccountEntry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 354,
+            "description": "Contains all the information for a single account charge(-) or credit(+)"
+        },
+        "KU.Student.JWEB.EvalProgram": {
+            "name": "KU.Student.JWEB.EvalProgram",
+            "shortname": "KU.Student.JWEB.EvalProgram",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 394,
+            "description": "Contains all information regarding an evaluation program"
+        },
+        "KU.Student.JWEB.FinalGrade": {
+            "name": "KU.Student.JWEB.FinalGrade",
+            "shortname": "KU.Student.JWEB.FinalGrade",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 434,
+            "description": "Contains all information for a final grade"
+        },
+        "KU.Student.JWEB.EvalArea": {
+            "name": "KU.Student.JWEB.EvalArea",
+            "shortname": "KU.Student.JWEB.EvalArea",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 514,
+            "description": "Contains an evaluation area of required courses and their current status\nfor the student"
+        },
+        "KU.Student.JWEB.EvalCourse": {
+            "name": "KU.Student.JWEB.EvalCourse",
+            "shortname": "KU.Student.JWEB.EvalCourse",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 587,
+            "description": "Contains a required course according to degree evaluation on jweb."
+        },
+        "KU.Student.JWEB.Evaluation": {
+            "name": "KU.Student.JWEB.Evaluation",
+            "shortname": "KU.Student.JWEB.Evaluation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 678,
+            "description": "Holds all the information for a degree evaluation"
+        },
+        "KU.Student.JWEB.Book": {
+            "name": "KU.Student.JWEB.Book",
+            "shortname": "KU.Student.JWEB.Book",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 895,
+            "description": "Holds all information for a required book"
+        },
+        "KU.Student.JWEB.Course": {
+            "name": "KU.Student.JWEB.Course",
+            "shortname": "KU.Student.JWEB.Course",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 955,
+            "description": "Holds course information from banner web"
+        },
+        "KU.Student.JWEB.StudentInfo": {
+            "name": "KU.Student.JWEB.StudentInfo",
+            "shortname": "KU.Student.JWEB.StudentInfo",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\student.js",
+            "line": 1086,
+            "description": "Holds basic curriculum information for a student"
         },
         "KU.Student.BB": {
             "name": "KU.Student.BB",
@@ -368,8 +622,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 30,
+            "file": "js\\student.js",
+            "line": 3479,
             "description": "Child class of student to contain all Blackboard related functions and classes"
         },
         "KU.Student.BB.Contact": {
@@ -382,8 +636,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 38,
+            "file": "js\\student.js",
+            "line": 3487,
             "description": "Holds the information for a Blackboard contact"
         },
         "KU.Student.BB.Grade": {
@@ -396,8 +650,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 97,
+            "file": "js\\student.js",
+            "line": 3528,
             "description": "Holds all the information for a Blackboard grade"
         },
         "KU.Student.BB.Tree": {
@@ -410,8 +664,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 207,
+            "file": "js\\student.js",
+            "line": 3613,
             "description": "Holds all the folders and files within a single layer of a content tree\nfor a course."
         },
         "KU.Student.BB.Folder": {
@@ -424,8 +678,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 256,
+            "file": "js\\student.js",
+            "line": 3671,
             "description": "Holds all the basic information for a folder on Blackboard and allows\nits own menu tree to be downloaded."
         },
         "KU.Student.BB.Item": {
@@ -438,8 +692,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 366,
+            "file": "js\\student.js",
+            "line": 3757,
             "description": "Holds all the information for a content item on Blackboard!"
         },
         "KU.Student.BB.Course": {
@@ -452,8 +706,8 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\student.js",
-            "line": 410,
+            "file": "js\\student.js",
+            "line": 3799,
             "description": "Holds all the information for a course downloaded from Blackboard"
         },
         "KU.Transfer": {
@@ -466,7 +720,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\transfer.js",
+            "file": "js\\transfer.js",
             "line": 19,
             "description": "The transfer class will allow KetteringJS to gather information\non transferable courses to Kettering!"
         },
@@ -480,7 +734,7 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\transfer.js",
+            "file": "js\\transfer.js",
             "line": 35,
             "description": "Contains information for a college able to transfer credits to Kettering!"
         },
@@ -494,14 +748,14 @@
             "extension_for": [],
             "module": "KU",
             "namespace": "",
-            "file": "src\\transfer.js",
-            "line": 111,
+            "file": "js\\transfer.js",
+            "line": 87,
             "description": "Contains information for a course which is transferable to Kettering!"
         }
     },
     "classitems": [
         {
-            "file": "src\\directory.js",
+            "file": "js\\directory.js",
             "line": 36,
             "description": "Deobfuscate a message",
             "params": [
@@ -515,63 +769,78 @@
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
+            "file": "js\\directory.js",
             "line": 70,
             "description": "The name of the department in plain English.",
             "itemtype": "attribute",
             "name": "name",
             "type": "string",
-            "readonly": "",
             "class": "KU.Directory.Department",
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 86,
+            "file": "js\\directory.js",
+            "line": 80,
             "description": "The value identifier of the department used with the directory API and\nspecifically the search method. This value is generally an int, but can\nalso be a string (e.g All)",
             "itemtype": "attribute",
             "name": "valueId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Directory.Department",
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 133,
+            "file": "js\\directory.js",
+            "line": 104,
+            "description": "Message to be displayed",
+            "itemtype": "attribute",
+            "name": "message",
+            "type": "string",
+            "class": "KU.Directory.Contact.Info",
+            "module": "KU"
+        },
+        {
+            "file": "js\\directory.js",
+            "line": 114,
+            "description": "Font-weight for the message",
+            "itemtype": "attribute",
+            "name": "weight",
+            "type": "string",
+            "class": "KU.Directory.Contact.Info",
+            "module": "KU"
+        },
+        {
+            "file": "js\\directory.js",
+            "line": 137,
             "description": "The full name of the faculty/staff member.",
             "itemtype": "attribute",
             "name": "fullName",
             "type": "string",
-            "readonly": "",
             "class": "KU.Directory.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 149,
-            "description": "Information on the directory contact. Unfortunately the information is\nunordered and unclassified so it can only exist for now as an array\nof strings. Usually the order is [department, tags, office, phone, email].\nImportant: this order is NOT guaranteed nor is it that each of these pieces\nwill be available. *Note: the array type is <a class=\"crosslink\" \nhref=\"..\\classes\\KU.Directory.Contact.Info.html\">KU.Directory.Contact.Info</a>*.",
+            "file": "js\\directory.js",
+            "line": 147,
+            "description": "Information on the directory contact. Unfortunately the information is\nunordered and unclassified so it can only exist for now as an array\nof strings. Usually the order is [department, tags, office, phone, email].\nImportant: this order is NOT guaranteed nor is it that each of these pieces\nwill be available. *Note: the array type is <a class=\"crosslink\" \nhref=\"../classes/KU.Directory.Contact.Info.html\">KU.Directory.Contact.Info</a>*.",
             "itemtype": "attribute",
             "name": "info",
             "type": "{Array<KU.Directory.Contact.Info>}",
-            "readonly": "",
             "class": "KU.Directory.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 170,
+            "file": "js\\directory.js",
+            "line": 162,
             "description": "The image url corresponding to the faculty/staff member.",
             "itemtype": "attribute",
             "name": "imgUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.Directory.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 190,
+            "file": "js\\directory.js",
+            "line": 176,
             "description": "Cancels the current search for the directory.",
             "itemtype": "method",
             "name": "abort",
@@ -586,8 +855,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 211,
+            "file": "js\\directory.js",
+            "line": 197,
             "description": "Searches through Kettering directory with the specified parameters.",
             "itemtype": "method",
             "name": "search",
@@ -614,7 +883,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -634,15 +903,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 360,
+            "file": "js\\directory.js",
+            "line": 346,
             "description": "Gathers the next page of the latest search in the directory.",
             "itemtype": "method",
             "name": "nextPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -662,15 +931,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 402,
+            "file": "js\\directory.js",
+            "line": 388,
             "description": "Gathers the previous page of the latest search in the directory.",
             "itemtype": "method",
             "name": "previousPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Directory.Contact.html\">\n    KU.Directory.Contact</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -690,15 +959,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\directory.js",
-            "line": 453,
+            "file": "js\\directory.js",
+            "line": 439,
             "description": "Retrieves a list of valid departments available to search with.",
             "itemtype": "method",
             "name": "getDepartments",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of departments. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Directory.Department.html\">\n    KU.Directory.Department</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of departments. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Directory.Department.html\">\n    KU.Directory.Department</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -718,136 +987,125 @@
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
+            "file": "js\\events.js",
             "line": 45,
             "description": "Title of the event",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Event",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 61,
+            "file": "js\\events.js",
+            "line": 55,
             "description": "Event main HTML content",
             "itemtype": "attribute",
             "name": "mainHtml",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Event",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 88,
+            "file": "js\\events.js",
+            "line": 77,
             "description": "Title of the event",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 104,
+            "file": "js\\events.js",
+            "line": 87,
             "description": "Location of the event",
             "itemtype": "attribute",
             "name": "location",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 120,
+            "file": "js\\events.js",
+            "line": 97,
             "description": "Time of the event",
             "itemtype": "attribute",
             "name": "time",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 136,
+            "file": "js\\events.js",
+            "line": 107,
             "description": "Month of the event",
             "itemtype": "attribute",
             "name": "month",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 152,
+            "file": "js\\events.js",
+            "line": 117,
             "description": "Day of the month for the event",
             "itemtype": "attribute",
             "name": "dayOfTheMonth",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 168,
+            "file": "js\\events.js",
+            "line": 127,
             "description": "Day of the week for the event",
             "itemtype": "attribute",
             "name": "dayOfTheWeek",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 184,
+            "file": "js\\events.js",
+            "line": 137,
             "description": "Kettering's tags for the event",
             "itemtype": "attribute",
             "name": "tags",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 200,
+            "file": "js\\events.js",
+            "line": 147,
             "description": "Web address for the image/icon corresponding with the article.",
             "itemtype": "attribute",
             "name": "imgUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 215,
+            "file": "js\\events.js",
+            "line": 157,
             "description": "The web address to the detail article page.",
             "itemtype": "attribute",
             "name": "detailsUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.Events.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 231,
+            "file": "js\\events.js",
+            "line": 167,
             "description": "Retrieves the detailed contents of an event.",
             "itemtype": "method",
             "name": "getEvent",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
+                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
                     "type": "Function"
                 },
                 {
@@ -867,8 +1125,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 267,
+            "file": "js\\events.js",
+            "line": 203,
             "description": "Retrieves the detailed contents of an event.",
             "itemtype": "method",
             "name": "downloadEventDetails",
@@ -880,7 +1138,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
+                    "description": "- Called after successful gathering of \n    the event. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Events.Event.html\">\n    KU.Events.Event</a></span> event)</code>;",
                     "type": "Function"
                 },
                 {
@@ -900,8 +1158,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 328,
+            "file": "js\\events.js",
+            "line": 264,
             "description": "Retrieves a list of Caption grabbed and parsed from the specified page number",
             "itemtype": "method",
             "name": "retrieve",
@@ -913,7 +1171,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -933,15 +1191,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 458,
+            "file": "js\\events.js",
+            "line": 394,
             "description": "Retrieves the next page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
             "itemtype": "method",
             "name": "nextPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -961,15 +1219,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\events.js",
-            "line": 495,
+            "file": "js\\events.js",
+            "line": 431,
             "description": "Retrieves the previous page of event captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
             "itemtype": "method",
             "name": "previousPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Events.Caption.html\">\n    KU.Events.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -989,85 +1247,78 @@
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
+            "file": "js\\library.js",
             "line": 54,
             "description": "Title of the book",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.Book",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 69,
+            "file": "js\\library.js",
+            "line": 64,
             "description": "Author of the book",
             "itemtype": "attribute",
             "name": "author",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.Book",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 85,
+            "file": "js\\library.js",
+            "line": 74,
             "description": "Call number for the book",
             "itemtype": "attribute",
             "name": "callNumber",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.Book",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 101,
+            "file": "js\\library.js",
+            "line": 84,
             "description": "Holdings statement for the book (number of books left / availability).",
             "itemtype": "attribute",
             "name": "holdings",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.Book",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 117,
+            "file": "js\\library.js",
+            "line": 94,
             "description": "Web address for the image corresponding to the book (if there is one)!",
             "itemtype": "attribute",
             "name": "imgUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.Book",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 143,
+            "file": "js\\library.js",
+            "line": 114,
             "description": "The name of the search option in plain English",
             "itemtype": "attribute",
             "name": "name",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.SearchOption",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 159,
+            "file": "js\\library.js",
+            "line": 124,
             "description": "The value identifier of the search option used with the library API and\nspecifically the search method. This value is generally a strange string\ndefined by our 3rd party library system.",
             "itemtype": "attribute",
             "name": "valueId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Library.SearchOption",
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 180,
+            "file": "js\\library.js",
+            "line": 139,
             "description": "Searches through Kettering library with the specified parameters.",
             "itemtype": "method",
             "name": "search",
@@ -1084,7 +1335,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1104,15 +1355,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 318,
+            "file": "js\\library.js",
+            "line": 277,
             "description": "Gets the next page for the latest Library search!",
             "itemtype": "method",
             "name": "nextPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the search results. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Library.Book.html\">\n    KU.Library.Book</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1132,8 +1383,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 355,
+            "file": "js\\library.js",
+            "line": 314,
             "description": "Returns a list of valuable library options to search by.",
             "itemtype": "method",
             "name": "getSearchOptions",
@@ -1148,8 +1399,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\library.js",
-            "line": 371,
+            "file": "js\\library.js",
+            "line": 330,
             "description": "Cancels the current search for the library.",
             "itemtype": "method",
             "name": "abort",
@@ -1164,48 +1415,45 @@
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
+            "file": "js\\news.js",
             "line": 45,
             "description": "Title of the article",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Article",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 60,
+            "file": "js\\news.js",
+            "line": 55,
             "description": "Header info (such as date, category, etc)",
             "itemtype": "attribute",
             "name": "headerInfo",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Article",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 75,
+            "file": "js\\news.js",
+            "line": 65,
             "description": "Article main HTML content. This includes all types of elements including\nimages and videos.",
             "itemtype": "attribute",
             "name": "mainHtml",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Article",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 102,
+            "file": "js\\news.js",
+            "line": 88,
             "description": "Retrieves the detailed contents of a news article.",
             "itemtype": "method",
             "name": "getArticle",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the news article. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Article.html\">\n    KU.News.Article</a></span> article)</code>;",
+                    "description": "- Called after successful gathering of \n    the news article. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.News.Article.html\">\n    KU.News.Article</a></span> article)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1225,63 +1473,58 @@
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 133,
+            "file": "js\\news.js",
+            "line": 119,
             "description": "Title of the article",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 149,
+            "file": "js\\news.js",
+            "line": 129,
             "description": "Author who wrote the article",
             "itemtype": "attribute",
             "name": "author",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 165,
+            "file": "js\\news.js",
+            "line": 139,
             "description": "Date when the article was written",
             "itemtype": "attribute",
             "name": "date",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 181,
+            "file": "js\\news.js",
+            "line": 149,
             "description": "Web address for the image/icon corresponding with the article.",
             "itemtype": "attribute",
             "name": "imgUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 196,
+            "file": "js\\news.js",
+            "line": 159,
             "description": "The web address to the detail article page.",
             "itemtype": "attribute",
             "name": "detailsUrl",
             "type": "string",
-            "readonly": "",
             "class": "KU.News.Caption",
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 217,
+            "file": "js\\news.js",
+            "line": 174,
             "description": "Retrieves the detailed contents of a news article.",
             "itemtype": "method",
             "name": "downloadArticle",
@@ -1293,7 +1536,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the news article. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Article.html\">\n    KU.News.Article</a></span> article)</code>;",
+                    "description": "- Called after successful gathering of \n    the news article. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.News.Article.html\">\n    KU.News.Article</a></span> article)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1313,8 +1556,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 281,
+            "file": "js\\news.js",
+            "line": 238,
             "description": "Retrieves a list of Caption grabbed and parsed from the specified page number.",
             "itemtype": "method",
             "name": "retrieve",
@@ -1326,7 +1569,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1346,15 +1589,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 366,
+            "file": "js\\news.js",
+            "line": 323,
             "description": "Retrieves the next page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the next page number!",
             "itemtype": "method",
             "name": "nextPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1374,15 +1617,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\news.js",
-            "line": 404,
+            "file": "js\\news.js",
+            "line": 361,
             "description": "Retrieves the previous page of news captions. Note this is a courtesy function \nthat is the same as calling retrieve on the previous page number!",
             "itemtype": "method",
             "name": "previousPage",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the list of Caption. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.News.Caption.html\">\n    KU.News.Caption</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1402,37 +1645,1851 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
+            "file": "js\\student.js",
             "line": 19,
             "description": "The student class will allow KetteringJS to gather information\non a student at Kettering University through banner web and blackboard",
-            "class": "KU.Student.BB",
+            "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 46,
+            "file": "js\\student.js",
+            "line": 47,
+            "description": "Status of the course (e.g NR for no registration, C for closed)",
+            "itemtype": "attribute",
+            "name": "status",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 57,
+            "description": "The unqiue crn for the course (used for registering)",
+            "itemtype": "attribute",
+            "name": "crn",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 67,
+            "description": "The course identifier including subject and number",
+            "itemtype": "attribute",
+            "name": "courseId",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 77,
+            "description": "Section of the course as a number",
+            "itemtype": "attribute",
+            "name": "section",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 87,
+            "description": "Campus the course takes place on",
+            "itemtype": "attribute",
+            "name": "campus",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 97,
+            "description": "Credits the course is worth",
+            "itemtype": "attribute",
+            "name": "credits",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 107,
+            "description": "Title of the course",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 117,
+            "description": "Days the course takes place in (e.g MT for monday, tuesday)",
+            "itemtype": "attribute",
+            "name": "days",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 127,
+            "description": "Time the course takes place at (e.g 10:15 am-12:20 pm)",
+            "itemtype": "attribute",
+            "name": "time",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 137,
+            "description": "Student capacity for the course",
+            "itemtype": "attribute",
+            "name": "capacity",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 147,
+            "description": "Number of active students registered for course",
+            "itemtype": "attribute",
+            "name": "active",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 157,
+            "description": "Professor teaching the course",
+            "itemtype": "attribute",
+            "name": "professor",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 167,
+            "description": "Start date for the course",
+            "itemtype": "attribute",
+            "name": "startDate",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 177,
+            "description": "Room the course takes place in",
+            "itemtype": "attribute",
+            "name": "room",
+            "type": "string",
+            "class": "KU.Student.JWEB.CatalogEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 198,
+            "description": "Year range represented (July 2014 to June 2015)",
+            "itemtype": "attribute",
+            "name": "years",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardYear",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 208,
+            "description": "Award entries. Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.AwardEntry.html\">\nKU.Student.JWEB.AwardEntry</a>[]</span></code>;",
+            "itemtype": "attribute",
+            "name": "entries",
+            "type": "Array",
+            "class": "KU.Student.JWEB.AwardYear",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 230,
+            "description": "Name of the fund",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 240,
+            "description": "Amount of award offered",
+            "itemtype": "attribute",
+            "name": "offered",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 250,
+            "description": "Amount of award accepted",
+            "itemtype": "attribute",
+            "name": "accepted",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 260,
+            "description": "Amount of award declined",
+            "itemtype": "attribute",
+            "name": "declined",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 270,
+            "description": "Amount of award cancelled",
+            "itemtype": "attribute",
+            "name": "cancelled",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 280,
+            "description": "Amount of award paid to date",
+            "itemtype": "attribute",
+            "name": "paidToDate",
+            "type": "string",
+            "class": "KU.Student.JWEB.AwardEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 300,
+            "description": "Term represented (formatted in words, e.g Winter 2015)",
+            "itemtype": "attribute",
+            "name": "term",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountTerm",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 310,
+            "description": "Total charges for the term",
+            "itemtype": "attribute",
+            "name": "totalCharges",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountTerm",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 320,
+            "description": "Total credits for the term",
+            "itemtype": "attribute",
+            "name": "totalCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountTerm",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 330,
+            "description": "Net balance for the term",
+            "itemtype": "attribute",
+            "name": "balance",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountTerm",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 340,
+            "description": "Account entries. Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.AccountEntry.html\">\nKU.Student.JWEB.AccountEntry</a>[]</span></code>;",
+            "itemtype": "attribute",
+            "name": "entries",
+            "type": "Array",
+            "class": "KU.Student.JWEB.AccountTerm",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 362,
+            "description": "Code used by Kettering to distinguish the account entry",
+            "itemtype": "attribute",
+            "name": "code",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 372,
+            "description": "Account entry description",
+            "itemtype": "attribute",
+            "name": "description",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 382,
+            "description": "The total dollar amount for the account entry: charge(-) or credit(+).",
+            "itemtype": "attribute",
+            "name": "total",
+            "type": "string",
+            "class": "KU.Student.JWEB.AccountEntry",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 402,
+            "description": "Readable name for the available program",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalProgram",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 412,
+            "description": "The source which the evaluation program is meant to use",
+            "itemtype": "attribute",
+            "name": "sourceId",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalProgram",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 422,
+            "description": "The program term which the evaluation should be generated against (e.g P201501)",
+            "itemtype": "attribute",
+            "name": "programId",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalProgram",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 442,
+            "description": "Unique identifier for course",
+            "itemtype": "attribute",
+            "name": "crn",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 452,
+            "description": "Course identifier in format SUBJ-NUM",
+            "itemtype": "attribute",
+            "name": "courseId",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 462,
+            "description": "Section number for course",
+            "itemtype": "attribute",
+            "name": "section",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 472,
+            "description": "Title of the course",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 482,
+            "description": "Campus the course took place on",
+            "itemtype": "attribute",
+            "name": "campus",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 492,
+            "description": "Letter grade received for course",
+            "itemtype": "attribute",
+            "name": "grade",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 502,
+            "description": "Earned credits for the course",
+            "itemtype": "attribute",
+            "name": "earnedCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.FinalGrade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 523,
+            "description": "Whether or not the requirement is met for this area",
+            "itemtype": "attribute",
+            "name": "met",
+            "type": "boolean",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 533,
+            "description": "The name of the area (general education, math, science etc)",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 543,
+            "description": "The number of required credits in order to satisfy this area",
+            "itemtype": "attribute",
+            "name": "requiredCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 553,
+            "description": "The number of earned credits towards this area",
+            "itemtype": "attribute",
+            "name": "earnedCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 563,
+            "description": "The total GPA for this area only",
+            "itemtype": "attribute",
+            "name": "gpa",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 573,
+            "description": "List of all required courses. Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.EvalCourse.html\">\nKU.Student.JWEB.EvalCourse</a>[]</span></code>;",
+            "itemtype": "attribute",
+            "name": "requiredCourses",
+            "type": "Array",
+            "class": "KU.Student.JWEB.EvalArea",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 596,
+            "description": "Whether or not the requirement is met",
+            "itemtype": "attribute",
+            "name": "met",
+            "type": "boolean",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 606,
+            "description": "The course id or general name of the required course",
+            "itemtype": "attribute",
+            "name": "name",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 616,
+            "description": "The course id of the satisfying course",
+            "itemtype": "attribute",
+            "name": "takenCourseId",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 626,
+            "description": "The course title of the satisfying course",
+            "itemtype": "attribute",
+            "name": "takenCourseTitle",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 636,
+            "description": "The term which the course was taken",
+            "itemtype": "attribute",
+            "name": "takenTerm",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 646,
+            "description": "The number of credits the satisfying course is worth",
+            "itemtype": "attribute",
+            "name": "takenCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 656,
+            "description": "The grade received  for the taken course",
+            "itemtype": "attribute",
+            "name": "takenGrade",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 666,
+            "description": "The details of the course requirement (when available)",
+            "itemtype": "attribute",
+            "name": "details",
+            "type": "string",
+            "class": "KU.Student.JWEB.EvalCourse",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 688,
+            "description": "Full name of student",
+            "itemtype": "attribute",
+            "name": "fullName",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 698,
+            "description": "User id number of student",
+            "itemtype": "attribute",
+            "name": "idNumber",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 709,
+            "description": "College the student is classified under",
+            "itemtype": "attribute",
+            "name": "college",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 719,
+            "description": "Degree type the student is pursuing (e.g Bachelors of Science)",
+            "itemtype": "attribute",
+            "name": "degree",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 729,
+            "description": "The level of the student (e.g undergraduate or graduate)",
+            "itemtype": "attribute",
+            "name": "level",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 739,
+            "description": "The majors the student is enrolled in (comma separated)",
+            "itemtype": "attribute",
+            "name": "majors",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 749,
+            "description": "The catalog the students requirements come from (e.g Summer 2011)",
+            "itemtype": "attribute",
+            "name": "catalog",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 759,
+            "description": "The date the student is expected to graduate on",
+            "itemtype": "attribute",
+            "name": "expectedGraduation",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 769,
+            "description": "The date the evaluation was generated on",
+            "itemtype": "attribute",
+            "name": "date",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 779,
+            "description": "The minors the student is taking (comma separated)",
+            "itemtype": "attribute",
+            "name": "minors",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 789,
+            "description": "The concentrations the student is taking (comma separated)",
+            "itemtype": "attribute",
+            "name": "concentrations",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 799,
+            "description": "Whether or not the overall credit requirement is met",
+            "itemtype": "attribute",
+            "name": "creditsMet",
+            "type": "boolean",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 809,
+            "description": "The number of required credits to graduate",
+            "itemtype": "attribute",
+            "name": "requiredCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 819,
+            "description": "The number of satisfied credits by the student",
+            "itemtype": "attribute",
+            "name": "usedCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 829,
+            "description": "The number of transferred credits to Kettering",
+            "itemtype": "attribute",
+            "name": "transferCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 839,
+            "description": "Whether or not the overall GPA requirement is met",
+            "itemtype": "attribute",
+            "name": "overallGPAMet",
+            "type": "boolean",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 849,
+            "description": "Whether or not the program GPA requirement is met",
+            "itemtype": "attribute",
+            "name": "programGPAMet",
+            "type": "boolean",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 859,
+            "description": "Program GPA",
+            "itemtype": "attribute",
+            "name": "programGPA",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 869,
+            "description": "Overall GPA",
+            "itemtype": "attribute",
+            "name": "overallGPA",
+            "type": "string",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 879,
+            "description": "List of all required areas (general education, math, science etc).  \nType is <code><span class=\"type\"><a class=\"crosslink\" \nhref=\"../classes/KU.Student.JWEB.EvalArea.html\">KU.Student.JWEB.EvalArea\n</a>[]</span></code>;",
+            "itemtype": "attribute",
+            "name": "evalAreas",
+            "type": "Array",
+            "class": "KU.Student.JWEB.Evaluation",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 903,
+            "description": "Title of book",
+            "itemtype": "attribute",
+            "name": "title",
+            "type": "string",
+            "class": "KU.Student.JWEB.Book",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 913,
+            "description": "Edition of book",
+            "itemtype": "attribute",
+            "name": "edition",
+            "type": "string",
+            "class": "KU.Student.JWEB.Book",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 923,
+            "description": "Url image for the book",
+            "itemtype": "attribute",
+            "name": "imgUrl",
+            "type": "string",
+            "class": "KU.Student.JWEB.Book",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 933,
+            "description": "Author of book",
+            "itemtype": "attribute",
+            "name": "author",
+            "type": "string",
+            "class": "KU.Student.JWEB.Book",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 943,
+            "description": "ISBN of book",
+            "itemtype": "attribute",
+            "name": "isbn",
+            "type": "string",
+            "class": "KU.Student.JWEB.Book",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 964,
+            "description": "Title of given course",
+            "itemtype": "attribute",
+            "name": "courseTitle",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 974,
+            "description": "Identifier for given course",
+            "itemtype": "attribute",
+            "name": "courseId",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 984,
+            "description": "Section of course",
+            "itemtype": "attribute",
+            "name": "section",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 994,
+            "description": "Term the course is being taken in",
+            "itemtype": "attribute",
+            "name": "term",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1004,
+            "description": "CRN for the course",
+            "itemtype": "attribute",
+            "name": "crn",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1014,
+            "description": "Professor who is assigned to teach the course",
+            "itemtype": "attribute",
+            "name": "professor",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1024,
+            "description": "Amount of credits the course is worth",
+            "itemtype": "attribute",
+            "name": "credits",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1034,
+            "description": "Campus the course takes place on",
+            "itemtype": "attribute",
+            "name": "campus",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1044,
+            "description": "Type of course (i.e lab, lecture)",
+            "itemtype": "attribute",
+            "name": "type",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1054,
+            "description": "Time the course is held from",
+            "itemtype": "attribute",
+            "name": "time",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1064,
+            "description": "Days the course is held on",
+            "itemtype": "attribute",
+            "name": "days",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1074,
+            "description": "Location the course takes place on",
+            "itemtype": "attribute",
+            "name": "location",
+            "type": "string",
+            "class": "KU.Student.JWEB.Course",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1095,
+            "description": "Full name of student",
+            "itemtype": "attribute",
+            "name": "fullName",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1105,
+            "description": "User id number of student",
+            "itemtype": "attribute",
+            "name": "idNumber",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1115,
+            "description": "Class standing of student",
+            "itemtype": "attribute",
+            "name": "standing",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1125,
+            "description": "Transfer credits of student",
+            "itemtype": "attribute",
+            "name": "transferCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1135,
+            "description": "Regular credits of student",
+            "itemtype": "attribute",
+            "name": "regularCredits",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1145,
+            "description": "Program title (e.g Bachelors of Science)",
+            "itemtype": "attribute",
+            "name": "program",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1155,
+            "description": "College category attended",
+            "itemtype": "attribute",
+            "name": "college",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1165,
+            "description": "Major(s) of the student",
+            "itemtype": "attribute",
+            "name": "major",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1175,
+            "description": "Concentration(s) of the student",
+            "itemtype": "attribute",
+            "name": "concentration",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1185,
+            "description": "Minor(s) of the student",
+            "itemtype": "attribute",
+            "name": "minor",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1195,
+            "description": "Specialty(s) of the student",
+            "itemtype": "attribute",
+            "name": "specialty",
+            "type": "string",
+            "class": "KU.Student.JWEB.StudentInfo",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1207,
+            "description": "Logs the user into banner web",
+            "itemtype": "method",
+            "name": "login",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "- the Kettering user Id",
+                    "type": "String"
+                },
+                {
+                    "name": "pass",
+                    "description": "- password used to login to banner",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful login into banner. \n    Function Header: <code>void successCallback()</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at logging into\n    banner. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Login !\n    KU.Student.JWEB.login(\"user\",\"pass\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1281,
+            "description": "Logs the user out of banner web",
+            "itemtype": "method",
+            "name": "logout",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful logout of banner. \n    Function Header: <code>void successCallback()</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at logging out of\n    banner. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Logout !\n    KU.Student.JWEB.logout(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1328,
+            "description": "Retrieves the logged in student's account summary by term",
+            "itemtype": "method",
+            "name": "retrieveAccountSummary",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful retrieval. \n    Function Header: <code>void successCallback(int overallBalance, \n    <span class=\"type\"><a class=\"crosslink\" href=\n    \"../classes/KU.Student.JWEB.AccountTerm.html\">KU.Student.JWEB.AccountTerm</a>\n    []</span> terms</code>;)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure to retrieve.\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(overallBalance, terms){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get account summary\n    KU.Student.JWEB.retrieveAccountSummary(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1387,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1414,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1425,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1445,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1480,
+            "description": "Retrieves the logged in student's current holds as an html string",
+            "itemtype": "method",
+            "name": "retrieveCurrentHolds",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful retrieval. \n    Function Header: <code>void successCallback(String holdsHtml)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure to retrieve.\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(holdsHtml){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get current holds\n    KU.Student.JWEB.retrieveCurrentHolds(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1546,
+            "description": "Retrieves the logged in student's unofficial transcript as an html string",
+            "itemtype": "method",
+            "name": "retrieveTranscript",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful retrieval. \n    Function Header: <code>void successCallback(String transcriptHtml)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure to retrieve transcript.\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(transcriptHtml){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get transcript\n    KU.Student.JWEB.retrieveTranscript(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1596,
+            "description": "Retrieves the logged in student's award history by year",
+            "itemtype": "method",
+            "name": "retrieveAwardHistory",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful retrieval. \n    Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.AwardYear.html\">\n    KU.Student.JWEB.AwardYear</a>[]</span> awardYears</code>;)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure to retrieve.\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(awardYears){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get award history\n    KU.Student.JWEB.retrieveAwardHistory(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1664,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1710,
+            "description": "Retrieve schedule catalog for all courses based on term provided",
+            "itemtype": "method",
+            "name": "retrieveScheduleCatalog",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    catalog. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.CatalogEntry.html\">\n    KU.Student.JWEB.CatalogEntry</a>[]</span> entries)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting catalog \n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(entries){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get course catalog\n    KU.Student.JWEB.retrieveScheduleCatalog(\"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1779,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1828,
+            "description": "Retrieve available terms for schedule",
+            "itemtype": "method",
+            "name": "retrieveScheduleTerms",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    schedule terms. Function Header: <code>void successCallback(String[] terms)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting schedule terms \n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(terms){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get schedule terms\n    KU.Student.JWEB.retrieveScheduleTerms(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1887,
+            "description": "Retrieve available terms for final grades",
+            "itemtype": "method",
+            "name": "retrieveFinalTerms",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    final terms. Function Header: <code>void successCallback(String[] terms)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting final terms \n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(terms){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get final terms\n    KU.Student.JWEB.retrieveFinalTerms(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 1946,
+            "description": "Retrieve final grades for a given term at Kettering University",
+            "itemtype": "method",
+            "name": "retrieveFinalGrades",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    final grades. Function Header: <code>void successCallback(String term, \n    String termGpa, String overallGpa, <span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.FinalGrade.html\">\n    KU.Student.JWEB.FinalGrade</a>[]</span> grades)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting finals. \n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(term, termGpa, overallGpa, grades){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get final grades\n    KU.Student.JWEB.retrieveFinalGrades(\"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2001,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2012,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2034,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2066,
+            "description": "Generates new evaluation for a student",
+            "itemtype": "method",
+            "name": "generateEvaluation",
+            "params": [
+                {
+                    "name": "sourceId",
+                    "description": "- The source to generate the evaluation from.\n    Use <code>retrieveEvalPrograms</code> to find this information.",
+                    "type": "String"
+                },
+                {
+                    "name": "programId",
+                    "description": "- The program to use for the generation.\n    Use <code>retrieveEvalPrograms</code> to find this information.",
+                    "type": "String"
+                },
+                {
+                    "name": "term",
+                    "description": "- Year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful generation of \n    evaluation. Function Header: <code>void successCallback()</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at generating evaluation.\n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Generate evaluation\n    KU.Student.JWEB.generateEvaluation(\"sourceId\", \"programId\", \"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2120,
+            "description": "Retrieves available evaluation programs and corresponding information.\nMainly used to generate new evaluations with.",
+            "itemtype": "method",
+            "name": "retrieveEvalPrograms",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- Year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    eval programs. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.EvalProgram.html\">\n    KU.Student.JWEB.EvalProgram</a>[]</span> evalPrograms)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting eval \n    programs. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(evalPrograms){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get evaluation programs\n    KU.Student.JWEB.retrieveEvalPrograms(\"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2196,
+            "description": "Retrieve evaluation for student based on given request number",
+            "itemtype": "method",
+            "name": "retrieveEvaluation",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "requestNum",
+                    "description": "- request number for already generated degree evaluation",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    evaluation. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.Evaluation.html\">\n    KU.Student.JWEB.Evaluation</a></span> evaluation)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting evaluation. \n    Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(evaluation){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get eval\n    KU.Student.JWEB.retrieveEvaluation(\"201501\", \"1\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2292,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2322,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2330,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2339,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2348,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2378,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2407,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2461,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2512,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2561,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2592,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2602,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2632,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2658,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2703,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2778,
+            "description": "Get evaluation list for student. This represents all possible evaluations\nthat are already generated in order of their generated date.",
+            "itemtype": "method",
+            "name": "retrieveEvaluationList",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    evaluation possibilities. Function Header: <code>void successCallback(<span class=\"type\">\n    String[]</span> possibilities)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting evaluation \n    possibilities. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(possibilities){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get eval possibilities !\n    KU.Student.JWEB.retrieveEvaluationList(\"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2864,
+            "description": "Downloads the latest student curriculum information",
+            "itemtype": "method",
+            "name": "retrieveStudentInfo",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    information. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.StudentInfo.html\">\n    KU.Student.JWEB.StudentInfo</a></span> studentInfo)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting information\n    from banner. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(studentInfo){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get info !\n    KU.Student.JWEB.retrieveStudentInfo(\"201501\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2951,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2975,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2986,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2993,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3001,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3009,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3017,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3049,
+            "description": "Downloads the required books for a given course and term.",
+            "itemtype": "method",
+            "name": "retrieveRequiredBooks",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- name of the desired term (e.g Winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "courseId",
+                    "description": "- name of the course id (e.g CS-101)",
+                    "type": "String"
+                },
+                {
+                    "name": "section",
+                    "description": "- section of the desired course (e.g 1)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    books. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.Book.html\">\n    KU.Student.JWEB.Book</a>[]</span> required, <span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.Book.html\">\n    KU.Student.JWEB.Book</a>[]</span> optional)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting required\n    books. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(required, optional){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get required books !\n    KU.Student.JWEB.retrieveRequiredBooks(\"Winter 2015\", \"CS-101\", \"01\", success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3269,
+            "description": "Downloads the student schedule information for specified term.",
+            "itemtype": "method",
+            "name": "retrieveSchedule",
+            "params": [
+                {
+                    "name": "term",
+                    "description": "- year and quarter (e.g 201501 for winter 2015)",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful gathering of \n    schedule. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.JWEB.Course.html\">\n    KU.Student.JWEB.Course</a>[]</span> courses)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at getting schedule\n    from banner. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(courses){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get courses !\n    KU.Student.JWEB.retrieveSchedule(success, failure);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3362,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3369,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3376,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3383,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3390,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3422,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3429,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3436,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3443,
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3495,
             "description": "First name of contact",
             "itemtype": "attribute",
             "name": "firstName",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 62,
+            "file": "js\\student.js",
+            "line": 3505,
             "description": "Last name of contact",
             "itemtype": "attribute",
             "name": "lastName",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 78,
+            "file": "js\\student.js",
+            "line": 3515,
             "description": "Email address of the contact (when available).",
             "itemtype": "attribute",
             "name": "email",
@@ -1440,35 +3497,32 @@
                 ""
             ],
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Contact",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 105,
+            "file": "js\\student.js",
+            "line": 3536,
             "description": "Title of grade",
             "itemtype": "attribute",
             "name": "title",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 121,
+            "file": "js\\student.js",
+            "line": 3546,
             "description": "Grade as a letter, percent or raw number",
             "itemtype": "attribute",
             "name": "grade",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 137,
+            "file": "js\\student.js",
+            "line": 3556,
             "description": "Points possible for the grade (when available).",
             "itemtype": "attribute",
             "name": "pointsPossible",
@@ -1476,13 +3530,12 @@
                 ""
             ],
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 154,
+            "file": "js\\student.js",
+            "line": 3567,
             "description": "Due date for the assignment (when available).",
             "itemtype": "attribute",
             "name": "dueDate",
@@ -1490,13 +3543,12 @@
                 ""
             ],
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 171,
+            "file": "js\\student.js",
+            "line": 3578,
             "description": "The date the grade was last updated (when available).",
             "itemtype": "attribute",
             "name": "postedDate",
@@ -1504,13 +3556,12 @@
                 ""
             ],
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 188,
+            "file": "js\\student.js",
+            "line": 3589,
             "description": "Status the assignment (when available).",
             "itemtype": "attribute",
             "name": "status",
@@ -1518,86 +3569,115 @@
                 ""
             ],
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Grade",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 216,
-            "description": "Folders found inside the blackboard folder! Type is <code><span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Folder.html\">\n    KU.Student.BB.Folder[]</a></span></code>;",
+            "file": "js\\student.js",
+            "line": 3600,
+            "description": "Additional information on the course grade (when available)",
+            "itemtype": "attribute",
+            "name": "additionalInfo",
+            "optional": [
+                ""
+            ],
+            "type": "string",
+            "class": "KU.Student.BB.Grade",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3622,
+            "description": "Course id for Blackboard",
+            "itemtype": "attribute",
+            "name": "bbId",
+            "type": "string",
+            "class": "KU.Student.BB.Tree",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3632,
+            "description": "Content id for root folder on blackboard (when available)",
+            "optional": [
+                ""
+            ],
+            "itemtype": "attribute",
+            "name": "contentId",
+            "type": "string",
+            "class": "KU.Student.BB.Tree",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3643,
+            "description": "Folders found inside the blackboard folder! Type is <code><span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Folder.html\">\n    KU.Student.BB.Folder</a>[]</span></code>;",
             "itemtype": "attribute",
             "name": "folders",
             "type": "Array",
-            "readonly": "",
             "class": "KU.Student.BB.Tree",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 234,
-            "description": "Items found inside the blackboard folder! Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Item.html\">\nKU.Student.BB.Item[]</a></span></code>;",
+            "file": "js\\student.js",
+            "line": 3655,
+            "description": "Items found inside the blackboard folder! Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"../classes/KU.Student.BB.Item.html\">\nKU.Student.BB.Item</a>[]</span></code>;",
             "itemtype": "attribute",
             "name": "items",
             "type": "Array",
-            "readonly": "",
             "class": "KU.Student.BB.Tree",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 265,
+            "file": "js\\student.js",
+            "line": 3680,
             "description": "Blackboard course identifier",
             "itemtype": "attribute",
             "name": "bbId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Folder",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 281,
+            "file": "js\\student.js",
+            "line": 3690,
             "description": "Blackboard content folder identifier",
             "itemtype": "attribute",
             "name": "contentId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Folder",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 297,
+            "file": "js\\student.js",
+            "line": 3700,
             "description": "The name of the folder as it appears on Blackboard",
             "itemtype": "attribute",
             "name": "name",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Folder",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 313,
+            "file": "js\\student.js",
+            "line": 3710,
             "description": "Details html for the folder as they appear on Blackboard",
             "itemtype": "attribute",
             "name": "details",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Folder",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 329,
+            "file": "js\\student.js",
+            "line": 3720,
             "description": "Gets the content tree for a folder",
             "itemtype": "method",
             "name": "getContentTree",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1617,125 +3697,125 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 374,
+            "file": "js\\student.js",
+            "line": 3765,
             "description": "The name of the content item as it appears on Blackboard",
             "itemtype": "attribute",
             "name": "name",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Item",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 390,
+            "file": "js\\student.js",
+            "line": 3775,
             "description": "Details html for the item as they appear on Blackboard",
             "itemtype": "attribute",
             "name": "details",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Item",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 418,
+            "file": "js\\student.js",
+            "line": 3785,
+            "description": "The full blackboard id for the item usually CourseId-BBid-Content-id",
+            "itemtype": "attribute",
+            "name": "fullBBId",
+            "type": "string",
+            "class": "KU.Student.BB.Item",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 3807,
             "description": "Course identifier",
             "itemtype": "attribute",
             "name": "courseId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 434,
+            "file": "js\\student.js",
+            "line": 3817,
             "description": "Term for the course. This is represented by the year and quarter (e.g 201501)",
             "itemtype": "attribute",
             "name": "term",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 450,
+            "file": "js\\student.js",
+            "line": 3827,
             "description": "Crn for the course",
             "itemtype": "attribute",
             "name": "crn",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 466,
+            "file": "js\\student.js",
+            "line": 3837,
             "description": "Section for the course",
             "itemtype": "attribute",
             "name": "section",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 482,
+            "file": "js\\student.js",
+            "line": 3847,
             "description": "Title for the course",
             "itemtype": "attribute",
             "name": "courseTitle",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 498,
+            "file": "js\\student.js",
+            "line": 3857,
             "description": "Days string for the course (e.g \"MTR\" for Monday Tuesday Thursday)",
             "itemtype": "attribute",
             "name": "days",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 514,
+            "file": "js\\student.js",
+            "line": 3867,
             "description": "Meeting time for the course (e.g 3:35-5:40)",
             "itemtype": "attribute",
             "name": "time",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 530,
+            "file": "js\\student.js",
+            "line": 3877,
             "description": "Blackboard course Id",
             "itemtype": "attribute",
             "name": "bbId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Student.BB.Course",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 546,
+            "file": "js\\student.js",
+            "line": 3887,
             "description": "Gets the content tree for a course containing a list of folders and files.",
             "itemtype": "method",
             "name": "getContentTree",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1755,15 +3835,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 579,
+            "file": "js\\student.js",
+            "line": 3920,
             "description": "Gets the entire class roster",
             "itemtype": "method",
             "name": "getRoster",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after the class roster has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Contact.html\">\n    KU.Student.BB.Contact[]</a></span> contacts)</code>;",
+                    "description": "- Called after the class roster has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Contact.html\">\n    KU.Student.BB.Contact</a>[]</span> contacts)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1783,15 +3863,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 660,
+            "file": "js\\student.js",
+            "line": 3953,
             "description": "Downloads the current grades for a course",
             "itemtype": "method",
             "name": "getGrades",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after the course grades has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Grade.html\">\n    KU.Student.BB.Grade[]</a></span> grades)</code>;",
+                    "description": "- Called after the course grades has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Grade.html\">\n    KU.Student.BB.Grade</a>[]</span> grades)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1811,13 +3891,72 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 744,
+            "file": "js\\student.js",
+            "line": 3988,
+            "description": "Downloads the current grades for a specified blackboard course",
+            "itemtype": "method",
+            "name": "retrieveGrades",
+            "params": [
+                {
+                    "name": "bbId",
+                    "description": "- blackboard course identifier",
+                    "type": "String"
+                },
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the course grades has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Grade.html\">\n    KU.Student.BB.Grade</a>[]</span> grades)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the course grades failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(grades){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the course grades\n    KU.Student.BB.retrieveGrades(\"bbId\", success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 4093,
+            "description": "Retrieves the entire class roster for a given course",
+            "itemtype": "method",
+            "name": "retrieveRoster",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after the class roster has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Contact.html\">\n    KU.Student.BB.Contact</a>[]</span> contacts)</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called if the class roster was failed to\n    download. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(contacts){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    KU.Student.BB.retrieveRoster(\"bbId\", success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 4174,
             "description": "Gets the content tree for a course containing a list of folders and files\nbased on a specified bbId and contentId. This is meant to be a generic function\nused by KU.Student.BB.Course and KU.Student.BB.Folder.",
             "itemtype": "method",
             "name": "retrieveContentTree",
-            "access": "private",
-            "tagname": "",
             "params": [
                 {
                     "name": "bbId",
@@ -1831,7 +3970,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
+                    "description": "- Called after the content tree has been\n    downloaded. Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Tree.html\">\n    KU.Student.BB.Tree</a></span> tree)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1845,14 +3984,42 @@
                 "type": "Void"
             },
             "example": [
-                "  \n    var success = function(tree){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    course.getContentTree(success, failure);"
+                "  \n    var success = function(tree){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Get the content tree\n    KU.Student.BB.getContentTree(\"bbId\", \"contentId\", success, failure);"
             ],
             "class": "KU.Student.BB",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 933,
+            "file": "js\\student.js",
+            "line": 4382,
+            "description": "Logs any user out of blackboard",
+            "itemtype": "method",
+            "name": "logout",
+            "params": [
+                {
+                    "name": "successCallback",
+                    "description": "- Called after successful log out of blackboard. \n    Function Header: <code>void successCallback()</code>;",
+                    "type": "Function"
+                },
+                {
+                    "name": "failureCallback",
+                    "description": "- Called after a failure at logging out of\n    blackboard. Function Header: void <code>failureCallback(String errMsg)</code>;",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Void"
+            },
+            "example": [
+                "  \n    var success = function(){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Logout !\n    KU.Student.BB.logout(success, failure);"
+            ],
+            "class": "KU.Student.BB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 4446,
             "description": "Logs the user into blackboard",
             "itemtype": "method",
             "name": "login",
@@ -1889,15 +4056,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 1005,
+            "file": "js\\student.js",
+            "line": 4519,
             "description": "Checks to see if browser has any user logged into Blackboard",
             "itemtype": "method",
             "name": "checkLogIn",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after login status is checked. \n    Function Header: <code>void successCallback(Boolean loggedIn)</code>;",
+                    "description": "- Called after login status is checked. \n    Function Header: <code>void successCallback(boolean loggedIn, String user)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1911,14 +4078,14 @@
                 "type": "Void"
             },
             "example": [
-                "  \n    var success = function(loggedIn){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Check login\n    KU.Student.BB.checkLogIn(success, failure);"
+                "  \n    var success = function(loggedIn, user){\n        ...\n    }\n   \n    var failure = function(errMsg){\n        ...\n    }\n    \n    // Check login\n    KU.Student.BB.checkLogIn(success, failure);"
             ],
             "class": "KU.Student.BB",
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 1056,
+            "file": "js\\student.js",
+            "line": 4582,
             "description": "Parses an html document to evaluate login status of Blackboard",
             "itemtype": "method",
             "name": "isLoggedIn",
@@ -1941,15 +4108,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\student.js",
-            "line": 1075,
+            "file": "js\\student.js",
+            "line": 4601,
             "description": "Downloads the blackboard courses",
             "itemtype": "method",
             "name": "downloadCourses",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after courses are gathered. \n    Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"..\\classes\\KU.Student.BB.Course.html\">\n    KU.Student.BB.Course</a></span> courses)</code>;",
+                    "description": "- Called after courses are gathered. \n    Function Header: <code>void successCallback(<span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Course.html\">\n    KU.Student.BB.Course</a></span> courses)</code>;",
                     "type": "Function"
                 },
                 {
@@ -1969,30 +4136,28 @@
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
+            "file": "js\\transfer.js",
             "line": 43,
             "description": "Name of the college",
             "itemtype": "attribute",
             "name": "name",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.College",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 59,
+            "file": "js\\transfer.js",
+            "line": 53,
             "description": "Search code used against Kettering's database",
             "itemtype": "attribute",
             "name": "code",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.College",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 75,
+            "file": "js\\transfer.js",
+            "line": 63,
             "description": "City where college is located (if known).",
             "itemtype": "attribute",
             "name": "city",
@@ -2000,13 +4165,12 @@
             "optional": [
                 ""
             ],
-            "readonly": "",
             "class": "KU.Transfer.College",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 92,
+            "file": "js\\transfer.js",
+            "line": 74,
             "description": "State where college is located (if known).",
             "itemtype": "attribute",
             "name": "state",
@@ -2014,79 +4178,72 @@
             "optional": [
                 ""
             ],
-            "readonly": "",
             "class": "KU.Transfer.College",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 119,
+            "file": "js\\transfer.js",
+            "line": 95,
             "description": "Title for Kettering course",
             "itemtype": "attribute",
             "name": "kuTitle",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 135,
+            "file": "js\\transfer.js",
+            "line": 105,
             "description": "Course Id for Kettering course",
             "itemtype": "attribute",
             "name": "kuCourseId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 151,
+            "file": "js\\transfer.js",
+            "line": 115,
             "description": "Title for transfer course as referenced from other college",
             "itemtype": "attribute",
             "name": "transTitle",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 167,
+            "file": "js\\transfer.js",
+            "line": 125,
             "description": "Course Id for transfer course as referenced from other college",
             "itemtype": "attribute",
             "name": "transCourseId",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 183,
+            "file": "js\\transfer.js",
+            "line": 135,
             "description": "Number of credits the transfer course is worth",
             "itemtype": "attribute",
             "name": "credits",
             "type": "string",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 199,
+            "file": "js\\transfer.js",
+            "line": 145,
             "description": "College that corresponds with the transfer course",
             "itemtype": "attribute",
             "name": "college",
             "type": "KU.Transfer.College",
-            "readonly": "",
             "class": "KU.Transfer.Course",
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 217,
+            "file": "js\\transfer.js",
+            "line": 157,
             "description": "Searches for transfer courses by course id",
             "itemtype": "method",
             "name": "searchByCollege",
@@ -2098,7 +4255,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -2118,8 +4275,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 326,
+            "file": "js\\transfer.js",
+            "line": 266,
             "description": "Searches for transfer courses by course id",
             "itemtype": "method",
             "name": "searchByCourseId",
@@ -2141,7 +4298,7 @@
                 },
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the transfer courses. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Transfer.Course.html\">\n    KU.Transfer.Course</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -2161,15 +4318,15 @@
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 442,
+            "file": "js\\transfer.js",
+            "line": 382,
             "description": "Retrieves a list of valid colleges which can be searched with.",
             "itemtype": "method",
             "name": "getColleges",
             "params": [
                 {
                     "name": "successCallback",
-                    "description": "- Called after successful gathering of \n    the colleges. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"..\\classes\\KU.Transfer.College.html\">\n    KU.Transfer.College</a>[]</span> items)</code>;",
+                    "description": "- Called after successful gathering of \n    the colleges. Function Header: <code>void successCallback(<span \n    class=\"type\"><a class=\"crosslink\" href=\"../classes/KU.Transfer.College.html\">\n    KU.Transfer.College</a>[]</span> items)</code>;",
                     "type": "Function"
                 },
                 {
@@ -2189,8 +4346,8 @@
             "module": "KU"
         },
         {
-            "file": "src\\transfer.js",
-            "line": 510,
+            "file": "js\\transfer.js",
+            "line": 450,
             "description": "Cancels the current search within transfer",
             "itemtype": "method",
             "name": "abort",

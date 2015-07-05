@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>KU.News.Article - KetteringJS</title>
+    <title>KU.Student.JWEB.EvalArea - KetteringJS</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.9.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -154,7 +154,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>KU.News.Article</h1>
+                        <h1>KU.Student.JWEB.EvalArea</h1>
 <div class="box meta">
     
 
@@ -174,7 +174,8 @@
 
 
 <div class="box intro">
-    <p>Holds all the information for a Kettering news article.</p>
+    <p>Contains an evaluation area of required courses and their current status
+for the student</p>
 </div>
 
 
@@ -211,15 +212,27 @@
                     <ul class="index-list attrs">
                         
                             <li class="index-item attr">
-                                <a href="#attr_headerInfo">headerInfo</a>
+                                <a href="#attr_earnedCredits">earnedCredits</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_mainHtml">mainHtml</a>
+                                <a href="#attr_gpa">gpa</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_title">title</a>
+                                <a href="#attr_met">met</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_name">name</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_requiredCourses">requiredCourses</a>
+                            </li>
+                        
+                            <li class="index-item attr">
+                                <a href="#attr_requiredCredits">requiredCredits</a>
                             </li>
                         
                     </ul>
@@ -237,9 +250,9 @@
             <div id="attrs" class="api-class-tabpanel">
                 
                 
-                    <div id="attr_headerInfo" class="attr item">
-    <a name="config_headerInfo"></a> 
-    <h3 class="name"><code>headerInfo</code></h3>
+                    <div id="attr_earnedCredits" class="attr item">
+    <a name="config_earnedCredits"></a> 
+    <h3 class="name"><code>earnedCredits</code></h3>
     <span class="type">String</span>
 
     
@@ -273,7 +286,7 @@
     </div>
 
     <div class="description">
-        <p>Header info (such as date, category, etc)</p>
+        <p>The number of earned credits towards this area</p>
     </div>
 
     
@@ -284,9 +297,9 @@
 </div>
 
                 
-                    <div id="attr_mainHtml" class="attr item">
-    <a name="config_mainHtml"></a> 
-    <h3 class="name"><code>mainHtml</code></h3>
+                    <div id="attr_gpa" class="attr item">
+    <a name="config_gpa"></a> 
+    <h3 class="name"><code>gpa</code></h3>
     <span class="type">String</span>
 
     
@@ -320,8 +333,7 @@
     </div>
 
     <div class="description">
-        <p>Article main HTML content. This includes all types of elements including
-images and videos.</p>
+        <p>The total GPA for this area only</p>
     </div>
 
     
@@ -332,9 +344,56 @@ images and videos.</p>
 </div>
 
                 
-                    <div id="attr_title" class="attr item">
-    <a name="config_title"></a> 
-    <h3 class="name"><code>title</code></h3>
+                    <div id="attr_met" class="attr item">
+    <a name="config_met"></a> 
+    <h3 class="name"><code>met</code></h3>
+    <span class="type">Boolean</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Whether or not the requirement is met for this area</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_name" class="attr item">
+    <a name="config_name"></a> 
+    <h3 class="name"><code>name</code></h3>
     <span class="type">String</span>
 
     
@@ -368,7 +427,103 @@ images and videos.</p>
     </div>
 
     <div class="description">
-        <p>Title of the article</p>
+        <p>The name of the area (general education, math, science etc)</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_requiredCourses" class="attr item">
+    <a name="config_requiredCourses"></a> 
+    <h3 class="name"><code>requiredCourses</code></h3>
+    <span class="type">Array</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>List of all required courses. Type is <code><span>
+<a  href="../classes/KU.Student.JWEB.EvalCourse.html">
+KU.Student.JWEB.EvalCourse</a>[]</span></code>;</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="attr_requiredCredits" class="attr item">
+    <a name="config_requiredCredits"></a> 
+    <h3 class="name"><code>requiredCredits</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+            
+        
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The number of required credits in order to satisfy this area</p>
     </div>
 
     

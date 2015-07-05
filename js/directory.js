@@ -73,14 +73,8 @@
          *  @attribute name
          *  @type string
          *  @for KU.Directory.Department
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "name" , { 
-        
-            // Getter and Setter
-            get: function() { return name; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.name = name;
         
         
         /******************************************************************************
@@ -91,14 +85,8 @@
          *  @attribute valueId
          *  @type string
          *  @for KU.Directory.Department
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "valueId" , { 
-        
-            // Getter and Setter
-            get: function() { return valueId; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.valueId = valueId;
         
         
     }
@@ -113,7 +101,23 @@
     function Info(message, weight){
         
         
+        /******************************************************************************
+         *  Message to be displayed
+         *
+         *  @attribute message
+         *  @type string
+         *  @for KU.Directory.Contact.Info
+        ******************************************************************************/
         this.message = message;
+        
+        
+        /******************************************************************************
+         *  Font-weight for the message
+         *
+         *  @attribute weight
+         *  @type string
+         *  @for KU.Directory.Contact.Info
+        ******************************************************************************/
         this.weight = weight;
         
         
@@ -136,15 +140,9 @@
          *  @attribute fullName
          *  @type string
          *  @for KU.Directory.Contact
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "fullName" , { 
+        this.fullName = fullName;
         
-            // Getter and Setter
-            get: function() { return fullName; },
-            set: function(val) { /* Read only!! */ }
-        });
-
         
         /******************************************************************************
          *  Information on the directory contact. Unfortunately the information is
@@ -152,19 +150,13 @@
          *  of strings. Usually the order is [department, tags, office, phone, email].
          *  Important: this order is NOT guaranteed nor is it that each of these pieces
          *  will be available. *Note: the array type is <a class="crosslink" 
-         *  href="..\classes\KU.Directory.Contact.Info.html">KU.Directory.Contact.Info</a>*.
+         *  href="../classes/KU.Directory.Contact.Info.html">KU.Directory.Contact.Info</a>*.
          *
          *  @attribute info
          *  @type {Array<KU.Directory.Contact.Info>}
          *  @for KU.Directory.Contact
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "info" , { 
-        
-            // Getter and Setter
-            get: function() { return info; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.info = info;
         
 
         /******************************************************************************
@@ -173,14 +165,8 @@
          *  @attribute imgUrl
          *  @type string
          *  @for KU.Directory.Contact
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "imgUrl" , { 
-        
-            // Getter and Setter
-            get: function() { return imgUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.imgUrl = imgUrl;
         
       
         return this;
@@ -218,7 +204,7 @@
      *  @param {string} departmentId - value identifier for a department used in search
      *  @param {function} successCallback - Called after successful gathering of 
      *      the search results. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Directory.Contact.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Directory.Contact.html">
      *      KU.Directory.Contact</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      search results. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -363,7 +349,7 @@
      *  @method nextPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the search results. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Directory.Contact.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Directory.Contact.html">
      *      KU.Directory.Contact</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      search results. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -405,7 +391,7 @@
      *  @method previousPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the search results. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Directory.Contact.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Directory.Contact.html">
      *      KU.Directory.Contact</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      search results. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -456,7 +442,7 @@
      *  @method getDepartments
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of departments. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Directory.Department.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Directory.Department.html">
      *      KU.Directory.Department</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of departments. Function Header: void <code>failureCallback(String errMsg)</code>;

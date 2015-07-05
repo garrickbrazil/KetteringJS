@@ -11,11 +11,11 @@ import os
 headerLen = 16
 coreFile = "KetteringJS-Core.js"
 outputFile = "KetteringJS.js"
-folderToCheck = "src"
+folderToCheck = "js"
 folderToOutput = "bin"
 
 # Get source files
-sourceFiles = os.listdir( "src" )
+sourceFiles = os.listdir( folderToCheck )
 
 
 # Output
@@ -23,7 +23,7 @@ with open(folderToOutput + "\\" + outputFile, 'w') as fout:
 
 
     # Copy KetteringJS-Core.js first
-    for line in fileinput.input("src\\" + coreFile):
+    for line in fileinput.input(folderToCheck + "\\" + coreFile):
 
         # Copy contents
         fout.write(line)
@@ -41,7 +41,7 @@ with open(folderToOutput + "\\" + outputFile, 'w') as fout:
             index = 0
             
             # Open file
-            for line in fileinput.input("src\\" + file):
+            for line in fileinput.input(folderToCheck + "\\" + file):
 
                 index += 1
 

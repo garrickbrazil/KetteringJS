@@ -48,14 +48,8 @@
          *  @attribute title
          *  @type string
          *  @for KU.Events.Event
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "title" , { 
-        
-            // Getter and Setter
-            get: function() { return title; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.title = title;
 
       
         /******************************************************************************
@@ -64,14 +58,9 @@
          *  @attribute mainHtml
          *  @type string
          *  @for KU.Events.Event
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "mainHtml" , { 
+        this.mainHtml = mainHtml;
         
-            // Getter and Setter
-            get: function() { return mainHtml; },
-            set: function(val) { /* Read only!! */ }
-        });
       
         return this;
     };
@@ -91,14 +80,8 @@
          *  @attribute title
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "title" , { 
-        
-            // Getter and Setter
-            get: function() { return title; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.title = title;
         
         
         /******************************************************************************
@@ -107,30 +90,18 @@
          *  @attribute location
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "location" , { 
+        this.location = location;
+
         
-            // Getter and Setter
-            get: function() { return location; },
-            set: function(val) { /* Read only!! */ }
-        });
-
-
         /******************************************************************************
          *  Time of the event
          *
          *  @attribute time
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "time" , { 
-        
-            // Getter and Setter
-            get: function() { return time; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.time = time;
         
         
         /******************************************************************************
@@ -139,14 +110,8 @@
          *  @attribute month
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "month" , { 
-        
-            // Getter and Setter
-            get: function() { return month; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.month = month;
         
         
         /******************************************************************************
@@ -155,14 +120,8 @@
          *  @attribute dayOfTheMonth
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "dayOfTheMonth" , { 
-        
-            // Getter and Setter
-            get: function() { return dayOfTheMonth; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.dayOfTheMonth = dayOfTheMonth;
         
         
         /******************************************************************************
@@ -171,14 +130,8 @@
          *  @attribute dayOfTheWeek
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "dayOfTheWeek" , { 
-        
-            // Getter and Setter
-            get: function() { return dayOfTheWeek; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.dayOfTheWeek = dayOfTheWeek;
         
         
         /******************************************************************************
@@ -187,14 +140,8 @@
          *  @attribute tags
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "tags" , { 
-        
-            // Getter and Setter
-            get: function() { return tags; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.tags = tags;
         
         
         /******************************************************************************
@@ -203,14 +150,9 @@
          *  @attribute imgUrl
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "imgUrl" , { 
+        this.imgUrl = imgUrl;
         
-            // Getter and Setter
-            get: function() { return imgUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
 
         /******************************************************************************
          *  The web address to the detail article page.
@@ -218,14 +160,8 @@
          *  @attribute detailsUrl
          *  @type string
          *  @for KU.Events.Caption
-         *  @readOnly
         ******************************************************************************/
-        Object.defineProperty(this, "detailsUrl" , { 
-        
-            // Getter and Setter
-            get: function() { return detailsUrl; },
-            set: function(val) { /* Read only!! */ }
-        });
+        this.detailsUrl = detailsUrl;
         
     
         /******************************************************************************
@@ -234,7 +170,7 @@
          *  @method getEvent
          *  @param {function} successCallback - Called after successful gathering of 
          *      the event. Function Header: <code>void successCallback(<span 
-         *      class="type"><a class="crosslink" href="..\classes\KU.Events.Event.html">
+         *      class="type"><a class="crosslink" href="../classes/KU.Events.Event.html">
          *      KU.Events.Event</a></span> event)</code>;
          *  @param {function} failureCallback - Called after a failure at gathering the
          *      event. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -271,7 +207,7 @@
      *  @param {string} eventUrl - the web address of where to download the event from
      *  @param {function} successCallback - Called after successful gathering of 
      *      the event. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Events.Event.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Events.Event.html">
      *      KU.Events.Event</a></span> event)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      event. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -332,7 +268,7 @@
      *  @param {int} pageNumber - the index page to retrieve
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Events.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Events.Caption.html">
      *      KU.Events.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -462,7 +398,7 @@
      *  @method nextPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Events.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Events.Caption.html">
      *      KU.Events.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;
@@ -499,7 +435,7 @@
      *  @method previousPage
      *  @param {function} successCallback - Called after successful gathering of 
      *      the list of Caption. Function Header: <code>void successCallback(<span 
-     *      class="type"><a class="crosslink" href="..\classes\KU.Events.Caption.html">
+     *      class="type"><a class="crosslink" href="../classes/KU.Events.Caption.html">
      *      KU.Events.Caption</a>[]</span> items)</code>;
      *  @param {function} failureCallback - Called after a failure at gathering the
      *      list of Caption. Function Header: void <code>failureCallback(String errMsg)</code>;
