@@ -1,6 +1,8 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
+        "KU.Announcements",
+        "KU.Announcements.Caption",
         "KU.Directory",
         "KU.Directory.Contact",
         "KU.Directory.Contact.Info",

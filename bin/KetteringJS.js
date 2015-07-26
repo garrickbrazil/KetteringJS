@@ -30,6 +30,214 @@ var KU = {
 
 
 /******************************************************************************
+ *  The announcement class contains properties and functions related to Kettering
+ *  University's campus announcements. It should provide an easy and structured 
+ *  access to the latest announcement captions on campus. 
+ *
+ *  @class KU.Announcements
+ ******************************************************************************/
+(function (lib) {
+	
+	
+    // Default object
+    var Announcements = {};
+	
+    // Private
+    var page = null;
+    
+	
+    /******************************************************************************
+     *  Holds all the very basic information for a Kettering announcement. 
+     *
+     *  @class KU.Announcements.Caption
+     ******************************************************************************/
+    function Caption(title, mainHtml){
+      
+        
+        /******************************************************************************
+         *  Title of the announcement
+         *
+         *  @attribute title
+         *  @type string
+         *  @for KU.Announcements.Caption
+        ******************************************************************************/
+        this.title = title;
+        
+	
+        /******************************************************************************
+         *  The main html for the announcement, containing relevant information, links
+         *  and images. 
+         *
+         *  @attribute mainHtml
+         *  @type string
+         *  @for KU.Announcements.Caption
+        ******************************************************************************/
+        this.mainHtml = mainHtml;
+        
+    
+        return this;
+
+    };
+    
+    
+    /******************************************************************************
+     *  Retrieves a list of captions grabbed and parsed from the specified page number. 
+     * 
+     *  @method retrieve
+     *  @param {int} pageNumber - the index page to retrieve
+     *  @param {function} successCallback - Called after successful gathering of 
+     *      the list of captions. Function Header: <code>void successCallback(<span 
+     *      class="type"><a class="crosslink" href="../classes/KU.Announcements.Caption.html">
+     *      KU.Announcements.Caption</a>[]</span> items)</code>;
+     *  @param {function} failureCallback - Called after a failure at gathering the
+     *      list of captions. Function Header: void <code>failureCallback(String errMsg)</code>;
+     *  @for KU.Announcements
+     *  @return {void}
+     *  @example  
+     *      var success = function(items){
+     *          ...
+     *      }
+     *     
+     *      var failure = function(errMsg){
+     *          ...
+     *      }
+     *      
+     *      // Get announcements list from page 0
+     *      KU.Announcements.retrieve(0, success, failure);
+     *****************************************************************************/
+    Announcements.retrieve = function( pageNumber, successCallback, failureCallback ){
+      
+      
+        // Properties used
+        var url;
+      
+        // Found at least one occasion where page=0 was different than default
+		// site, current-announcements seems more reliable without a page in this case
+        if( pageNumber != 0 ) url = 'http://www.kettering.edu/announcements?page=' + pageNumber;
+        else url = 'http://www.kettering.edu/announcements/';
+        
+        page = pageNumber;
+        
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'html',
+            success: function(data) {
+                
+                // Start list as blank
+                var announcementList = [];
+                
+                // Go through each item
+                $("<div>").html(data).find('.views-row').each(
+                    function(index){
+                        
+                        // Setup item information
+                        var title = $('h3', this).text();
+                        var mainHtml = $(this);
+                        mainHtml.find("h3:first").remove();
+                        
+                        // Store item
+                        announcementList[index] = new Caption(title, mainHtml.html());
+                    }
+                );
+                
+                // Callback!
+                successCallback(announcementList);
+            },
+            
+            error: function(xhr, status, errorThrown){
+            
+                // Callback!
+                failureCallback(errorThrown);
+            }
+        });	
+        
+    };
+    
+    
+    /******************************************************************************
+     *  Retrieves the next page of announcement captions. Note this is a courtesy function 
+     *  that is the same as calling retrieve on the next page number! 
+     * 
+     *  @method nextPage
+     *  @param {function} successCallback - Called after successful gathering of 
+     *      the list of captions. Function Header: <code>void successCallback(<span 
+     *      class="type"><a class="crosslink" href="../classes/KU.Announcements.Caption.html">
+     *      KU.Announcements.Caption</a>[]</span> items)</code>;
+     *  @param {function} failureCallback - Called after a failure at gathering the
+     *      list of captions. Function Header: void <code>failureCallback(String errMsg)</code>;
+     *  @for KU.Announcements
+     *  @return {void}
+     *  @example  
+     *      var success = function(items){
+     *          ...
+     *      }
+     *     
+     *      var failure = function(errMsg){
+     *          ...
+     *      }
+     *      
+     *      // Get announcements list from next page
+     *      KU.Announcements.nextPage(success, failure);
+     *****************************************************************************/
+    Announcements.nextPage = function (successCallback, failureCallback){
+        
+        // Adjust page number
+        if(page == null) page = 0;
+        else page++;
+        
+        // Retrieve!
+        Announcements.retrieve(page, successCallback, failureCallback);
+        
+    };
+    
+
+    
+    /******************************************************************************
+     *  Retrieves the previous page of announcements captions. Note this is a courtesy function 
+     *  that is the same as calling retrieve on the previous page number! 
+     * 
+     *  @method previousPage
+     *  @param {function} successCallback - Called after successful gathering of 
+     *      the list of Caption. Function Header: <code>void successCallback(<span 
+     *      class="type"><a class="crosslink" href="../classes/KU.Announcements.Caption.html">
+     *      KU.Announcements.Caption</a>[]</span> items)</code>;
+     *  @param {function} failureCallback - Called after a failure at gathering the
+     *      list of captions. Function Header: void <code>failureCallback(String errMsg)</code>;
+     *  @for KU.Announcements
+     *  @return {void}
+     *  @example  
+     *      var success = function(items){
+     *          ...
+     *      }
+     *     
+     *      var failure = function(errMsg){
+     *          ...
+     *      }
+     *      
+     *      // Get announcements list from previous page
+     *      KU.Announcements.previousPage(success, failure);
+     *****************************************************************************/    
+    Announcements.previousPage = function (successCallback, failureCallback){
+        
+        // Adjust page number
+        if(page == null) page = 0;
+        else if ((page - 1) < 0) page = 0;
+        else page--;
+
+        // Retrieve!        
+        Announcements.retrieve(page, successCallback, failureCallback);
+        
+    };
+    
+    
+    // Save class to module
+    lib.Announcements = Announcements;
+    
+}(KU));
+
+
+/******************************************************************************
  *  The directory class will allow the library to gather information
  *  on faculty/staff members such as name, office, phone number, and email.
  *
@@ -3466,8 +3674,11 @@ var KU = {
                     }
                     
                     // Defaults
-                    var entries = []
-                    
+                    var entries = [], status = "", crn = "", courseId = "", 
+                        section = "", campus = "", credits = "", title = "", 
+                        days = "", time = "", capacity = "", active = "", 
+                        professor = "", startDate = "", room = "";
+                        
                     // Go through all course rows
                     doc.find("table.datadisplaytable tr").each(function(i){
                        
@@ -3476,20 +3687,19 @@ var KU = {
                         /** Course structure  **/
                         if (children.size() == 17){
                             
-                            // Defaults
-                            var status = "", crn = "", courseId = "", section = "", 
-                                campus = "", credits = "", title = "", days = "", 
-                                time = "", capacity = "", active = "", professor = "", 
-                                startDate = "", room = "";
+                            // Valid course information (otherwise use previous information)
+                            if (children.eq(1).text().trim() != ""){
                             
-                            // Get information
-                            status = children.eq(0).text().trim();
-                            crn = children.eq(1).text().trim();
-                            courseId = children.eq(2).text().trim() + "-" + children.eq(3).text().trim();
-                            section = children.eq(4).text().trim();
-                            campus = children.eq(5).text().trim();
-                            credits = children.eq(6).text().trim();
-                            title = children.eq(7).text().trim();
+                                // Get information
+                                status = children.eq(0).text().trim();
+                                crn = children.eq(1).text().trim();
+                                courseId = children.eq(2).text().trim() + "-" + children.eq(3).text().trim();
+                                section = children.eq(4).text().trim();
+                                campus = children.eq(5).text().trim();
+                                credits = children.eq(6).text().trim();
+                                title = children.eq(7).text().trim();
+                            }
+                            
                             days = children.eq(8).text().trim();
                             time = children.eq(9).text().trim();
                             capacity = children.eq(10).text().trim();
@@ -5103,56 +5313,59 @@ var KU = {
                             // Valid meeting table?
                             if(meetingTable.find("tr").size() > 1){
                                 
-                                // Get rows
-                                var headerRow = meetingTable.find("tr").eq(0);
-                                var infoRow = meetingTable.find("tr").eq(1);
+                                for (var meetingIndex = 1; meetingIndex < meetingTable.find("tr").size(); meetingIndex++){
                                 
-                                // Header columns and info columns size match?
-                                if(headerRow.find("th").size() == infoRow.find("td").size()){
-                                                                        
-                                
-                                    // Check all columns of meeting table
-                                    // note: this only accounts for a single meeting time
-                                    // per each course
-                                    $("th", headerRow).each(function(column){
-                             
-                                        /** Type **/
-                                        if ( neutral($(this)) === "schedule type") {
+                                    // Get rows
+                                    var headerRow = meetingTable.find("tr").eq(0);
+                                    var infoRow = meetingTable.find("tr").eq(meetingIndex);
+                                    
+                                    // Header columns and info columns size match?
+                                    if(headerRow.find("th").size() == infoRow.find("td").size()){
+                                                                            
+                                    
+                                        // Check all columns of meeting table
+                                        // note: this only accounts for a single meeting time
+                                        // per each course
+                                        $("th", headerRow).each(function(column){
+                                 
+                                            /** Type **/
+                                            if ( neutral($(this)) === "schedule type") {
+                                                
+                                                // Store type
+                                                type = $("td", infoRow).eq(column).text().trim();
+                                            }
                                             
-                                            // Store type
-                                            type = $("td", infoRow).eq(column).text().trim();
-                                        }
-                                        
-                                        /** Time **/
-                                        else if ( neutral($(this)) === "time") {
+                                            /** Time **/
+                                            else if ( neutral($(this)) === "time") {
+                                                
+                                                // Store time
+                                                time = $("td", infoRow).eq(column).text().trim();
+                                            }
                                             
-                                            // Store time
-                                            time = $("td", infoRow).eq(column).text().trim();
-                                        }
-                                        
-                                        /** Days **/
-                                        else if ( neutral($(this)) === "days") {
+                                            /** Days **/
+                                            else if ( neutral($(this)) === "days") {
+                                                
+                                                // Store time
+                                                days = $("td", infoRow).eq(column).text().trim();
+                                            }
                                             
-                                            // Store time
-                                            days = $("td", infoRow).eq(column).text().trim();
-                                        }
-                                        
-                                        /** Location **/
-                                        else if ( neutral($(this)) === "where") {
+                                            /** Location **/
+                                            else if ( neutral($(this)) === "where") {
+                                                
+                                                // Store time
+                                                location = $("td", infoRow).eq(column).text().trim();
+                                            }
                                             
-                                            // Store time
-                                            location = $("td", infoRow).eq(column).text().trim();
-                                        }
-                                        
-                                    });
-                                
+                                        });
+                                    }
+                                    
+                                    // Add new course
+                                    courses[courses.length] = new KU.Student.JWEB.Course(courseTitle, courseId,
+                                        section, term, crn, professor, credits, campus, type, time, days, location);
                                 }
-                            
                             }
                             
-                            // Add new course
-                            courses[courses.length] = new KU.Student.JWEB.Course(courseTitle, courseId,
-                                section, term, crn, professor, credits, campus, type, time, days, location);
+                            
                             
                         }
                         
