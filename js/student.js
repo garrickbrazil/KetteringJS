@@ -1362,6 +1362,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
                     
@@ -1511,6 +1513,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
                     
@@ -1577,6 +1581,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
                     
@@ -1628,6 +1634,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                     
                     // Load downloaded document
                     var doc = $("<div>").html(data);
@@ -1757,6 +1765,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
                     
@@ -1859,6 +1869,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
 
@@ -1917,6 +1929,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                     
                     // Load downloaded document
                     var doc = $("<div>").html(data);
@@ -1980,6 +1994,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                     
                     // Load downloaded document
                     var doc = $("<div>").html(data);
@@ -2104,6 +2120,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                   
                     // All done!
                     successCallback();
@@ -2156,6 +2174,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                  
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                   
                     // Load downloaded document
                     var doc = $("<div>").html(data);
@@ -2234,6 +2254,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                      // Evaluation url
                     var url = "https://jweb.kettering.edu/cku1/bwckcapp.P_VerifyDispEvalViewOption?request_no=" 
                         + requestNum + "&program_summary=3";
@@ -2243,6 +2265,8 @@
                         type: 'GET',
                         dataType: 'html',
                         success: function(data, text, response){
+                            
+                            if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                             
                             // Load downloaded document
                             var doc = $("<div>").html(data);
@@ -2814,6 +2838,8 @@
                 dataType: 'html',
                 success: function(data, text, response){
                     
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
+                    
                     // Load downloaded document
                     var doc = $("<div>").html(data);
                     
@@ -2864,6 +2890,27 @@
         
         
         /******************************************************************************
+         *  Checks if incoming data is actually a banner error page
+         * 
+         *  @method isErrorPage
+         *  @param {string} data - the html data for a page
+         *  @for KU.Student.JWEB
+         *  @return {boolean}
+         *  @example  
+         *      
+         *      // Check for error !
+         *      var isError = KU.Student.JWEB.isErrorPage(htmlData);
+         *****************************************************************************/
+        isErrorPage: function(data){
+          
+            // Check if login fields exist, if so assume we have been redirected to login page
+            var doc = $("<div></div>").html(data);
+            return ($("#UserID", doc).length > 0 && $("#PIN", doc).length > 0);
+            
+        },
+        
+        
+        /******************************************************************************
          *  Downloads the latest student curriculum information
          * 
          *  @method retrieveStudentInfo
@@ -2890,7 +2937,6 @@
          *****************************************************************************/
         retrieveStudentInfo: function(term, successCallback, failureCallback){
             
-            
             // Terms url
             var url = "https://jweb.kettering.edu/cku1/bwskrsta.P_RegsStatusDisp?term_in=" + term;
             
@@ -2899,6 +2945,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                     
                     // Load downloaded document
                     var doc = $("<div>").html(data);
@@ -2911,10 +2959,16 @@
                     var headerPattern = /(\d\d\d\d+)\s(.*)\n.*/;
                     var standingPattern = /Your\sClass\sfor\sregistration\spurposes\sis\s([a-zA-Z]+\s\d)\..*/;
                     
-                    // Header info
+                    // Header
                     var headerGroups = headerPattern.exec($(".staticheaders", doc).text().trim());
-                    fullName = (headerGroups.length === 3)? headerGroups[2] : "";
-                    idNumber = (headerGroups.length === 3)? headerGroups[1] : "";
+                    
+                    // Full Name
+                    if (headerGroups != null && headerGroups.length === 3) fullName = headerGroups[2];
+                    else fullName = "";
+                    
+                    // Id Number
+                    if (headerGroups != null && headerGroups.length === 3) idNumber = headerGroups[1];
+                    else idNumber = "";
                     
                     // Default standing
                     standing = "";
@@ -3304,6 +3358,8 @@
                 type: 'GET',
                 dataType: 'html',
                 success: function(data, text, response){
+                    
+                    if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
 
                     // Load downloaded document
                     var doc = $("<div>").html(data);

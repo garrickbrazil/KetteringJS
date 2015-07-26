@@ -2,7 +2,7 @@
     "project": {
         "name": "KetteringJS",
         "description": "Kettering University Javascript Library.",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "url": "http://ketteringjs.info"
     },
     "files": {
@@ -11,8 +11,12 @@
             "modules": {
                 "KU": 1
             },
-            "classes": {},
-            "fors": {},
+            "classes": {
+                "KU.KetteringJS": 1
+            },
+            "fors": {
+                "KU.KetteringJS": 1
+            },
             "namespaces": {}
         },
         "js\\announcements.js": {
@@ -162,6 +166,7 @@
             "name": "KU",
             "submodules": {},
             "classes": {
+                "KU.KetteringJS": 1,
                 "KU.Announcements": 1,
                 "KU.Announcements.Caption": 1,
                 "KU.Directory": 1,
@@ -203,6 +208,7 @@
                 "KU.Transfer.Course": 1
             },
             "fors": {
+                "KU.KetteringJS": 1,
                 "KU.Announcements.Caption": 1,
                 "KU.Announcements": 1,
                 "KU.Directory.Department": 1,
@@ -251,6 +257,20 @@
         }
     },
     "classes": {
+        "KU.KetteringJS": {
+            "name": "KU.KetteringJS",
+            "shortname": "KU.KetteringJS",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "KU",
+            "namespace": "",
+            "file": "js\\KetteringJS-Core.js",
+            "line": 27,
+            "description": "Information on KetteringJS library."
+        },
         "KU.Announcements": {
             "name": "KU.Announcements",
             "shortname": "KU.Announcements",
@@ -668,7 +688,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3484,
+            "line": 3540,
             "description": "Child class of student to contain all Blackboard related functions and classes"
         },
         "KU.Student.BB.Contact": {
@@ -682,7 +702,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3492,
+            "line": 3548,
             "description": "Holds the information for a Blackboard contact"
         },
         "KU.Student.BB.Grade": {
@@ -696,7 +716,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3533,
+            "line": 3589,
             "description": "Holds all the information for a Blackboard grade"
         },
         "KU.Student.BB.Tree": {
@@ -710,7 +730,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3618,
+            "line": 3674,
             "description": "Holds all the folders and files within a single layer of a content tree\nfor a course."
         },
         "KU.Student.BB.Folder": {
@@ -724,7 +744,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3676,
+            "line": 3732,
             "description": "Holds all the basic information for a folder on Blackboard and allows\nits own menu tree to be downloaded."
         },
         "KU.Student.BB.Item": {
@@ -738,7 +758,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3762,
+            "line": 3818,
             "description": "Holds all the information for a content item on Blackboard!"
         },
         "KU.Student.BB.Course": {
@@ -752,7 +772,7 @@
             "module": "KU",
             "namespace": "",
             "file": "js\\student.js",
-            "line": 3804,
+            "line": 3860,
             "description": "Holds all the information for a course downloaded from Blackboard"
         },
         "KU.Transfer": {
@@ -799,6 +819,42 @@
         }
     },
     "classitems": [
+        {
+            "file": "js\\KetteringJS-Core.js",
+            "line": 35,
+            "description": "Version for this build of KetteringJS",
+            "itemtype": "attribute",
+            "name": "version",
+            "class": "KU.KetteringJS",
+            "module": "KU"
+        },
+        {
+            "file": "js\\KetteringJS-Core.js",
+            "line": 44,
+            "description": "The date when this build was updated",
+            "itemtype": "attribute",
+            "name": "updated",
+            "class": "KU.KetteringJS",
+            "module": "KU"
+        },
+        {
+            "file": "js\\KetteringJS-Core.js",
+            "line": 53,
+            "description": "Name for this build of KetteringJS",
+            "itemtype": "attribute",
+            "name": "name",
+            "class": "KU.KetteringJS",
+            "module": "KU"
+        },
+        {
+            "file": "js\\KetteringJS-Core.js",
+            "line": 62,
+            "description": "Licence name for KetteringJS",
+            "itemtype": "attribute",
+            "name": "version",
+            "class": "KU.KetteringJS",
+            "module": "KU"
+        },
         {
             "file": "js\\announcements.js",
             "line": 44,
@@ -2921,31 +2977,31 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1387,
+            "line": 1389,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1414,
+            "line": 1416,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1425,
+            "line": 1427,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1445,
+            "line": 1447,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1480,
+            "line": 1482,
             "description": "Retrieves the logged in student's current holds as an html string",
             "itemtype": "method",
             "name": "retrieveCurrentHolds",
@@ -2973,7 +3029,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1546,
+            "line": 1550,
             "description": "Retrieves the logged in student's unofficial transcript as an html string",
             "itemtype": "method",
             "name": "retrieveTranscript",
@@ -3001,7 +3057,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1596,
+            "line": 1602,
             "description": "Retrieves the logged in student's award history by year",
             "itemtype": "method",
             "name": "retrieveAwardHistory",
@@ -3029,13 +3085,13 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1664,
+            "line": 1672,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1710,
+            "line": 1718,
             "description": "Retrieve schedule catalog for all courses based on term provided",
             "itemtype": "method",
             "name": "retrieveScheduleCatalog",
@@ -3068,13 +3124,13 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1782,
+            "line": 1792,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 1830,
+            "line": 1840,
             "description": "Retrieve available terms for schedule",
             "itemtype": "method",
             "name": "retrieveScheduleTerms",
@@ -3102,7 +3158,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1889,
+            "line": 1901,
             "description": "Retrieve available terms for final grades",
             "itemtype": "method",
             "name": "retrieveFinalTerms",
@@ -3130,7 +3186,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 1948,
+            "line": 1962,
             "description": "Retrieve final grades for a given term at Kettering University",
             "itemtype": "method",
             "name": "retrieveFinalGrades",
@@ -3163,25 +3219,25 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2003,
+            "line": 2019,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2014,
+            "line": 2030,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2036,
+            "line": 2052,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2068,
+            "line": 2084,
             "description": "Generates new evaluation for a student",
             "itemtype": "method",
             "name": "generateEvaluation",
@@ -3224,7 +3280,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2122,
+            "line": 2140,
             "description": "Retrieves available evaluation programs and corresponding information.\nMainly used to generate new evaluations with.",
             "itemtype": "method",
             "name": "retrieveEvalPrograms",
@@ -3257,7 +3313,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2198,
+            "line": 2218,
             "description": "Retrieve evaluation for student based on given request number",
             "itemtype": "method",
             "name": "retrieveEvaluation",
@@ -3295,97 +3351,97 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2294,
+            "line": 2318,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2324,
+            "line": 2348,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2332,
+            "line": 2356,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2341,
+            "line": 2365,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2350,
+            "line": 2374,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2380,
+            "line": 2404,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2409,
+            "line": 2433,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2463,
+            "line": 2487,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2514,
+            "line": 2538,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2563,
+            "line": 2587,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2594,
+            "line": 2618,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2604,
+            "line": 2628,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2634,
+            "line": 2658,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2660,
+            "line": 2684,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2705,
+            "line": 2729,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2780,
+            "line": 2804,
             "description": "Get evaluation list for student. This represents all possible evaluations\nthat are already generated in order of their generated date.",
             "itemtype": "method",
             "name": "retrieveEvaluationList",
@@ -3418,7 +3474,30 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2866,
+            "line": 2892,
+            "description": "Checks if incoming data is actually a banner error page",
+            "itemtype": "method",
+            "name": "isErrorPage",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "- the html data for a page",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "example": [
+                "  \n    \n    // Check for error !\n    var isError = KU.Student.JWEB.isErrorPage(htmlData);"
+            ],
+            "class": "KU.Student.JWEB",
+            "module": "KU"
+        },
+        {
+            "file": "js\\student.js",
+            "line": 2913,
             "description": "Downloads the latest student curriculum information",
             "itemtype": "method",
             "name": "retrieveStudentInfo",
@@ -3451,49 +3530,49 @@
         },
         {
             "file": "js\\student.js",
-            "line": 2953,
+            "line": 3007,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2977,
+            "line": 3031,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2988,
+            "line": 3042,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 2995,
+            "line": 3049,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3003,
+            "line": 3057,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3011,
+            "line": 3065,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3019,
+            "line": 3073,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3051,
+            "line": 3105,
             "description": "Downloads the required books for a given course and term.",
             "itemtype": "method",
             "name": "retrieveRequiredBooks",
@@ -3536,7 +3615,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3271,
+            "line": 3325,
             "description": "Downloads the student schedule information for specified term.",
             "itemtype": "method",
             "name": "retrieveSchedule",
@@ -3569,61 +3648,61 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3364,
+            "line": 3420,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3371,
+            "line": 3427,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3378,
+            "line": 3434,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3385,
+            "line": 3441,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3392,
+            "line": 3448,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3426,
+            "line": 3482,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3433,
+            "line": 3489,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3440,
+            "line": 3496,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3447,
+            "line": 3503,
             "class": "KU.Student.JWEB",
             "module": "KU"
         },
         {
             "file": "js\\student.js",
-            "line": 3500,
+            "line": 3556,
             "description": "First name of contact",
             "itemtype": "attribute",
             "name": "firstName",
@@ -3633,7 +3712,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3510,
+            "line": 3566,
             "description": "Last name of contact",
             "itemtype": "attribute",
             "name": "lastName",
@@ -3643,7 +3722,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3520,
+            "line": 3576,
             "description": "Email address of the contact (when available).",
             "itemtype": "attribute",
             "name": "email",
@@ -3656,7 +3735,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3541,
+            "line": 3597,
             "description": "Title of grade",
             "itemtype": "attribute",
             "name": "title",
@@ -3666,7 +3745,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3551,
+            "line": 3607,
             "description": "Grade as a letter, percent or raw number",
             "itemtype": "attribute",
             "name": "grade",
@@ -3676,7 +3755,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3561,
+            "line": 3617,
             "description": "Points possible for the grade (when available).",
             "itemtype": "attribute",
             "name": "pointsPossible",
@@ -3689,7 +3768,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3572,
+            "line": 3628,
             "description": "Due date for the assignment (when available).",
             "itemtype": "attribute",
             "name": "dueDate",
@@ -3702,7 +3781,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3583,
+            "line": 3639,
             "description": "The date the grade was last updated (when available).",
             "itemtype": "attribute",
             "name": "postedDate",
@@ -3715,7 +3794,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3594,
+            "line": 3650,
             "description": "Status the assignment (when available).",
             "itemtype": "attribute",
             "name": "status",
@@ -3728,7 +3807,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3605,
+            "line": 3661,
             "description": "Additional information on the course grade (when available)",
             "itemtype": "attribute",
             "name": "additionalInfo",
@@ -3741,7 +3820,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3627,
+            "line": 3683,
             "description": "Course id for Blackboard",
             "itemtype": "attribute",
             "name": "bbId",
@@ -3751,7 +3830,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3637,
+            "line": 3693,
             "description": "Content id for root folder on blackboard (when available)",
             "optional": [
                 ""
@@ -3764,7 +3843,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3648,
+            "line": 3704,
             "description": "Folders found inside the blackboard folder! Type is <code><span class=\"type\">\n    <a class=\"crosslink\" href=\"../classes/KU.Student.BB.Folder.html\">\n    KU.Student.BB.Folder</a>[]</span></code>;",
             "itemtype": "attribute",
             "name": "folders",
@@ -3774,7 +3853,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3660,
+            "line": 3716,
             "description": "Items found inside the blackboard folder! Type is <code><span class=\"type\">\n<a class=\"crosslink\" href=\"../classes/KU.Student.BB.Item.html\">\nKU.Student.BB.Item</a>[]</span></code>;",
             "itemtype": "attribute",
             "name": "items",
@@ -3784,7 +3863,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3685,
+            "line": 3741,
             "description": "Blackboard course identifier",
             "itemtype": "attribute",
             "name": "bbId",
@@ -3794,7 +3873,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3695,
+            "line": 3751,
             "description": "Blackboard content folder identifier",
             "itemtype": "attribute",
             "name": "contentId",
@@ -3804,7 +3883,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3705,
+            "line": 3761,
             "description": "The name of the folder as it appears on Blackboard",
             "itemtype": "attribute",
             "name": "name",
@@ -3814,7 +3893,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3715,
+            "line": 3771,
             "description": "Details html for the folder as they appear on Blackboard",
             "itemtype": "attribute",
             "name": "details",
@@ -3824,7 +3903,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3725,
+            "line": 3781,
             "description": "Gets the content tree for a folder",
             "itemtype": "method",
             "name": "getContentTree",
@@ -3852,7 +3931,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3770,
+            "line": 3826,
             "description": "The name of the content item as it appears on Blackboard",
             "itemtype": "attribute",
             "name": "name",
@@ -3862,7 +3941,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3780,
+            "line": 3836,
             "description": "Details html for the item as they appear on Blackboard",
             "itemtype": "attribute",
             "name": "details",
@@ -3872,7 +3951,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3790,
+            "line": 3846,
             "description": "The full blackboard id for the item usually CourseId-BBid-Content-id",
             "itemtype": "attribute",
             "name": "fullBBId",
@@ -3882,7 +3961,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3812,
+            "line": 3868,
             "description": "Course identifier",
             "itemtype": "attribute",
             "name": "courseId",
@@ -3892,7 +3971,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3822,
+            "line": 3878,
             "description": "Term for the course. This is represented by the year and quarter (e.g 201501)",
             "itemtype": "attribute",
             "name": "term",
@@ -3902,7 +3981,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3832,
+            "line": 3888,
             "description": "Crn for the course",
             "itemtype": "attribute",
             "name": "crn",
@@ -3912,7 +3991,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3842,
+            "line": 3898,
             "description": "Section for the course",
             "itemtype": "attribute",
             "name": "section",
@@ -3922,7 +4001,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3852,
+            "line": 3908,
             "description": "Title for the course",
             "itemtype": "attribute",
             "name": "courseTitle",
@@ -3932,7 +4011,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3862,
+            "line": 3918,
             "description": "Days string for the course (e.g \"MTR\" for Monday Tuesday Thursday)",
             "itemtype": "attribute",
             "name": "days",
@@ -3942,7 +4021,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3872,
+            "line": 3928,
             "description": "Meeting time for the course (e.g 3:35-5:40)",
             "itemtype": "attribute",
             "name": "time",
@@ -3952,7 +4031,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3882,
+            "line": 3938,
             "description": "Blackboard course Id",
             "itemtype": "attribute",
             "name": "bbId",
@@ -3962,7 +4041,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3892,
+            "line": 3948,
             "description": "Gets the content tree for a course containing a list of folders and files.",
             "itemtype": "method",
             "name": "getContentTree",
@@ -3990,7 +4069,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3925,
+            "line": 3981,
             "description": "Gets the entire class roster",
             "itemtype": "method",
             "name": "getRoster",
@@ -4018,7 +4097,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3958,
+            "line": 4014,
             "description": "Downloads the current grades for a course",
             "itemtype": "method",
             "name": "getGrades",
@@ -4046,7 +4125,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 3993,
+            "line": 4049,
             "description": "Downloads the current grades for a specified blackboard course",
             "itemtype": "method",
             "name": "retrieveGrades",
@@ -4079,7 +4158,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4098,
+            "line": 4154,
             "description": "Retrieves the entire class roster for a given course",
             "itemtype": "method",
             "name": "retrieveRoster",
@@ -4107,7 +4186,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4179,
+            "line": 4235,
             "description": "Gets the content tree for a course containing a list of folders and files\nbased on a specified bbId and contentId. This is meant to be a generic function\nused by KU.Student.BB.Course and KU.Student.BB.Folder.",
             "itemtype": "method",
             "name": "retrieveContentTree",
@@ -4145,7 +4224,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4387,
+            "line": 4443,
             "description": "Logs any user out of blackboard",
             "itemtype": "method",
             "name": "logout",
@@ -4173,7 +4252,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4451,
+            "line": 4507,
             "description": "Logs the user into blackboard",
             "itemtype": "method",
             "name": "login",
@@ -4211,7 +4290,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4524,
+            "line": 4580,
             "description": "Checks to see if browser has any user logged into Blackboard",
             "itemtype": "method",
             "name": "checkLogIn",
@@ -4239,7 +4318,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4587,
+            "line": 4643,
             "description": "Parses an html document to evaluate login status of Blackboard",
             "itemtype": "method",
             "name": "isLoggedIn",
@@ -4263,7 +4342,7 @@
         },
         {
             "file": "js\\student.js",
-            "line": 4606,
+            "line": 4662,
             "description": "Downloads the blackboard courses",
             "itemtype": "method",
             "name": "downloadCourses",

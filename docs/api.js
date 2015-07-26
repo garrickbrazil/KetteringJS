@@ -10,6 +10,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "KU.Events",
         "KU.Events.Caption",
         "KU.Events.Event",
+        "KU.KetteringJS",
         "KU.Library",
         "KU.Library.Book",
         "KU.Library.SearchOption",
