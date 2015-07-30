@@ -1247,8 +1247,8 @@
                         type: 'POST',
                         dataType: 'html',
                         data:{
-                            "sid": encodeURIComponent(user),
-                            "PIN": encodeURIComponent(pass)
+                            "sid": user,
+                            "PIN": pass
                         },
                         success: function(message, text, data){
                             
@@ -4539,8 +4539,8 @@
                 type: 'POST',
                 dataType: 'html',
                 data:{
-                    "user_id": encodeURIComponent(user),
-                    "password": encodeURIComponent(pass),
+                    "user_id": user,
+                    "password": pass,
                     "login": "Login",
                     "action": "login",
                     "new_loc":""

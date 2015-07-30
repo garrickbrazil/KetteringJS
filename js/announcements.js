@@ -119,7 +119,7 @@
                     function(index){
                         
                         // Setup item information
-                        var title = $('h3', this).text();
+                        var title = $('h3:first', this).text();
                         var mainHtml = $(this);
                         mainHtml.find("h3:first").remove();
                         

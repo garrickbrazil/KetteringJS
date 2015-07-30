@@ -38,7 +38,7 @@ var KU = {
          *  @attribute version
          *  @for KU.KetteringJS
          ******************************************************************************/
-        "version": "v0.0.8",
+        "version": "v0.0.9",
          
          
         /******************************************************************************
@@ -178,7 +178,7 @@ var KU = {
                     function(index){
                         
                         // Setup item information
-                        var title = $('h3', this).text();
+                        var title = $('h3:first', this).text();
                         var mainHtml = $(this);
                         mainHtml.find("h3:first").remove();
                         
@@ -3198,8 +3198,8 @@ var KU = {
                         type: 'POST',
                         dataType: 'html',
                         data:{
-                            "sid": encodeURIComponent(user),
-                            "PIN": encodeURIComponent(pass)
+                            "sid": user,
+                            "PIN": pass
                         },
                         success: function(message, text, data){
                             
@@ -6490,8 +6490,8 @@ var KU = {
                 type: 'POST',
                 dataType: 'html',
                 data:{
-                    "user_id": encodeURIComponent(user),
-                    "password": encodeURIComponent(pass),
+                    "user_id": user,
+                    "password": pass,
                     "login": "Login",
                     "action": "login",
                     "new_loc":""
