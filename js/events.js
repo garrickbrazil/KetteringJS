@@ -223,12 +223,12 @@
      *      }
      *      
      *      // Get article from first events caption
-     *      KU.Events.downloadEventDetails("http://www.kettering.edu/events/example",success, failure);
+     *      KU.Events.downloadEventDetails("http://my.kettering.edu/events/example",success, failure);
      *****************************************************************************/
     Events.downloadEventDetails = function(url, successCallback, failureCallback){
         
         // Properties used
-        var url = 'http://www.kettering.edu/' + url;
+        var url = 'http://my.kettering.edu/' + url;
         
         $.ajax({
             url: url,
@@ -294,8 +294,8 @@
       
         // Found at least one occasion where page=0 was different than default
 		// site, /events seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/events?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/events';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/events?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/events';
         
         page = pageNumber;
         
@@ -321,7 +321,7 @@
                         
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Setup item information

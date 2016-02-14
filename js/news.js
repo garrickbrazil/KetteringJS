@@ -194,12 +194,12 @@
      *      }
      *      
      *      // Get article from first news caption
-     *      KU.News.downloadArticle("http://www.kettering.edu/news/example", success, failure);
+     *      KU.News.downloadArticle("http://my.kettering.edu/news/example", success, failure);
      *****************************************************************************/
     News.downloadArticle = function(articleUrl, successCallback, failureCallback){
         
         // Properties used
-        var url = 'http://www.kettering.edu/' + articleUrl;
+        var url = 'http://my.kettering.edu/' + articleUrl;
         
         
         $.ajax({
@@ -268,8 +268,8 @@
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-news seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/news/current-news?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/news/current-news';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/news/current-news?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/news/current-news';
         
         page = pageNumber;
         
@@ -292,7 +292,7 @@
                         
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Setup item information
