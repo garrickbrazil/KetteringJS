@@ -159,8 +159,8 @@ var KU = {
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-announcements seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/announcements?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/announcements/';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/announcements?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/announcements/';
         
         page = pageNumber;
         
@@ -512,7 +512,7 @@ var KU = {
         };
         
         // Setup url
-        var url = 'http://www.kettering.edu/faculty-staff/directory?' 
+        var url = 'http://my.kettering.edu/faculty-staff/directory?' 
                 + 'field_faculty_staff_first_value=' + encodeURIComponent(firstName)
                 + '&field_faculty_staff_last_value=' + encodeURIComponent(lastName) 
                 + '&field_phone_extension_value=' + ext +  '&tid=' +departmentId
@@ -541,7 +541,7 @@ var KU = {
 
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Gather information
@@ -731,7 +731,7 @@ var KU = {
         
         
         // Setup URL
-        var url = "http://www.kettering.edu/faculty-staff/directory?"
+        var url = "http://my.kettering.edu/faculty-staff/directory?"
                 + "field_faculty_staff_first_value=&field_faculty_staff_last_value="
                 + "&field_phone_extension_value=KUMOBILE&tid=All";
         
@@ -993,12 +993,12 @@ var KU = {
      *      }
      *      
      *      // Get article from first events caption
-     *      KU.Events.downloadEventDetails("http://www.kettering.edu/events/example",success, failure);
+     *      KU.Events.downloadEventDetails("http://my.kettering.edu/events/example",success, failure);
      *****************************************************************************/
     Events.downloadEventDetails = function(url, successCallback, failureCallback){
         
         // Properties used
-        var url = 'http://www.kettering.edu/' + url;
+        var url = 'http://my.kettering.edu/' + url;
         
         $.ajax({
             url: url,
@@ -1064,8 +1064,8 @@ var KU = {
       
         // Found at least one occasion where page=0 was different than default
 		// site, /events seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/events?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/events';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/events?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/events';
         
         page = pageNumber;
         
@@ -1091,7 +1091,7 @@ var KU = {
                         
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Setup item information
@@ -1759,12 +1759,12 @@ var KU = {
      *      }
      *      
      *      // Get article from first news caption
-     *      KU.News.downloadArticle("http://www.kettering.edu/news/example", success, failure);
+     *      KU.News.downloadArticle("http://my.kettering.edu/news/example", success, failure);
      *****************************************************************************/
     News.downloadArticle = function(articleUrl, successCallback, failureCallback){
         
         // Properties used
-        var url = 'http://www.kettering.edu/' + articleUrl;
+        var url = 'http://my.kettering.edu/' + articleUrl;
         
         
         $.ajax({
@@ -1833,8 +1833,8 @@ var KU = {
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-news seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/news/current-news?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/news/current-news';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/news/current-news?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/news/current-news';
         
         page = pageNumber;
         
@@ -1857,7 +1857,7 @@ var KU = {
                         
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Setup item information
