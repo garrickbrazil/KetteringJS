@@ -100,8 +100,8 @@
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-announcements seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://www.kettering.edu/announcements?page=' + pageNumber;
-        else url = 'http://www.kettering.edu/announcements/';
+        if( pageNumber != 0 ) url = 'http://my.kettering.edu/announcements?page=' + pageNumber;
+        else url = 'http://my.kettering.edu/announcements/';
         
         page = pageNumber;
         

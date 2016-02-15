@@ -245,7 +245,7 @@
         };
         
         // Setup url
-        var url = 'http://www.kettering.edu/faculty-staff/directory?' 
+        var url = 'http://my.kettering.edu/faculty-staff/directory?' 
                 + 'field_faculty_staff_first_value=' + encodeURIComponent(firstName)
                 + '&field_faculty_staff_last_value=' + encodeURIComponent(lastName) 
                 + '&field_phone_extension_value=' + ext +  '&tid=' +departmentId
@@ -274,7 +274,7 @@
 
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://www.kettering.edu" + source;
+                            source = "http://my.kettering.edu" + source;
                         }
                         
                         // Gather information
@@ -464,7 +464,7 @@
         
         
         // Setup URL
-        var url = "http://www.kettering.edu/faculty-staff/directory?"
+        var url = "http://my.kettering.edu/faculty-staff/directory?"
                 + "field_faculty_staff_first_value=&field_faculty_staff_last_value="
                 + "&field_phone_extension_value=KUMOBILE&tid=All";
         
