@@ -1759,12 +1759,12 @@ var KU = {
      *      }
      *      
      *      // Get article from first news caption
-     *      KU.News.downloadArticle("http://my.kettering.edu/news/example", success, failure);
+     *      KU.News.downloadArticle("http://news.kettering.edu/news/example", success, failure);
      *****************************************************************************/
     News.downloadArticle = function(articleUrl, successCallback, failureCallback){
         
         // Properties used
-        var url = 'http://my.kettering.edu/' + articleUrl;
+        var url = 'http://news.kettering.edu/' + articleUrl;
         
         
         $.ajax({
@@ -1833,8 +1833,8 @@ var KU = {
       
         // Found at least one occasion where page=0 was different than default
 		// site, current-news seems more reliable without a page in this case
-        if( pageNumber != 0 ) url = 'http://my.kettering.edu/news/current-news?page=' + pageNumber;
-        else url = 'http://my.kettering.edu/news/current-news';
+        if( pageNumber != 0 ) url = 'http://news.kettering.edu/news/current-news?page=' + pageNumber;
+        else url = 'http://news.kettering.edu/news/current-news';
         
         page = pageNumber;
         
@@ -1857,7 +1857,7 @@ var KU = {
                         
                         // Fix relative path
                         if(source[0] == "/"){
-                            source = "http://my.kettering.edu" + source;
+                            source = "http://news.kettering.edu" + source;
                         }
                         
                         // Setup item information
@@ -3181,7 +3181,7 @@ var KU = {
          *****************************************************************************/
         login: function(user, pass, successCallback, failureCallback){
             
-            var initialUrl = "https://jweb.kettering.edu/cku1/twbkwbis.P_ValLogin"
+            var initialUrl = "https://kuxe.kettering.edu/CKU1/twbkwbis.P_ValLogin"
             
             // Load jweb initially so the proper cookies exist
             $.ajax({
@@ -3191,7 +3191,7 @@ var KU = {
                 success: function(message, text, data){
                     
                     // Compile url
-                    var url = "https://jweb.kettering.edu/cku1/twbkwbis.P_ValLogin";
+                    var url = "https://kuxe.kettering.edu/CKU1/twbkwbis.P_ValLogin";
                     
                     $.ajax({
                         url: url,
@@ -3255,7 +3255,7 @@ var KU = {
             
             
             // Compile url
-            var url = "https://jweb.kettering.edu/cku1/twbkwbis.P_Logout";
+            var url = "https://kuxe.kettering.edu/CKU1/twbkwbis.P_Logout";
             
             $.ajax({
                 url: url,
@@ -3305,7 +3305,7 @@ var KU = {
             
             
             // Compile url
-            var url = "https://jweb.kettering.edu/cku1/bwskoacc.P_ViewAcct";
+            var url = "https://kuxe.kettering.edu/CKU1/bwskoacc.P_ViewAcct";
             
             $.ajax({
                 url: url,
@@ -3456,7 +3456,7 @@ var KU = {
             
             
             // Compile url
-            var url = "http://jweb.kettering.edu/cku1/bwskoacc.P_ViewHold";
+            var url = "http://kuxe.kettering.edu/CKU1/bwskoacc.P_ViewHold";
             
             $.ajax({
                 url: url,
@@ -3524,7 +3524,7 @@ var KU = {
             
             
             // Compile url
-            var url = "https://jweb.kettering.edu/cku1/ku_web_trans.view_transcript?tprt=SHRTRTC&levl=U";
+            var url = "https://kuxe.kettering.edu/CKU1/ku_web_trans.view_transcript?tprt=SHRTRTC&levl=U";
             
             $.ajax({
                 url: url,
@@ -3577,7 +3577,7 @@ var KU = {
         retrieveAwardHistory: function(successCallback, failureCallback){
             
             // Award url 
-            var url = "https://jweb.kettering.edu/cku1/bwrkrhst.P_DispAwdHst";
+            var url = "https://kuxe.kettering.edu/CKU1/bwrkrhst.P_DispAwdHst";
             
             
             $.ajax({
@@ -3694,7 +3694,7 @@ var KU = {
         retrieveScheduleCatalog: function(term, successCallback, failureCallback){
         
             // Url for all courses
-            var url = "https://jweb.kettering.edu/cku1/bwskfcls.P_GetCrse_Advanced?"
+            var url = "https://kuxe.kettering.edu/CKU1/bwskfcls.P_GetCrse_Advanced?"
                 + "rsts=dummy&crn=dummy&term_in=" + term + "&sel_subj=dummy&sel_day=dummy"
                 + "&sel_schd=dummy&sel_insm=dummy&sel_camp=dummy&sel_levl=dummy"
                 + "&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&sel_attr=dummy"
@@ -3812,7 +3812,7 @@ var KU = {
          *****************************************************************************/
         retrieveScheduleTerms: function(successCallback, failureCallback){
             
-            var url = "https://jweb.kettering.edu/cku1/bwskflib.P_SelDefTerm";
+            var url = "https://kuxe.kettering.edu/CKU1/bwskflib.P_SelDefTerm";
             
             $.ajax({
                 url: url,
@@ -3873,7 +3873,7 @@ var KU = {
          *****************************************************************************/
         retrieveFinalTerms: function(successCallback, failureCallback){
             
-            var url = "https://jweb.kettering.edu/cku1/wbwskogrd.P_ViewTermGrde";
+            var url = "https://kuxe.kettering.edu/CKU1/wbwskogrd.P_ViewTermGrde";
             
             $.ajax({
                 url: url,
@@ -3938,7 +3938,7 @@ var KU = {
          *****************************************************************************/
         retrieveFinalGrades: function(term, successCallback, failureCallback){
         
-            var url = "https://jweb.kettering.edu/cku1/wbwskogrd.P_ViewGrde?term_in=" + term + "&inam=on&snam=on&sgid=on";
+            var url = "https://kuxe.kettering.edu/CKU1/wbwskogrd.P_ViewGrde?term_in=" + term + "&inam=on&snam=on&sgid=on";
             
             $.ajax({
                 url: url,
@@ -4062,7 +4062,7 @@ var KU = {
         generateEvaluation: function(sourceId, programId, term, successCallback, failureCallback){
             
             // Generate url
-            var url = "https://jweb.kettering.edu/cku1/bwckcapp.P_Submit?source1=" 
+            var url = "https://kuxe.kettering.edu/CKU1/bwckcapp.P_Submit?source1=" 
                 + sourceId + "&program=" + programId + "&ctlg_term=" + term + "&eval_term=999999&dflt_ip=Y";
                 
             // First set the terms
@@ -4117,7 +4117,7 @@ var KU = {
         retrieveEvalPrograms: function(term, successCallback, failureCallback){
             
             // Generate url
-            var url = "https://jweb.kettering.edu/cku1/bwckcapp.P_DispEvalTerm?term_in=" + term;
+            var url = "https://kuxe.kettering.edu/CKU1/bwckcapp.P_DispEvalTerm?term_in=" + term;
                 
             // First set the terms
             $.ajax({
@@ -4196,7 +4196,7 @@ var KU = {
             
             
             // Terms url
-             var termUrl = "https://jweb.kettering.edu/cku1/bwckcapp.P_DispCurrent?term_in=" + term
+             var termUrl = "https://kuxe.kettering.edu/CKU1/bwckcapp.P_DispCurrent?term_in=" + term
             
             // First set the terms
             $.ajax({
@@ -4208,7 +4208,7 @@ var KU = {
                     if(KU.Student.JWEB.isErrorPage(data)){ failureCallback("Request failed"); return; }
                     
                      // Evaluation url
-                    var url = "https://jweb.kettering.edu/cku1/bwckcapp.P_VerifyDispEvalViewOption?request_no=" 
+                    var url = "https://kuxe.kettering.edu/CKU1/bwckcapp.P_VerifyDispEvalViewOption?request_no=" 
                         + requestNum + "&program_summary=3";
                
                     $.ajax({
@@ -4781,7 +4781,7 @@ var KU = {
             
             
             // Terms url
-            var url = "https://jweb.kettering.edu/cku1/bwcksmmt.P_DispPrevEval?term_in=" + term;
+            var url = "https://kuxe.kettering.edu/CKU1/bwcksmmt.P_DispPrevEval?term_in=" + term;
             
             $.ajax({
                 url: url,
@@ -4889,7 +4889,7 @@ var KU = {
         retrieveStudentInfo: function(term, successCallback, failureCallback){
             
             // Terms url
-            var url = "https://jweb.kettering.edu/cku1/bwskrsta.P_RegsStatusDisp?term_in=" + term;
+            var url = "https://kuxe.kettering.edu/CKU1/bwskrsta.P_RegsStatusDisp?term_in=" + term;
             
             $.ajax({
                 url: url,
@@ -5302,7 +5302,7 @@ var KU = {
             
             
             // Schedule url
-            var url = "https://jweb.kettering.edu/cku1/bwskfshd.P_CrseSchdDetl?term_in=" + term;
+            var url = "https://kuxe.kettering.edu/CKU1/bwskfshd.P_CrseSchdDetl?term_in=" + term;
             
             $.ajax({
                 url: url,
