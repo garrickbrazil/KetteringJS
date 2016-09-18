@@ -1253,7 +1253,7 @@
                         success: function(message, text, data){
                             
                             // Success pattern is a redirect to GenMenu page!
-                            var successPattern = /.*<meta.*url=\/cku1\/twbkwbis\.P_GenMenu.*>.*/
+                            var successPattern = /.*<meta.*url=\/CKU1\/twbkwbis\.P_GenMenu.*>.*/i;
                             
                             // Good login!
                             if(successPattern.test(message)) successCallback();
